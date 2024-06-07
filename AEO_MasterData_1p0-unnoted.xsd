@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:AEO_MasterData:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:AEO_MasterData_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:AEO_MasterData:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:AEO_MasterData_DS:1" schemaLocation="AEO_MasterData_1p0_urn_wco_datamodel_WCO_AEO_MasterData_DS_1.xsd"/>
+  <xs:element name="AEO_MasterData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Function" type="ds:AEO_MasterDataFunctionCodeType"/>
+        <xs:element name="FunctionalReferenceID" type="ds:AEO_MasterDataFunctionalReferenceIDType"/>
+        <xs:element name="TypeCode" type="ds:AEO_MasterDataTypeCodeType"/>
+        <xs:element name="MasterDataRecipient">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TypeCode" type="ds:MasterDataRecipientTypeCodeType" minOccurs="0"/>
+              <xs:element name="ID" type="ds:MasterDataRecipientIdentificationIDType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MasterDataSender">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TypeCode" type="ds:MasterDataSenderTypeCodeType" minOccurs="0"/>
+              <xs:element name="ID" type="ds:MasterDataSenderIdentificationIDType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MasterDataParty" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="ds:MasterDataPartyNameTextType" minOccurs="0"/>
+              <xs:element name="ID" type="ds:MasterDataPartyIdentificationIDType" minOccurs="0"/>
+              <xs:element name="RoleCode" type="ds:MasterDataPartyRoleCodeType" minOccurs="0"/>
+              <xs:element name="IdentificationIssuingCountryCode" type="ds:MasterDataPartyIdentificationIssuingCountryCodeType" minOccurs="0"/>
+              <xs:element name="ShortName" type="ds:MasterDataPartyShortNameTextType" minOccurs="0"/>
+              <xs:element name="BusinessTypeCode" type="ds:MasterDataPartyBusinessTypeCodeType" minOccurs="0"/>
+              <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="TypeCode" type="ds:AddressTypeCodeType" minOccurs="0"/>
+                    <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                    <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                    <xs:element name="CountryName" type="ds:AddressCountryNameTextType" minOccurs="0"/>
+                    <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                    <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                    <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                    <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalDocument" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType" minOccurs="0"/>
+                    <xs:element name="EffectiveDateTime" type="ds:AdditionalDocumentEffectiveDateTimeType" minOccurs="0"/>
+                    <xs:element name="ExpirationDateTime" type="ds:AdditionalDocumentExpirationDateTimeType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:AdditionalDocumentIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="StatusCode" type="ds:AdditionalDocumentStatusCodeType" minOccurs="0"/>
+                    <xs:element name="TypeCode" type="ds:AdditionalDocumentTypeCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

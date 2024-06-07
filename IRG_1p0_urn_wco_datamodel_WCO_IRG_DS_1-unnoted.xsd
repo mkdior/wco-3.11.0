@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ds="urn:wco:datamodel:WCO:IRG_DS:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:wco:datamodel:WCO:IRG_DS:1"
+    elementFormDefault="qualified">
+  <xs:complexType name="AdditionalDocumentIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AdditionalDocumentTypeCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AdditionalDocumentTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AdditionalDocumentTypeCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressCityNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AddressCountryCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AddressCountryCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AddressCountryCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AddressCountrySubDivisionCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AddressCountrySubDivisionCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AddressCountrySubDivisionCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressCountrySubDivisionNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressLineTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressPostcodeIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AddressTypeCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AddressTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AddressTypeCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AgentIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AgentNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AgentRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AgentRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AgentRoleCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ArrivalLocationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ArrivalTransportMeansIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ArrivalTransportMeansNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BorderTransportMeansFirstArrivalLocationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BorderTransportMeansIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BorderTransportMeansJourneyIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BorderTransportMeansNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CarrierIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CarrierNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="CarrierRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="CarrierRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:CarrierRoleCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ClassificationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommodityDescriptionTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommunicationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="CommunicationTypeCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="CommunicationTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:CommunicationTypeCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsigneeIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsigneeNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ConsigneeRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="ConsigneeRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:ConsigneeRoleCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ConsignmentSequenceNumericType">
+    <xs:restriction base="xs:decimal"/>
+  </xs:simpleType>
+  <xs:complexType name="ConsignmentTotalPackageQuantityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsignorIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsignorNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ConsignorRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="ConsignorRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:ConsignorRoleCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ContactNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="CurrencyExchangeCurrencyTypeCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="CurrencyExchangeCurrencyTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:CurrencyExchangeCurrencyTypeCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CustomsValuationExitToEntryChargeAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DeclarationTotalGrossMassMeasureType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DeclarationTotalPackageQuantityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DepartureTransportMeansIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ExporterIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ExporterNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ExporterRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="ExporterRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:ExporterRoleCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GoodsConsignedPlaceIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GoodsMeasureGrossMassMeasureType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="GoodsShipmentSequenceNumericType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="GoodsShipmentTransactionNatureCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="GoodsShipmentTransactionNatureCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:GoodsShipmentTransactionNatureCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GovernmentAgencyGoodsItemCustomsValueAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="GovernmentProcedureCurrentCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="GovernmentProcedureCurrentCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:GovernmentProcedureCurrentCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ImporterIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ImporterNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ImporterRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="ImporterRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:ImporterRoleCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InvoiceIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LoadingLocationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LoadingLocationNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="OriginCountryCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="OriginCountryCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:OriginCountryCodeContentType"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PackagingMarksNumbersIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PackagingQuantityQuantityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransportContractDocumentIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TransportEquipmentIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UCRIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UCRTraderAssignedReferenceIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UnloadingLocationArrivalDateTimeType">
+    <xs:choice>
+      <xs:element name="DateTimeString">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="formatCode" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="UnloadingLocationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

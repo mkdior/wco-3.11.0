@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:AEI:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:AEI_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:AEI:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:AEI_DS:1" schemaLocation="AEI_1p0_urn_wco_datamodel_WCO_AEI_DS_1.xsd"/>
+  <xs:element name="Declaration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="InvoiceAmount" type="ds:DeclarationInvoiceAmountType" minOccurs="0"/>
+        <xs:element name="TotalGrossMassMeasure" type="ds:DeclarationTotalGrossMassMeasureType" minOccurs="0"/>
+        <xs:element name="Agent" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="ds:AgentNameTextType" minOccurs="0"/>
+              <xs:element name="ID" type="ds:AgentIdentificationIDType" minOccurs="0"/>
+              <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                    <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                    <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                    <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                    <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                    <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BorderTransportMeans" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="ds:BorderTransportMeansNameTextType" minOccurs="0"/>
+              <xs:element name="ID" type="ds:BorderTransportMeansIdentificationIDType" minOccurs="0"/>
+              <xs:element name="RegistrationNationalityCode" type="ds:BorderTransportMeansRegistrationNationalityCodeType" minOccurs="0"/>
+              <xs:element name="ArrivalDateTime" type="ds:BorderTransportMeansArrivalDateTimeType" minOccurs="0"/>
+              <xs:element name="FirstArrivalLocationID" type="ds:BorderTransportMeansFirstArrivalLocationIDType" minOccurs="0"/>
+              <xs:element name="JourneyID" type="ds:BorderTransportMeansJourneyIDType" minOccurs="0"/>
+              <xs:element name="ArrivalLocation" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:ArrivalLocationIdentificationIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Itinerary" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="RoutingCountryCode" type="ds:ItineraryRoutingCountryCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Consignment" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Agent" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:AgentIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="RoleCode" type="ds:AgentRoleCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Carrier" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:CarrierNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:CarrierIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ConsignmentItem" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Commodity" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CargoDescription" type="ds:CommodityCargoDescriptionTextType" minOccurs="0"/>
+                          <xs:element name="Description" type="ds:CommodityDescriptionTextType" minOccurs="0"/>
+                          <xs:element name="Classification" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:ClassificationIdentificationIDType" minOccurs="0"/>
+                                <xs:element name="IdentificationTypeCode" type="ds:ClassificationIdentificationTypeCodeType" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Origin" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CountryCode" type="ds:OriginCountryCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Packaging" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="QuantityQuantity" type="ds:PackagingQuantityQuantityType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:PackagingTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="TransportEquipment" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:TransportEquipmentIdentificationIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="UCR" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:UCRIdentificationIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DeliveryDestination" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:DeliveryDestinationNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:DeliveryDestinationIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Freight" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PaymentMethodCode" type="ds:FreightPaymentMethodCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="LoadingLocation" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:LoadingLocationNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:LoadingLocationIdentificationIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="NotifyParty" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:NotifyPartyNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:NotifyPartyIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="StuffingEstablishment" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:StuffingEstablishmentNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:StuffingEstablishmentIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TransportContractDocument" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Consolidator" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ConsolidatorNameTextType" minOccurs="0"/>
+                          <xs:element name="ID" type="ds:ConsolidatorIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                                <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                                <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                                <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                                <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                                <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                                <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TransportEquipment" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CharacteristicCode" type="ds:TransportEquipmentCharacteristicCodeType" minOccurs="0"/>
+                    <xs:element name="FullnessCode" type="ds:TransportEquipmentFullnessCodeType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:TransportEquipmentIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="StowPosition" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:StowPositionIdentificationIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Seal" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:SealIdentificationIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="TransportEquipmentLocation" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:TransportEquipmentLocationNameTextType" minOccurs="0"/>
+                          <xs:element name="ID" type="ds:TransportEquipmentLocationIdentificationIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Status" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="EventStatusCode" type="ds:StatusEventStatusCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="UnloadingLocation" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:UnloadingLocationNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:UnloadingLocationIdentificationIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CurrencyExchange" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CurrencyTypeCode" type="ds:CurrencyExchangeCurrencyTypeCodeType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ExitOffice" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="ds:ExitOfficeIdentificationIDType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Exporter" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="ds:ExporterNameTextType" minOccurs="0"/>
+              <xs:element name="ID" type="ds:ExporterIdentificationIDType" minOccurs="0"/>
+              <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                    <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                    <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                    <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                    <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                    <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GoodsShipment" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Buyer" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:BuyerNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:BuyerIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Consignee" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ConsigneeNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:ConsigneeIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Consignment" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ContainerOperator" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:ContainerOperatorIdentificationIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Consignor" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ConsignorNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:ConsignorIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GovernmentAgencyGoodsItem" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Manufacturer" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ManufacturerNameTextType" minOccurs="0"/>
+                          <xs:element name="ID" type="ds:ManufacturerIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                                <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                                <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                                <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                                <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                                <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                                <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Seller" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:SellerNameTextType" minOccurs="0"/>
+                    <xs:element name="ID" type="ds:SellerIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                          <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="UCR" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:UCRIdentificationIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Importer" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="ds:ImporterNameTextType" minOccurs="0"/>
+              <xs:element name="ID" type="ds:ImporterIdentificationIDType" minOccurs="0"/>
+              <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0"/>
+                    <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0"/>
+                    <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0"/>
+                    <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0"/>
+                    <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0"/>
+                    <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

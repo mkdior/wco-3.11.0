@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:DocumentMetaData:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:DocumentMetaData:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:MetaData_DS:1" schemaLocation="DocumentMetaData_1p0_urn_wco_datamodel_WCO_MetaData_DS_1.xsd"/>
+  <xs:element name="MetaData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="WCODataModelVersionCode" type="ds:MetaDataWCODataModelVersionCodeType" minOccurs="0"/>
+        <xs:element name="WCOCategoryCode" type="ds:MetaDataWCOCategoryCodeType" minOccurs="0"/>
+        <xs:element name="WCOTypeCode" type="ds:MetaDataWCOTypeCodeType" minOccurs="0"/>
+        <xs:element name="WCOTypeName" type="ds:MetaDataWCOTypeNameTextType" minOccurs="0"/>
+        <xs:element name="ResponsibleCountryCode" type="ds:MetaDataResponsibleCountryCodeType" minOccurs="0"/>
+        <xs:element name="ResponsibleAgencyCode" type="ds:MetaDataResponsibleAgencyCodeType" minOccurs="0"/>
+        <xs:element name="ResponsibleAgencyName" type="ds:MetaDataResponsibleAgencyNameTextType" minOccurs="0"/>
+        <xs:element name="AgencyAssignedCustomizationCode" type="ds:MetaDataAgencyAssignedCustomizationCodeType" minOccurs="0"/>
+        <xs:element name="AgencyAssignedCustomizationVersionCode" type="ds:MetaDataAgencyAssignedCustomizationVersionCodeType" minOccurs="0"/>
+        <xs:element name="FunctionalDefinition" type="ds:MetaDataFunctionalDefinitionTextType" minOccurs="0"/>
+        <xs:element name="BinaryFile" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="ds:BinaryFileIdentificationIDType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="Title" type="ds:BinaryFileTitleTextType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="AuthorName" type="ds:BinaryFileAuthorNameTextType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="VersionID" type="ds:BinaryFileVersionIDType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="FileNametext" type="ds:BinaryFileFileNameTextType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="URIID" type="ds:BinaryFileURIIDType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="MIMECode" type="ds:BinaryFileMIMECodeType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="EncodingCode" type="ds:BinaryFileEncodingCodeType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="CharacterSetCode" type="ds:BinaryFileCharacterSetCodeType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="IncludedBinaryObjectBinaryObject" type="ds:BinaryFileIncludedBinaryObjectBinaryObjectType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="Access" type="ds:BinaryFileAccessTextType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="Description" type="ds:BinaryFileDescriptionTextType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="SizeMeasure" type="ds:BinaryFileSizeMeasureType" minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="TypeCode" type="ds:BinaryFileTypeCodeType" minOccurs="0"/>
+              <xs:element name="HashCode" type="ds:BinaryFileHashCodeTextType" minOccurs="0"/>
+              <xs:element name="HashCodeAlgorithmIDCode" type="ds:BinaryFileHashCodeAlgorithmIDCodeType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CommunicationMetaData" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AcknowledgementRequestIndicator" type="ds:CommunicationMetaDataAcknowledgementRequestIndicatorType" minOccurs="0"/>
+              <xs:element name="ApplicationReferenceID" type="ds:CommunicationMetaDataApplicationReferenceIDType" minOccurs="0"/>
+              <xs:element name="CommunicationsAgreementID" type="ds:CommunicationMetaDataCommunicationsAgreementIDType" minOccurs="0"/>
+              <xs:element name="PreparationDateTime" type="ds:CommunicationMetaDataPreparationDateTimeType" minOccurs="0"/>
+              <xs:element name="SyntaxIdentificationCode" type="ds:CommunicationMetaDataSyntaxIdentificationCodeType" minOccurs="0"/>
+              <xs:element name="SyntaxVersionCode" type="ds:CommunicationMetaDataSyntaxVersionCodeType" minOccurs="0"/>
+              <xs:element name="TestIndicator" type="ds:CommunicationMetaDataTestIndicatorType" minOccurs="0"/>
+              <xs:element name="SequenceNumeric" type="ds:CommunicationMetaDataSequenceNumericType" minOccurs="0"/>
+              <xs:element name="Recipient" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:RecipientIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="RoleCode" type="ds:RecipientRoleCodeType" minOccurs="0"/>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:RecipientIdentificationIssuingCountryCodeType" minOccurs="0"/>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0"/>
+                          <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Sender" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:SenderIdentificationIDType" minOccurs="0"/>
+                    <xs:element name="RoleCode" type="ds:SenderRoleCodeType" minOccurs="0"/>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:SenderIdentificationIssuingCountryCodeType" minOccurs="0"/>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0"/>
+                          <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0"/>
+                          <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContextMetaData" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BusinessProcessID" type="ds:ContextMetaDataBusinessProcessIDType" minOccurs="0"/>
+              <xs:element name="ProductClassificationID" type="ds:ContextMetaDataProductClassificationIDType" minOccurs="0"/>
+              <xs:element name="IndustryClassificationID" type="ds:ContextMetaDataIndustryClassificationIDType" minOccurs="0"/>
+              <xs:element name="GeopoliticalID" type="ds:ContextMetaDataGeopoliticalIDType" minOccurs="0"/>
+              <xs:element name="OfficialConstraintsID" type="ds:ContextMetaDataOfficialConstraintsIDType" minOccurs="0"/>
+              <xs:element name="BusinessProcessRoleID" type="ds:ContextMetaDataBusinessProcessRoleIDType" minOccurs="0"/>
+              <xs:element name="SupportingRoleID" type="ds:ContextMetaDataSupportingRoleIDType" minOccurs="0"/>
+              <xs:element name="SystemCapabilitiesID" type="ds:ContextMetaDataSystemCapabilitiesIDType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

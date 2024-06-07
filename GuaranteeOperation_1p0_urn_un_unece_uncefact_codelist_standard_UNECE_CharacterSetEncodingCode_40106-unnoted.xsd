@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:clm60133="urn:un:unece:uncefact:codelist:standard:UNECE:CharacterSetEncodingCode:40106"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:CharacterSetEncodingCode:40106"
+    elementFormDefault="qualified"
+    version="3.1">
+  <xs:simpleType name="CharacterSetEncodingCodeContentType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+</xs:schema>

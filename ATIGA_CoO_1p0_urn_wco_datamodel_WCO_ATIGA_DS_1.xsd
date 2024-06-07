@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:ds="urn:wco:datamodel:WCO:ATIGA_DS:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:clm5ISO42173A="urn:un:unece:uncefact:codelist:standard:ISO:ISO3AlphaCurrencyCode:2012-08-31"
+    xmlns:clm63055="urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B"
+    targetNamespace="urn:wco:datamodel:WCO:ATIGA_DS:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:un:unece:uncefact:codelist:standard:ISO:ISO3AlphaCurrencyCode:2012-08-31" schemaLocation="ATIGA_CoO_1p0_urn_un_unece_uncefact_codelist_standard_ISO_ISO3AlphaCurrencyCode_2012-08-31.xsd"/>
+  <xs:import namespace="urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B" schemaLocation="ATIGA_CoO_1p0_urn_un_unece_uncefact_codelist_standard_UNECE_AgencyIdentificationCode_D12B.xsd"/>
+  <xs:complexType name="AdditionalDocumentCategoryCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressCityNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AddressCountryCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AddressCountryCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AddressCountryCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressCountryNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AddressCountrySubDivisionCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AddressCountrySubDivisionCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AddressCountrySubDivisionCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressCountrySubDivisionNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressLineTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AddressPostcodeIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="AddressTypeCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="AddressTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:AddressTypeCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AuthenticationActualDateTimeType">
+    <xs:choice>
+      <xs:element name="DateTimeString">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="formatCode" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="AuthenticationActualLocationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="AuthenticationAuthenticationTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BorderTransportMeansDepartureDateTimeType">
+    <xs:choice>
+      <xs:element name="DateTimeString">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="formatCode" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="BorderTransportMeansIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BorderTransportMeansNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CertifierIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CertifierNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="CertifierRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="CertifierRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:CertifierRoleCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ClassificationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommodityCountQuantityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="unitCode" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CommodityDescriptionTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsigneeIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsigneeNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ConsigneeRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="ConsigneeRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:ConsigneeRoleCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ConsignmentItemSequenceNumericType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ConsignmentValueAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="currencyID" type="clm5ISO42173A:ISO3AlphaCurrencyCodeContentType" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsignorIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ConsignorNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ConsignorRoleCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="ConsignorRoleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:ConsignorRoleCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ControlResultIdentificationCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="DestinationCountryCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="DestinationCountryCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:DestinationCountryCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="DestinationCountryNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GoodsMeasureGrossMassMeasureType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="unitCode" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="GoodsMeasureTariffQuantityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="unitCode" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InvoiceIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="InvoiceIssueDateTimeType">
+    <xs:choice>
+      <xs:element name="DateTimeString">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="formatCode" type="xs:string" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="LPCOIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LPCOIssueLocationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LPCOIssueLocationNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="OriginCountryCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="OriginCountryCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:OriginCountryCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OriginCountryNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="OriginRuleCodeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:token">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PackagingMarksNumbersIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="PackagingQuantityQuantityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="unitCode" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="PackagingTypeCodeContentType">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <xs:complexType name="PackagingTypeCodeType">
+    <xs:simpleContent>
+      <xs:extension base="ds:PackagingTypeCodeContentType">
+        <xs:attribute name="listID" type="xs:token" use="optional"/>
+        <xs:attribute name="listAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="listAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="listName" type="xs:string" use="optional"/>
+        <xs:attribute name="listVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="name" type="xs:string" use="optional"/>
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+        <xs:attribute name="listURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="listSchemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UnloadingLocationIdentificationIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeAgencyID" type="clm63055:AgencyIdentificationCodeContentType" use="optional"/>
+        <xs:attribute name="schemeAgencyName" type="xs:string" use="optional"/>
+        <xs:attribute name="schemeVersionID" type="xs:token" use="optional"/>
+        <xs:attribute name="schemeDataURI" type="xs:anyURI" use="optional"/>
+        <xs:attribute name="schemeURI" type="xs:anyURI" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="UnloadingLocationNameTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="languageID" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

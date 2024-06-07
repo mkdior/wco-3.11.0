@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:AEO_MasterData:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:AEO_MasterData_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:AEO_MasterData:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:AEO_MasterData_DS:1" schemaLocation="AEO_MasterData_1p0_urn_wco_datamodel_WCO_AEO_MasterData_DS_1.xsd"/>
+  <xs:element name="AEO_MasterData">
+    <xs:annotation>
+      <xs:documentation>
+        <SuperClassID>SC1</SuperClassID>
+        <SuperClassName>RootDocument</SuperClassName>
+        <WCOClassID>75B</WCOClassID>
+        <WCOClassName>InterGov</WCOClassName>
+        <DictionaryEntryName>Content Information Structure. Details</DictionaryEntryName>
+        <UniqueInterGovClassID>0001I</UniqueInterGovClassID>
+        <BIPUsageInterGov>X</BIPUsageInterGov>
+        <WCOAttributeName>MasterData</WCOAttributeName>
+        <WCOAttributeDescription>Exchange of information between Governmental organizations related to Master Data</WCOAttributeDescription>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Function" type="ds:AEO_MasterDataFunctionCodeType">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (1225)</WCOCodeRemarks>
+              <WCOFormat>n..2</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1225</TDEDUID>
+              <TDEDName>Document.Function.Code</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S028</SuperClassElementID>
+              <SuperClassElementName>function</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>017</WCOAttributeID>
+              <WCOAttributeName>Message function, coded</WCOAttributeName>
+              <WCOAttributeDescription>Code indicating the function of a document</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Function. Code</DictionaryEntryName>
+              <NamedComplexType>DeclarationFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <DictionaryEntryName>InterGov. Function. Code</DictionaryEntryName>
+              <NamedComplexType>InterGovFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <DictionaryEntryName>Response. Function. Code</DictionaryEntryName>
+              <NamedComplexType>ResponseFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <DictionaryEntryName>LPCO. Function. Code</DictionaryEntryName>
+              <NamedComplexType>LPCOFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <BIPUsageInterGov>X</BIPUsageInterGov>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>75B</WCOClassID>
+              <WCOClassName>InterGov</WCOClassName>
+              <UniquePositionID>341</UniquePositionID>
+              <UniqueInterGovClassID>0001I</UniqueInterGovClassID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="FunctionalReferenceID" type="ds:AEO_MasterDataFunctionalReferenceIDType">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOFormat>an..70</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1154</TDEDUID>
+              <TDEDName>Reference. Identifier</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S030</SuperClassElementID>
+              <SuperClassElementName>functionalReference</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>D026</WCOAttributeID>
+              <WCOAttributeName>Functional reference number</WCOAttributeName>
+              <WCOAttributeDescription>Reference number identifying a specific information exchange</WCOAttributeDescription>
+              <CoreDataType>Identifier</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Functional Reference. Identifier</DictionaryEntryName>
+              <NamedComplexType>DeclarationFunctionalReferenceIDType</NamedComplexType>
+              <XMLTag>FunctionalReferenceID</XMLTag>
+              <DictionaryEntryName>InterGov. Functional Reference. Identifier</DictionaryEntryName>
+              <NamedComplexType>InterGovFunctionalReferenceIDType</NamedComplexType>
+              <XMLTag>FunctionalReferenceID</XMLTag>
+              <DictionaryEntryName>Response. Functional Reference. Identifier</DictionaryEntryName>
+              <NamedComplexType>ResponseFunctionalReferenceIDType</NamedComplexType>
+              <XMLTag>FunctionalReferenceID</XMLTag>
+              <BIPUsageInterGov>X</BIPUsageInterGov>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>75B</WCOClassID>
+              <WCOClassName>InterGov</WCOClassName>
+              <UniquePositionID>338</UniquePositionID>
+              <UniqueInterGovClassID>0001I</UniqueInterGovClassID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="TypeCode" type="ds:AEO_MasterDataTypeCodeType">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+              <WCOFormat>an..3</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1001</TDEDUID>
+              <TDEDName>Document. Type.Code</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S042</SuperClassElementID>
+              <SuperClassElementName>type</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>D013</WCOAttributeID>
+              <WCOAttributeName>Document name, coded</WCOAttributeName>
+              <WCOAttributeDescription>Code specifying the name of a document</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Type. Code</DictionaryEntryName>
+              <NamedComplexType>DeclarationTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <DictionaryEntryName>InterGov. Type. Code</DictionaryEntryName>
+              <NamedComplexType>InterGovTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <DictionaryEntryName>Response. Type. Code</DictionaryEntryName>
+              <NamedComplexType>ResponseTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <BIPUsageInterGov>X</BIPUsageInterGov>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>75B</WCOClassID>
+              <WCOClassName>InterGov</WCOClassName>
+              <UniquePositionID>337</UniquePositionID>
+              <UniqueInterGovClassID>0001I</UniqueInterGovClassID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="MasterDataRecipient">
+          <xs:annotation>
+            <xs:documentation>
+              <SuperClassID>SC2</SuperClassID>
+              <SuperClassName>GovernmentAgency</SuperClassName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>26C</WCOClassID>
+              <WCOClassName>MasterDataRecipient</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Master Data Recipient. Details</DictionaryEntryName>
+              <BIPUsageInterGov>X</BIPUsageInterGov>
+              <UniqueInterGovClassID>1893I</UniqueInterGovClassID>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TypeCode" type="ds:MasterDataRecipientTypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (9415)</WCOCodeRemarks>
+                    <WCOFormat>an.3</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassID>SC2</SuperClassID>
+                    <SuperClassName>GovernmentAgency</SuperClassName>
+                    <SuperClassElementID>S058</SuperClassElementID>
+                    <SuperClassElementName>type</SuperClassElementName>
+                    <TDEDUID>?</TDEDUID>
+                    <SuperClassTypeGovernmentAgency>X</SuperClassTypeGovernmentAgency>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>G016</WCOAttributeID>
+                    <WCOAttributeName>Master Data Recipient type, coded</WCOAttributeName>
+                    <WCOAttributeDescription>To identify the type of regulatory office that receives the Master Data</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Master Data Recipient. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>MasterDataRecipientTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                    <SuperClassTypeGovernmentAgency>X</SuperClassTypeGovernmentAgency>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>26C</WCOClassID>
+                    <WCOClassName>MasterDataRecipient</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1893I</UniqueInterGovClassID>
+                    <UniquePositionID>11406</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ID" type="ds:MasterDataRecipientIdentificationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>UN/LOCODE (an..5) + user codes (an..12)</WCOCodeRemarks>
+                    <WCOFormat>an..17</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassID>SC2</SuperClassID>
+                    <SuperClassName>GovernmentAgency</SuperClassName>
+                    <SuperClassElementID>S001</SuperClassElementID>
+                    <SuperClassElementName>identification</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>G017</WCOAttributeID>
+                    <WCOAttributeName>Master Data Recipient, coded</WCOAttributeName>
+                    <WCOAttributeDescription>To identify the regulatory office that receives the Master Data</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3225</TDEDUID>
+                    <TDEDName>Location.Identifier</TDEDName>
+                    <DictionaryEntryName>Master Data Recipient. Identification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>MasterDataRecipientIdentificationIDType</NamedComplexType>
+                    <XMLTag>ID</XMLTag>
+                    <SuperClassTypeGovernmentAgency>X</SuperClassTypeGovernmentAgency>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>26C</WCOClassID>
+                    <WCOClassName>MasterDataRecipient</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1893I</UniqueInterGovClassID>
+                    <UniquePositionID>11407</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MasterDataSender">
+          <xs:annotation>
+            <xs:documentation>
+              <SuperClassID>SC2</SuperClassID>
+              <SuperClassName>GovernmentAgency</SuperClassName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>27C</WCOClassID>
+              <WCOClassName>MasterDataSender</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Master Data Sender. Details</DictionaryEntryName>
+              <BIPUsageInterGov>X</BIPUsageInterGov>
+              <UniqueInterGovClassID>1894I</UniqueInterGovClassID>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TypeCode" type="ds:MasterDataSenderTypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (9415)</WCOCodeRemarks>
+                    <WCOFormat>an.3</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassID>SC2</SuperClassID>
+                    <SuperClassName>GovernmentAgency</SuperClassName>
+                    <SuperClassElementID>S058</SuperClassElementID>
+                    <SuperClassElementName>type</SuperClassElementName>
+                    <TDEDUID>?</TDEDUID>
+                    <SuperClassTypeGovernmentAgency>X</SuperClassTypeGovernmentAgency>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>G018</WCOAttributeID>
+                    <WCOAttributeName>Master Data Sender type, coded</WCOAttributeName>
+                    <WCOAttributeDescription>To identify the type of regulatory office that sends the Master Data</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Master Data Sender. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>MasterDataSenderTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                    <SuperClassTypeGovernmentAgency>X</SuperClassTypeGovernmentAgency>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>27C</WCOClassID>
+                    <WCOClassName>MasterDataSender</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1894I</UniqueInterGovClassID>
+                    <UniquePositionID>11408</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ID" type="ds:MasterDataSenderIdentificationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>UN/LOCODE (an..5) + user codes (an..12)</WCOCodeRemarks>
+                    <WCOFormat>an..17</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassID>SC2</SuperClassID>
+                    <SuperClassName>GovernmentAgency</SuperClassName>
+                    <SuperClassElementID>S001</SuperClassElementID>
+                    <SuperClassElementName>identification</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>G019</WCOAttributeID>
+                    <WCOAttributeName>Master Data Sender, coded</WCOAttributeName>
+                    <WCOAttributeDescription>To identify the regulatory office that sends the Master Data</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3225</TDEDUID>
+                    <TDEDName>Location.Identifier</TDEDName>
+                    <DictionaryEntryName>Master Data Sender. Identification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>MasterDataSenderIdentificationIDType</NamedComplexType>
+                    <XMLTag>ID</XMLTag>
+                    <SuperClassTypeGovernmentAgency>X</SuperClassTypeGovernmentAgency>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>27C</WCOClassID>
+                    <WCOClassName>MasterDataSender</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1894I</UniqueInterGovClassID>
+                    <UniquePositionID>11409</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MasterDataParty" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>
+              <SuperClassID>SC4</SuperClassID>
+              <SuperClassName>Party</SuperClassName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>28C</WCOClassID>
+              <WCOClassName>MasterDataParty</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Master Data Party. Details</DictionaryEntryName>
+              <BIPUsageInterGov>X</BIPUsageInterGov>
+              <UniqueInterGovClassID>1895I</UniqueInterGovClassID>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="ds:MasterDataPartyNameTextType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..70</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3036</TDEDUID>
+                    <TDEDName>Party.Name.Text</TDEDName>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <SuperClassElementID>S008</SuperClassElementID>
+                    <SuperClassElementName>name</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>R148</WCOAttributeID>
+                    <WCOAttributeName>MasterData Party name</WCOAttributeName>
+                    <WCOAttributeDescription>Name of the Party in the context of Master Data</WCOAttributeDescription>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Master Data Party. Name. Text</DictionaryEntryName>
+                    <NamedComplexType>MasterDataPartyNameTextType</NamedComplexType>
+                    <XMLTag>Name</XMLTag>
+                    <SuperClassTypeParty>X</SuperClassTypeParty>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>28C</WCOClassID>
+                    <WCOClassName>MasterDataParty</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1895I</UniqueInterGovClassID>
+                    <UniquePositionID>11410</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ID" type="ds:MasterDataPartyIdentificationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..35</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3039</TDEDUID>
+                    <TDEDName>Party. Identifier</TDEDName>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <SuperClassElementID>S009</SuperClassElementID>
+                    <SuperClassElementName>identification</SuperClassElementName>
+                    <SuperClassTypeParty>X</SuperClassTypeParty>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>R149</WCOAttributeID>
+                    <WCOAttributeName>Master Data party, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Identification of the Party in the context of Master Data</WCOAttributeDescription>
+                    <WCOCodeRemarks>International codes (e.g. DUNS, EAN) or user codes</WCOCodeRemarks>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Master Data Party. Identification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>MasterDataPartyIdentificationIDType</NamedComplexType>
+                    <XMLTag>ID</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>28C</WCOClassID>
+                    <WCOClassName>MasterDataParty</WCOClassName>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1895I</UniqueInterGovClassID>
+                    <UniquePositionID>11411</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="RoleCode" type="ds:MasterDataPartyRoleCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (3035)</WCOCodeRemarks>
+                    <WCOFormat>an..3</WCOFormat>
+                    <WCOAttributeID>R005</WCOAttributeID>
+                    <WCOAttributeName>Role code</WCOAttributeName>
+                    <WCOAttributeDescription>Code giving specific meaning to a party</WCOAttributeDescription>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3035</TDEDUID>
+                    <TDEDName>Party. Function.Code</TDEDName>
+                    <SuperClassTypeParty>X</SuperClassTypeParty>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <SuperClassElementID>S010</SuperClassElementID>
+                    <SuperClassElementName>role</SuperClassElementName>
+                    <SuperClassTypeParty>X</SuperClassTypeParty>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Master Data Party. Role. Code</DictionaryEntryName>
+                    <NamedComplexType>MasterDataPartyRoleCodeType</NamedComplexType>
+                    <XMLTag>RoleCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>28C</WCOClassID>
+                    <WCOClassName>MasterDataParty</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1895I</UniqueInterGovClassID>
+                    <UniquePositionID>11412</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="IdentificationIssuingCountryCode" type="ds:MasterDataPartyIdentificationIssuingCountryCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                    <WCOAttributeID>R147</WCOAttributeID>
+                    <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                    <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <SuperClassElementID>S057</SuperClassElementID>
+                    <SuperClassElementName>identificationIssuingCountry</SuperClassElementName>
+                    <SuperClassTypeParty>X</SuperClassTypeParty>
+                    <TDEDUID>3207</TDEDUID>
+                    <TDEDName>Country.Identifier</TDEDName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>a2</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Master Data Party. Identification Issuing Country. Code</DictionaryEntryName>
+                    <NamedComplexType>MasterDataPartyIdentificationIssuingCountryCodeType</NamedComplexType>
+                    <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <CoreDataType>Code</CoreDataType>
+                    <WCOClassID>28C</WCOClassID>
+                    <WCOClassName>MasterDataParty</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1895I</UniqueInterGovClassID>
+                    <UniquePositionID>11413</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ShortName" type="ds:MasterDataPartyShortNameTextType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>516</WCOAttributeID>
+                    <WCOAttributeName>MasterData Party short name</WCOAttributeName>
+                    <WCOAttributeDescription>Short name of the Party in the context of Master Data</WCOAttributeDescription>
+                    <WCOFormat>an..70</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Master Data Party. Short Name. Text</DictionaryEntryName>
+                    <NamedComplexType>MasterDataPartyShortNameTextType</NamedComplexType>
+                    <XMLTag>ShortName</XMLTag>
+                    <TDEDUID>?</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>28C</WCOClassID>
+                    <WCOClassName>MasterDataParty</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1895I</UniqueInterGovClassID>
+                    <UniquePositionID>11414</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="BusinessTypeCode" type="ds:MasterDataPartyBusinessTypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>ISIC code list or user codes</WCOCodeRemarks>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <WCOAttributeID>517</WCOAttributeID>
+                    <WCOAttributeName>Business type, code</WCOAttributeName>
+                    <WCOAttributeDescription>
+The business type of a party.
+Represents the nature of business / business area of the AEO
+                    </WCOAttributeDescription>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..7</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>?</TDEDUID>
+                    <DictionaryEntryName>Master Data Party. businessType. Code</DictionaryEntryName>
+                    <NamedComplexType>MasterDataPartybusinessTypeCodeType</NamedComplexType>
+                    <XMLTag>BusinessType</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>28C</WCOClassID>
+                    <WCOClassName>MasterDataParty</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1895I</UniqueInterGovClassID>
+                    <UniquePositionID>11415</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>04A</WCOClassID>
+                    <WCOClassName>Address</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Address. Details</DictionaryEntryName>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="TypeCode" type="ds:AddressTypeCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3131)</WCOCodeRemarks>
+                          <WCOAttributeID>410</WCOAttributeID>
+                          <WCOAttributeName>Type of address</WCOAttributeName>
+                          <WCOAttributeDescription>To identify the type of an address</WCOAttributeDescription>
+                          <WCOFormat>an..3</WCOFormat>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3131</TDEDUID>
+                          <TDEDName>Address. Type.Code</TDEDName>
+                          <DictionaryEntryName>Address. Type. Code</DictionaryEntryName>
+                          <NamedComplexType>AddressTypeCodeType</NamedComplexType>
+                          <XMLTag>TypeCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                          <UniquePositionID>11416</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>241</WCOAttributeID>
+                          <WCOAttributeName>City name</WCOAttributeName>
+                          <WCOAttributeDescription>Name of a city</WCOAttributeDescription>
+                          <WCOFormat>an..35</WCOFormat>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3164</TDEDUID>
+                          <TDEDName>Address.City.Name</TDEDName>
+                          <DictionaryEntryName>Address. City. Text</DictionaryEntryName>
+                          <NamedComplexType>AddressCityTextType</NamedComplexType>
+                          <XMLTag>City</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                          <UniquePositionID>11417</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                          <WCOAttributeID>242</WCOAttributeID>
+                          <WCOAttributeName>Country, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Identification of the name of the country or other geographical entity as specified in ISO 3166 and UN/ECE Rec 3</WCOAttributeDescription>
+                          <WCOFormat>a2</WCOFormat>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3207</TDEDUID>
+                          <TDEDName>Country.Identifier</TDEDName>
+                          <DictionaryEntryName>Address. Country. Code</DictionaryEntryName>
+                          <NamedComplexType>AddressCountryCodeType</NamedComplexType>
+                          <XMLTag>CountryCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                          <UniquePositionID>11418</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CountryName" type="ds:AddressCountryNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>412</WCOAttributeID>
+                          <WCOAttributeName>Country name</WCOAttributeName>
+                          <WCOAttributeDescription>Name of the country or other geographical entity</WCOAttributeDescription>
+                          <WCOFormat>an..35</WCOFormat>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3206</TDEDUID>
+                          <TDEDName>Country. Name.Text</TDEDName>
+                          <DictionaryEntryName>Address. Country Name. Text</DictionaryEntryName>
+                          <NamedComplexType>AddressCountryNameTextType</NamedComplexType>
+                          <XMLTag>CountryName</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                          <UniquePositionID>11419</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3229) = ISO 3166-2 2-alpha code or User codes</WCOCodeRemarks>
+                          <WCOAttributeID>244</WCOAttributeID>
+                          <WCOAttributeName>Country sub-entity identification</WCOAttributeName>
+                          <WCOAttributeDescription>Code specifying the name of a country subdivision</WCOAttributeDescription>
+                          <WCOFormat>an..9</WCOFormat>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3229</TDEDUID>
+                          <TDEDName>Country.Subdivision.Identifier</TDEDName>
+                          <DictionaryEntryName>Address. Country Sub Division. Code</DictionaryEntryName>
+                          <NamedComplexType>AddressCountrySubDivisionCodeType</NamedComplexType>
+                          <XMLTag>CountrySubDivisionCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                          <UniquePositionID>11420</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>239</WCOAttributeID>
+                          <WCOAttributeName>Street and number/P.O. Box</WCOAttributeName>
+                          <WCOAttributeDescription>Specification of the postal delivery point such as street and number or post office box</WCOAttributeDescription>
+                          <WCOFormat>an..256</WCOFormat>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3042</TDEDUID>
+                          <TDEDName>Postal.DeliveryPoint.Text</TDEDName>
+                          <DictionaryEntryName>Address. Line. Text</DictionaryEntryName>
+                          <NamedComplexType>AddressLineTextType</NamedComplexType>
+                          <XMLTag>Line</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                          <UniquePositionID>11421</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>245</WCOAttributeID>
+                          <WCOAttributeName>Postcode identification</WCOAttributeName>
+                          <WCOAttributeDescription>Code specifying a postal zone or address</WCOAttributeDescription>
+                          <WCOFormat>an..17</WCOFormat>
+                          <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3251</TDEDUID>
+                          <TDEDName>Postal.Identifier</TDEDName>
+                          <DictionaryEntryName>Address. Postcode. Identifier</DictionaryEntryName>
+                          <NamedComplexType>AddressPostcodeIDType</NamedComplexType>
+                          <XMLTag>PostcodeID</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1896I</UniqueInterGovClassID>
+                          <UniquePositionID>11422</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Contact" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>34A</WCOClassID>
+                    <WCOClassName>Contact</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Contact. Details</DictionaryEntryName>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1897I</UniqueInterGovClassID>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ContactNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>246</WCOAttributeID>
+                          <WCOAttributeName>Department or employee – Contact name</WCOAttributeName>
+                          <WCOAttributeDescription>Name of a department or employee</WCOAttributeDescription>
+                          <WCOFormat>an..70</WCOFormat>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3412</TDEDUID>
+                          <TDEDName>Contact.Name.Text</TDEDName>
+                          <DictionaryEntryName>Contact. Name. Text</DictionaryEntryName>
+                          <NamedComplexType>ContactNameTextType</NamedComplexType>
+                          <XMLTag>Name</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>34A</WCOClassID>
+                          <WCOClassName>Contact</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1897I</UniqueInterGovClassID>
+                          <UniquePositionID>11423</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="FunctionCode" type="ds:ContactFunctionCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3139)</WCOCodeRemarks>
+                          <WCOAttributeID>487</WCOAttributeID>
+                          <WCOAttributeName>Department or employee – Contact function, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Code specifying the function of a contact (e.g. department or person)</WCOAttributeDescription>
+                          <WCOFormat>an..3</WCOFormat>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3139</TDEDUID>
+                          <TDEDName>Contact. Function.Code</TDEDName>
+                          <DictionaryEntryName>Contact. Function. Code</DictionaryEntryName>
+                          <NamedComplexType>ContactFunctionCodeType</NamedComplexType>
+                          <XMLTag>FunctionCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>34A</WCOClassID>
+                          <WCOClassName>Contact</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1897I</UniqueInterGovClassID>
+                          <UniquePositionID>11424</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>25A</WCOClassID>
+                          <WCOClassName>Communication</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Communication. Details</DictionaryEntryName>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1898I</UniqueInterGovClassID>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>240</WCOAttributeID>
+                                <WCOAttributeName>Communication number</WCOAttributeName>
+                                <WCOAttributeDescription>To identify a communication address</WCOAttributeDescription>
+                                <WCOFormat>an..50</WCOFormat>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3148</TDEDUID>
+                                <TDEDName>Communication.Address.Identifier</TDEDName>
+                                <DictionaryEntryName>Communication. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>CommunicationIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <BIPUsageInterGov>X</BIPUsageInterGov>
+                                <UniqueInterGovClassID>1898I</UniqueInterGovClassID>
+                                <UniquePositionID>11425</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3155)</WCOCodeRemarks>
+                                <WCOAttributeID>253</WCOAttributeID>
+                                <WCOAttributeName>Communication number type</WCOAttributeName>
+                                <WCOAttributeDescription>To identify the type of communication address</WCOAttributeDescription>
+                                <WCOFormat>an..3</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3155</TDEDUID>
+                                <TDEDName>Communication.MeansType.Code</TDEDName>
+                                <DictionaryEntryName>Communication. Type. Code</DictionaryEntryName>
+                                <NamedComplexType>CommunicationTypeCodeType</NamedComplexType>
+                                <XMLTag>TypeCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <BIPUsageInterGov>X</BIPUsageInterGov>
+                                <UniqueInterGovClassID>1898I</UniqueInterGovClassID>
+                                <UniquePositionID>11426</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>25A</WCOClassID>
+                    <WCOClassName>Communication</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Communication. Details</DictionaryEntryName>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1899I</UniqueInterGovClassID>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>240</WCOAttributeID>
+                          <WCOAttributeName>Communication number</WCOAttributeName>
+                          <WCOAttributeDescription>To identify a communication address</WCOAttributeDescription>
+                          <WCOFormat>an..50</WCOFormat>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3148</TDEDUID>
+                          <TDEDName>Communication.Address.Identifier</TDEDName>
+                          <DictionaryEntryName>Communication. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>CommunicationIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>25A</WCOClassID>
+                          <WCOClassName>Communication</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1899I</UniqueInterGovClassID>
+                          <UniquePositionID>11427</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3155)</WCOCodeRemarks>
+                          <WCOAttributeID>253</WCOAttributeID>
+                          <WCOAttributeName>Communication number type</WCOAttributeName>
+                          <WCOAttributeDescription>To identify the type of communication address</WCOAttributeDescription>
+                          <WCOFormat>an..3</WCOFormat>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3155</TDEDUID>
+                          <TDEDName>Communication.MeansType.Code</TDEDName>
+                          <DictionaryEntryName>Communication. Type. Code</DictionaryEntryName>
+                          <NamedComplexType>CommunicationTypeCodeType</NamedComplexType>
+                          <XMLTag>TypeCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>25A</WCOClassID>
+                          <WCOClassName>Communication</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1899I</UniqueInterGovClassID>
+                          <UniquePositionID>11428</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>23C</WCOClassID>
+                    <WCOClassName>AdditionalIdentifier</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Additional Identifier. Details</DictionaryEntryName>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1900I</UniqueInterGovClassID>
+                    <WCOAttributeDescription>
+Additional identification of a party.
+Enables the use of other identifications associated with an AEO
+                    </WCOAttributeDescription>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>006</WCOAttributeID>
+                          <WCOAttributeName>Sequence number</WCOAttributeName>
+                          <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                          <WCOFormat>n..5</WCOFormat>
+                          <CoreDataType>Numeric</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>1050</TDEDUID>
+                          <TDEDName>Sequence. Position.Identifier</TDEDName>
+                          <DictionaryEntryName>Additional Identifier. Sequence. Numeric</DictionaryEntryName>
+                          <NamedComplexType>AdditionalIdentifierSequenceNumericType</NamedComplexType>
+                          <XMLTag>SequenceNumeric</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23C</WCOClassID>
+                          <WCOClassName>AdditionalIdentifier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1900I</UniqueInterGovClassID>
+                          <UniquePositionID>11429</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3039</TDEDUID>
+                          <TDEDName>Party. Identifier</TDEDName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>511</WCOAttributeID>
+                          <WCOAttributeName>Additional identification, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Additional identification of a party, e.g. VAT number</WCOAttributeDescription>
+                          <WCOCodeRemarks>
+International codes (e.g. DUNS, EAN) or user codes.
+To be used with CDT attributes "Identification Scheme. Identifier" and
+"Identification Scheme Agency. Identifier" to make the information unique
+                          </WCOCodeRemarks>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Identifier. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>AdditionalIdentifierIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23C</WCOClassID>
+                          <WCOClassName>AdditionalIdentifier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1900I</UniqueInterGovClassID>
+                          <UniquePositionID>11430</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                          <WCOAttributeID>R147</WCOAttributeID>
+                          <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                          <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3207</TDEDUID>
+                          <TDEDName>Country.Identifier</TDEDName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>a2</WCOFormat>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Identifier. Identification Issuing Country. Code</DictionaryEntryName>
+                          <NamedComplexType>AdditionalIdentifierIdentificationIssuingCountryCodeType</NamedComplexType>
+                          <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23C</WCOClassID>
+                          <WCOClassName>AdditionalIdentifier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1900I</UniqueInterGovClassID>
+                          <UniquePositionID>11431</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AdditionalDocument" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>02A</WCOClassID>
+                    <WCOClassName>AdditionalDocument</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Additional Document. Details</DictionaryEntryName>
+                    <BIPUsageInterGov>X</BIPUsageInterGov>
+                    <UniqueInterGovClassID>1901I</UniqueInterGovClassID>
+                    <WCOAttributeDescription>
+Details related to additional documents supplied as part of a declaration or sought as part of a response.
+Represents the AEO Certificate that contains AEO status information
+                    </WCOAttributeDescription>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                          <WCOFormat>an..3</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>1003</TDEDUID>
+                          <TDEDName>Document. Type.Identifier</TDEDName>
+                          <SuperClassID>SC1</SuperClassID>
+                          <SuperClassName>RootDocument</SuperClassName>
+                          <SuperClassElementID>S025</SuperClassElementID>
+                          <SuperClassElementName>category</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>D031</WCOAttributeID>
+                          <WCOAttributeName>Document category, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Code specifying the category of a document</WCOAttributeDescription>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Document. Category. Code</DictionaryEntryName>
+                          <NamedComplexType>AdditionalDocumentCategoryCodeType</NamedComplexType>
+                          <XMLTag>CategoryCode</XMLTag>
+                          <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>02A</WCOClassID>
+                          <WCOClassName>AdditionalDocument</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1901I</UniqueInterGovClassID>
+                          <UniquePositionID>11432</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="EffectiveDateTime" type="ds:AdditionalDocumentEffectiveDateTimeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <TDEDUID>2380</TDEDUID>
+                          <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                          <WCOFormat>an..35</WCOFormat>
+                          <SuperClassID>SC1</SuperClassID>
+                          <SuperClassName>RootDocument</SuperClassName>
+                          <SuperClassElementID>S026</SuperClassElementID>
+                          <SuperClassElementName>effective</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>276</WCOAttributeID>
+                          <WCOAttributeName>Document Effective Date</WCOAttributeName>
+                          <WCOAttributeDescription>The effective date of the document (e.g. license, visa, permit, certificate)</WCOAttributeDescription>
+                          <CoreDataType>Date Time</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Document. Effective. Date Time</DictionaryEntryName>
+                          <NamedComplexType>AdditionalDocumentEffectiveDateTimeType</NamedComplexType>
+                          <XMLTag>EffectiveDateTime</XMLTag>
+                          <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>02A</WCOClassID>
+                          <WCOClassName>AdditionalDocument</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1901I</UniqueInterGovClassID>
+                          <UniquePositionID>11433</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ExpirationDateTime" type="ds:AdditionalDocumentExpirationDateTimeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <TDEDUID>2380</TDEDUID>
+                          <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                          <WCOFormat>an..35</WCOFormat>
+                          <SuperClassID>SC1</SuperClassID>
+                          <SuperClassName>RootDocument</SuperClassName>
+                          <SuperClassElementID>S027</SuperClassElementID>
+                          <SuperClassElementName>expiration</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>275</WCOAttributeID>
+                          <WCOAttributeName>Document Expiration (Expiry) Date</WCOAttributeName>
+                          <WCOAttributeDescription>The expiry date of the document (e.g. license, visa, permit, certificate)</WCOAttributeDescription>
+                          <CoreDataType>Date Time</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Document. Expiration. Date Time</DictionaryEntryName>
+                          <NamedComplexType>AdditionalDocumentExpirationDateTimeType</NamedComplexType>
+                          <XMLTag>ExpirationDateTime</XMLTag>
+                          <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>02A</WCOClassID>
+                          <WCOClassName>AdditionalDocument</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1901I</UniqueInterGovClassID>
+                          <UniquePositionID>11434</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ID" type="ds:AdditionalDocumentIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..70</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>1004</TDEDUID>
+                          <TDEDName>Document. Identifier</TDEDName>
+                          <SuperClassID>SC1</SuperClassID>
+                          <SuperClassName>RootDocument</SuperClassName>
+                          <SuperClassElementID>S031</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>D005</WCOAttributeID>
+                          <WCOAttributeName>Additional document reference number</WCOAttributeName>
+                          <WCOAttributeDescription>Identifier of a document providing additional information</WCOAttributeDescription>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Document. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>AdditionalDocumentIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>02A</WCOClassID>
+                          <WCOClassName>AdditionalDocument</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1901I</UniqueInterGovClassID>
+                          <UniquePositionID>11435</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="StatusCode" type="ds:AdditionalDocumentStatusCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (1373)</WCOCodeRemarks>
+                          <WCOFormat>an..3</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>1373</TDEDUID>
+                          <TDEDName>Document.Status.Code</TDEDName>
+                          <SuperClassID>SC1</SuperClassID>
+                          <SuperClassName>RootDocument</SuperClassName>
+                          <SuperClassElementID>S041</SuperClassElementID>
+                          <SuperClassElementName>status</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>019</WCOAttributeID>
+                          <WCOAttributeName>Document/message status, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Code specifying the status of a document</WCOAttributeDescription>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Document. Status. Code</DictionaryEntryName>
+                          <NamedComplexType>AdditionalDocumentStatusCodeType</NamedComplexType>
+                          <XMLTag>StatusCode</XMLTag>
+                          <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>02A</WCOClassID>
+                          <WCOClassName>AdditionalDocument</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1901I</UniqueInterGovClassID>
+                          <UniquePositionID>11436</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TypeCode" type="ds:AdditionalDocumentTypeCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+                          <WCOFormat>an..3</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>1001</TDEDUID>
+                          <TDEDName>Document. Type.Code</TDEDName>
+                          <SuperClassID>SC1</SuperClassID>
+                          <SuperClassName>RootDocument</SuperClassName>
+                          <SuperClassElementID>S042</SuperClassElementID>
+                          <SuperClassElementName>type</SuperClassElementName>
+                          <WCOAttributeID>D006</WCOAttributeID>
+                          <WCOAttributeName>Additional document type, coded</WCOAttributeName>
+                          <WCOAttributeDescription>
+Code specifying the name of an additional document.
+Represents the AEO Type (Such as AEO C,…)
+                          </WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Document. Type. Code</DictionaryEntryName>
+                          <NamedComplexType>AdditionalDocumentTypeCodeType</NamedComplexType>
+                          <XMLTag>TypeCode</XMLTag>
+                          <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>02A</WCOClassID>
+                          <WCOClassName>AdditionalDocument</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageInterGov>X</BIPUsageInterGov>
+                          <UniqueInterGovClassID>1901I</UniqueInterGovClassID>
+                          <UniquePositionID>11437</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

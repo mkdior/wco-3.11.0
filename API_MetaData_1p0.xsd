@@ -1,0 +1,2905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:API_MetaData:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:API_MetaData_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:API_MetaData:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:API_MetaData_DS:1" schemaLocation="API_MetaData_1p0_urn_wco_datamodel_WCO_API_MetaData_DS_1.xsd"/>
+  <xs:element name="MetaData">
+    <xs:annotation>
+      <xs:documentation xml:lang="EN">
+        <WCOClassID>N/A</WCOClassID>
+        <WCOClassName>DocumentMetaData</WCOClassName>
+      </xs:documentation>
+      <xs:documentation>
+        <DictionaryEntryName>Document Meta Data. Details</DictionaryEntryName>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ResponsibleAgencyCode" type="ds:MetaDataResponsibleAgencyCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (0051)</WCOCodeRemarks>
+            </xs:documentation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Responsible Agency</WCOAttributeName>
+              <WCOAttributeDescription>Code to identify the agency controlling the specification, maintenance and publication of the message type</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOFormat>an..2</WCOFormat>
+              <DictionaryEntryName>Document Meta Data. Responsible Agency. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataResponsibleAgencyCodeType</NamedComplexType>
+              <XMLTag>ResponsibleAgencyCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9015</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="AgencyAssignedCustomizationCode" type="ds:MetaDataAgencyAssignedCustomizationCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Agency Assigned Customization</WCOAttributeName>
+              <WCOAttributeDescription>A code assigned by the association responsible for the design and maintenance of the message type concerned, which further identifies the message</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOFormat>an..6</WCOFormat>
+              <WCOCodeRemarks>User codes</WCOCodeRemarks>
+              <DictionaryEntryName>Document Meta Data. Agency Assigned Customization. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataAgencyAssignedCustomizationCodeType</NamedComplexType>
+              <XMLTag>AgencyAssignedCustomizationCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9000</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="CommunicationMetaData" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>CommunicationMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Communication Meta Data. Details</DictionaryEntryName>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ApplicationReferenceID" type="ds:CommunicationMetaDataApplicationReferenceIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Application Reference</WCOAttributeName>
+                    <WCOAttributeDescription>Identification of the application area assigned by the sender, to which the messages in the interchange relate e.g. the message identifier if all the messages in the interchange are of the same type</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOFormat>an..70</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Application Reference. Identifier</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataApplicationReferenceIDType</NamedComplexType>
+                    <XMLTag>ApplicationReferenceID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                    <UniquePositionID>9002</UniquePositionID>
+                    <APICodes>MSG001</APICodes>
+                    <APILength>an..14</APILength>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="PreparationDateTime" type="ds:CommunicationMetaDataPreparationDateTimeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Preparation date and time</WCOAttributeName>
+                    <WCOAttributeDescription>Local date and time when an interchange or a functional group was prepared</WCOAttributeDescription>
+                    <CoreDataType>Date Time</CoreDataType>
+                    <WCOFormat>an..35</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Preparation. Date Time</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataPreparationDateTimeType</NamedComplexType>
+                    <XMLTag>PreparationDateTime</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9004</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SyntaxIdentificationCode" type="ds:CommunicationMetaDataSyntaxIdentificationCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (0001)</WCOCodeRemarks>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Syntax identification, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Coded identification of the agency controlling a syntax and syntax level used in an interchange</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                    <WCOFormat>a4</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Syntax Identification. Code</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataSyntaxIdentificationCodeType</NamedComplexType>
+                    <XMLTag>SyntaxIdentificationCode</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9005</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SyntaxVersionCode" type="ds:CommunicationMetaDataSyntaxVersionCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (0002)</WCOCodeRemarks>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Syntax Version</WCOAttributeName>
+                    <WCOAttributeDescription>Version number of the syntax identified in the syntax identifier (0001)</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                    <WCOFormat>n1</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Syntax Version. Code</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataSyntaxVersionCodeType</NamedComplexType>
+                    <XMLTag>SyntaxVersionCode</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9006</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Recipient" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>Recipient</WCOClassName>
+                    <DictionaryEntryName>Recipient. Details</DictionaryEntryName>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:RecipientIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3039</TDEDUID>
+                          <TDEDName>Party. Identifier</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S009</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                          <WCOAttributeID>N/A</WCOAttributeID>
+                          <WCOAttributeName>Recipient identification</WCOAttributeName>
+                          <WCOAttributeDescription>Identifier of the (message) recipient</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Recipient. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>RecipientIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Recipient</WCOClassName>
+                          <UniquePositionID>9008</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:RecipientIdentificationIssuingCountryCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                          <WCOAttributeID>R147</WCOAttributeID>
+                          <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                          <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S057</SuperClassElementID>
+                          <SuperClassElementName>identificationIssuingCountry</SuperClassElementName>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <TDEDUID>3207</TDEDUID>
+                          <TDEDName>Country.Identifier</TDEDName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>a2</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Recipient. Identification Issuing Country. Code</DictionaryEntryName>
+                          <NamedComplexType>RecipientIdentificationIssuingCountryCodeType</NamedComplexType>
+                          <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Recipient</WCOClassName>
+                          <UniquePositionID>11396</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23C</WCOClassID>
+                          <WCOClassName>AdditionalIdentifier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Identifier. Details</DictionaryEntryName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>006</WCOAttributeID>
+                                <WCOAttributeName>Sequence number</WCOAttributeName>
+                                <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                                <WCOFormat>n..5</WCOFormat>
+                                <CoreDataType>Numeric</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1050</TDEDUID>
+                                <TDEDName>Sequence. Position.Identifier</TDEDName>
+                                <DictionaryEntryName>Additional Identifier. Sequence. Numeric</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierSequenceNumericType</NamedComplexType>
+                                <XMLTag>SequenceNumeric</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10843</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3039</TDEDUID>
+                                <TDEDName>Party. Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>511</WCOAttributeID>
+                                <WCOAttributeName>Additional identification, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Additional identification of a party, e.g. VAT number</WCOAttributeDescription>
+                                <WCOCodeRemarks>
+International codes (e.g. DUNS, EAN) or user codes.
+To be used with CDT attributes "Identification Scheme. Identifier" and
+"Identification Scheme Agency. Identifier" to make the information unique
+                                </WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10844</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOAttributeID>R147</WCOAttributeID>
+                                <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                                <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>a2</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification Issuing Country. Code</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIssuingCountryCodeType</NamedComplexType>
+                                <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>11397</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Sender" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>Sender</WCOClassName>
+                    <DictionaryEntryName>Sender. Details</DictionaryEntryName>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:SenderIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3039</TDEDUID>
+                          <TDEDName>Party. Identifier</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S009</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                          <WCOAttributeID>N/A</WCOAttributeID>
+                          <WCOAttributeName>Sender identification</WCOAttributeName>
+                          <WCOAttributeDescription>Identifier of the (message) sender</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Sender. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>SenderIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Sender</WCOClassName>
+                          <UniquePositionID>9009</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:SenderIdentificationIssuingCountryCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                          <WCOAttributeID>R147</WCOAttributeID>
+                          <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                          <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S057</SuperClassElementID>
+                          <SuperClassElementName>identificationIssuingCountry</SuperClassElementName>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <TDEDUID>3207</TDEDUID>
+                          <TDEDName>Country.Identifier</TDEDName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>a2</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Sender. Identification Issuing Country. Code</DictionaryEntryName>
+                          <NamedComplexType>SenderIdentificationIssuingCountryCodeType</NamedComplexType>
+                          <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Sender</WCOClassName>
+                          <UniquePositionID>11398</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23C</WCOClassID>
+                          <WCOClassName>AdditionalIdentifier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Identifier. Details</DictionaryEntryName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>006</WCOAttributeID>
+                                <WCOAttributeName>Sequence number</WCOAttributeName>
+                                <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                                <WCOFormat>n..5</WCOFormat>
+                                <CoreDataType>Numeric</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1050</TDEDUID>
+                                <TDEDName>Sequence. Position.Identifier</TDEDName>
+                                <DictionaryEntryName>Additional Identifier. Sequence. Numeric</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierSequenceNumericType</NamedComplexType>
+                                <XMLTag>SequenceNumeric</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10845</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3039</TDEDUID>
+                                <TDEDName>Party. Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>511</WCOAttributeID>
+                                <WCOAttributeName>Additional identification, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Additional identification of a party, e.g. VAT number</WCOAttributeDescription>
+                                <WCOCodeRemarks>
+International codes (e.g. DUNS, EAN) or user codes.
+To be used with CDT attributes "Identification Scheme. Identifier" and
+"Identification Scheme Agency. Identifier" to make the information unique
+                                </WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10846</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOAttributeID>R147</WCOAttributeID>
+                                <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                                <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>a2</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification Issuing Country. Code</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIssuingCountryCodeType</NamedComplexType>
+                                <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>11399</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="API" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>42A</WCOClassID>
+              <WCOClassName>Declaration</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Content Information Structure. Details</DictionaryEntryName>
+              <UniqueDecClassID>0001D</UniqueDecClassID>
+              <BIPUsageDeclaration>X</BIPUsageDeclaration>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Function" type="ds:APIFunctionCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (1225)</WCOCodeRemarks>
+                    <WCOFormat>n..2</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1225</TDEDUID>
+                    <TDEDName>Document.Function.Code</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S028</SuperClassElementID>
+                    <SuperClassElementName>function</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>017</WCOAttributeID>
+                    <WCOAttributeName>Message function, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Code indicating the function of a document</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Declaration. Function. Code</DictionaryEntryName>
+                    <NamedComplexType>DeclarationFunctionCodeType</NamedComplexType>
+                    <XMLTag>FunctionCode</XMLTag>
+                    <DictionaryEntryName>InterGov. Function. Code</DictionaryEntryName>
+                    <NamedComplexType>InterGovFunctionCodeType</NamedComplexType>
+                    <XMLTag>FunctionCode</XMLTag>
+                    <DictionaryEntryName>Response. Function. Code</DictionaryEntryName>
+                    <NamedComplexType>ResponseFunctionCodeType</NamedComplexType>
+                    <XMLTag>FunctionCode</XMLTag>
+                    <DictionaryEntryName>LPCO. Function. Code</DictionaryEntryName>
+                    <NamedComplexType>LPCOFunctionCodeType</NamedComplexType>
+                    <XMLTag>FunctionCode</XMLTag>
+                    <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>42A</WCOClassID>
+                    <WCOClassName>Declaration</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>341</UniquePositionID>
+                    <UniqueDecClassID>0001D</UniqueDecClassID>
+                    <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                    <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                    <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                    <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                    <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                    <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                    <APIName>Document identifier</APIName>
+                    <APICodes>
+CP
+XR
+RP
+CL 
+CLOB
+XF
+CF
+CL
+CLNB 
+CLOB
+                    </APICodes>
+                    <APILength>an..4</APILength>
+                    <APIRemark>
+In the WCO Data Model the API Document identifier is mapped to Message function, coded instead of using the Document reference number.
+
+The combination of Document Name Code and Document Identifier Code will result in:
+745  CP  Change Passenger Data
+745  XR  Cancel Reservation
+745  RP  Reduction in Party 
+266  CL  Flight Close (only) Flight Close w/ identified Passengers not on-board 
+266  CLOB  Flight Close w/ identified Passengers on-board
+266  XF  Cancel Flight
+266  CF  Change Flight/Itinerary
+250  CL  Crew Flight Close (only)
+250  CLNB Crew Flight Close w/ identified Crew not on-board 
+250  CLOB  Crew Flight Close w/ identified Crew on-board
+                    </APIRemark>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="FunctionalReferenceID" type="ds:APIFunctionalReferenceIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..70</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1154</TDEDUID>
+                    <TDEDName>Reference. Identifier</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S030</SuperClassElementID>
+                    <SuperClassElementName>functionalReference</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>D026</WCOAttributeID>
+                    <WCOAttributeName>Functional reference number</WCOAttributeName>
+                    <WCOAttributeDescription>Reference number identifying a specific information exchange</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Declaration. Functional Reference. Identifier</DictionaryEntryName>
+                    <NamedComplexType>DeclarationFunctionalReferenceIDType</NamedComplexType>
+                    <XMLTag>FunctionalReferenceID</XMLTag>
+                    <DictionaryEntryName>InterGov. Functional Reference. Identifier</DictionaryEntryName>
+                    <NamedComplexType>InterGovFunctionalReferenceIDType</NamedComplexType>
+                    <XMLTag>FunctionalReferenceID</XMLTag>
+                    <DictionaryEntryName>Response. Functional Reference. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ResponseFunctionalReferenceIDType</NamedComplexType>
+                    <XMLTag>FunctionalReferenceID</XMLTag>
+                    <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>42A</WCOClassID>
+                    <WCOClassName>Declaration</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>338</UniquePositionID>
+                    <UniqueDecClassID>0001D</UniqueDecClassID>
+                    <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                    <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                    <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                    <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                    <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                    <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                    <APIName>Transaction reference number</APIName>
+                    <APILength>an..25</APILength>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="TypeCode" type="ds:APITypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+                    <WCOFormat>an..3</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1001</TDEDUID>
+                    <TDEDName>Document. Type.Code</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S042</SuperClassElementID>
+                    <SuperClassElementName>type</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>D013</WCOAttributeID>
+                    <WCOAttributeName>Document name, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Code specifying the name of a document</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Declaration. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>DeclarationTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                    <DictionaryEntryName>InterGov. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>InterGovTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                    <DictionaryEntryName>Response. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>ResponseTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                    <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>42A</WCOClassID>
+                    <WCOClassName>Declaration</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>337</UniquePositionID>
+                    <UniqueDecClassID>0001D</UniqueDecClassID>
+                    <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                    <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                    <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                    <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                    <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                    <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                    <APIName>Document name code</APIName>
+                    <APICodes>
+250 Indicates crew list declaration 
+745 Indicates passenger list 
+266 Indicates change in flight status (used in interactive API messages only)
+336 Indicates master crew list declaration
+655 Indicates Gate Pass
+                    </APICodes>
+                    <APILength>n3</APILength>
+                    <APIRemark>*Note: A gate pass is an authorization for a non-travelling person to access the sterile area of airports for the purpose of accompanying a ticketed traveller. (Presently used only in the United States.)</APIRemark>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="VersionID" type="ds:APIVersionIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..9</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1057</TDEDUID>
+                    <TDEDName>Version. Identifier</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S043</SuperClassElementID>
+                    <SuperClassElementName>version</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>383</WCOAttributeID>
+                    <WCOAttributeName>Version number</WCOAttributeName>
+                    <WCOAttributeDescription>The sequential number that determines the version of a specific document/message number</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Declaration. Version. Identifier</DictionaryEntryName>
+                    <NamedComplexType>DeclarationVersionIDType</NamedComplexType>
+                    <XMLTag>VersionID</XMLTag>
+                    <DictionaryEntryName>LPCO. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>LPCOTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                    <DictionaryEntryName>Response. Version. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ResponseVersionIDType</NamedComplexType>
+                    <XMLTag>VersionID</XMLTag>
+                    <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>42A</WCOClassID>
+                    <WCOClassName>Declaration</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>348</UniquePositionID>
+                    <UniqueDecClassID>0001D</UniqueDecClassID>
+                    <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                    <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                    <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                    <APIName>Revision identifier</APIName>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="BorderTransportMeans" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC5</SuperClassID>
+                    <SuperClassName>TransportMeans</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>15A</WCOClassID>
+                    <WCOClassName>BorderTransportMeans</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Border Transport Means. Details</DictionaryEntryName>
+                    <UniqueDecClassID>0071D</UniqueDecClassID>
+                    <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="JourneyID" type="ds:BorderTransportMeansJourneyIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>149</WCOAttributeID>
+                          <WCOAttributeName>Conveyance reference number</WCOAttributeName>
+                          <WCOAttributeDescription>To identify a journey of a means of transport, for example voyage number, flight number, trip number</WCOAttributeDescription>
+                          <WCOFormat>an..17</WCOFormat>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>8028</TDEDUID>
+                          <TDEDName>TransportMeans.Journey.Identifier</TDEDName>
+                          <DictionaryEntryName>Border Transport Means. Journey. Identifier</DictionaryEntryName>
+                          <NamedComplexType>BorderTransportMeansJourneyIDType</NamedComplexType>
+                          <XMLTag>JourneyID</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>15A</WCOClassID>
+                          <WCOClassName>BorderTransportMeans</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <UniquePositionID>608</UniquePositionID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                          <UniqueDecClassID>0071D</UniqueDecClassID>
+                          <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                          <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                          <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                          <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                          <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                          <APIName>MEANS OF TRANSPORT JOURNEY IDENTIFIER</APIName>
+                          <APILength>an..17</APILength>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Itinerary" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <SuperClassID>SC3</SuperClassID>
+                          <SuperClassName>Location</SuperClassName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>81A</WCOClassID>
+                          <WCOClassName>Itinerary</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Itinerary. Details</DictionaryEntryName>
+                          <UniqueDecClassID>0100D</UniqueDecClassID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                          <APIRemark>
+To identify the arrival and departure airports relating to the specified flight. 
+Airport codes are published in the IATA Airline Coding Directory
+                          </APIRemark>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:ItineraryIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3225</TDEDUID>
+                                <TDEDName>Location.Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>UN/LOCODE (an..5) + user codes (an..30)</WCOCodeRemarks>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC3</SuperClassID>
+                                <SuperClassName>Location</SuperClassName>
+                                <SuperClassElementID>S003</SuperClassElementID>
+                                <SuperClassElementName>identification</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>L006</WCOAttributeID>
+                                <WCOAttributeName>Itinerary, code</WCOAttributeName>
+                                <WCOAttributeDescription>Identification of a single port of call or other location of the itinerary of a means of transport, coded</WCOAttributeDescription>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Itinerary. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>ItineraryIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                                <SuperClassTypeLocation>X</SuperClassTypeLocation>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>81A</WCOClassID>
+                                <WCOClassName>Itinerary</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>667</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0100D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Location name code</APIName>
+                                <APICodes>IATA Location Identifiers (Airport Codes)</APICodes>
+                                <APILength>a3</APILength>
+                                <APIRemark>a2 in WCO Data Model</APIRemark>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="SequenceNumeric" type="ds:ItinerarySequenceNumericType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>006</WCOAttributeID>
+                                <WCOAttributeName>Sequence number</WCOAttributeName>
+                                <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                                <WCOFormat>n..5</WCOFormat>
+                                <CoreDataType>Numeric</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1050</TDEDUID>
+                                <TDEDName>Sequence. Position.Identifier</TDEDName>
+                                <DictionaryEntryName>Itinerary. Sequence. Numeric</DictionaryEntryName>
+                                <NamedComplexType>ItinerarySequenceNumericType</NamedComplexType>
+                                <XMLTag>SequenceNumeric</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>81A</WCOClassID>
+                                <WCOClassName>Itinerary</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>4610</UniquePositionID>
+                                <UniquePositionID>7489</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0100D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ArrivalDateTime" type="ds:ItineraryArrivalDateTimeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>208</WCOAttributeID>
+                                <WCOAttributeName>Itinerary Arrival Date/Time</WCOAttributeName>
+                                <WCOAttributeDescription>Date and time when the means of transport arrives at itinerary port</WCOAttributeDescription>
+                                <WCOFormat>an..35</WCOFormat>
+                                <CoreDataType>Date Time</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>2380</TDEDUID>
+                                <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                                <DictionaryEntryName>Itinerary. Arrival. Date Time</DictionaryEntryName>
+                                <NamedComplexType>ItineraryArrivalDateTimeType</NamedComplexType>
+                                <XMLTag>ArrivalDateTime</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>81A</WCOClassID>
+                                <WCOClassName>Itinerary</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>663</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0100D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <APIName>Departure and arrival dates for a flight</APIName>
+                                <APICodes>189, 232</APICodes>
+                                <APILength>n6 or n10</APILength>
+                                <APIRemark>
+The default format is ‘YYMMDD’ (n6) ‘130628’ 
+Other format is ‘YYMMDDHHMM’ (n10).
+‘1306281205'
+                                </APIRemark>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="DepartureDateTime" type="ds:ItineraryDepartureDateTimeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>209</WCOAttributeID>
+                                <WCOAttributeName>Itinerary Departure Date/Time</WCOAttributeName>
+                                <WCOAttributeDescription>Date and time when the means of transport departs from itinerary port</WCOAttributeDescription>
+                                <WCOFormat>an..35</WCOFormat>
+                                <CoreDataType>Date Time</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>2380</TDEDUID>
+                                <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                                <DictionaryEntryName>Itinerary. Departure. Date Time</DictionaryEntryName>
+                                <NamedComplexType>ItineraryDepartureDateTimeType</NamedComplexType>
+                                <XMLTag>DepartureDateTime</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>81A</WCOClassID>
+                                <WCOClassName>Itinerary</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>664</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0100D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <APIName>Departure and arrival dates for a flight</APIName>
+                                <APICodes>189, 232</APICodes>
+                                <APILength>n6 or n10</APILength>
+                                <APIRemark>
+The default format is ‘YYMMDD’ (n6) ‘130628’ 
+Other format is ‘YYMMDDHHMM’ (n10).
+‘1306281205'
+                                </APIRemark>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="FunctionCode" type="ds:ItineraryFunctionCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3227)</WCOCodeRemarks>
+                                <WCOAttributeID>251</WCOAttributeID>
+                                <WCOAttributeName>Itinerary location type</WCOAttributeName>
+                                <WCOAttributeDescription>Type of the port of call or other location of the itinerary of the means of transport</WCOAttributeDescription>
+                                <WCOFormat>an..3</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3227</TDEDUID>
+                                <TDEDName>Location.Function.Code</TDEDName>
+                                <DictionaryEntryName>Itinerary. Function. Code</DictionaryEntryName>
+                                <NamedComplexType>ItineraryFunctionCodeType</NamedComplexType>
+                                <XMLTag>FunctionCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>81A</WCOClassID>
+                                <WCOClassName>Itinerary</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>665</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0100D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <APIName>LOCATION FUNCTION CODE QUALIFIER</APIName>
+                                <APICodes>87, 92, 125, 130</APICodes>
+                                <APILength>n..3</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PersonOnBoard" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <SuperClassID>SC6</SuperClassID>
+                          <SuperClassName>Person</SuperClassName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>67B</WCOClassID>
+                          <WCOClassName>PersonOnBoard</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Person On Board. Details</DictionaryEntryName>
+                          <UniqueDecClassID>0122D</UniqueDecClassID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                          <APIName>Names of passengers and crew aboard a specified flight</APIName>
+                          <APIName>Communication number(s) of the passenger</APIName>
+                          <APILength>an..35</APILength>
+                          <APIRemark>DMR needed for Communication number(s) of the passenger?</APIRemark>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SequenceNumeric" type="ds:PersonOnBoardSequenceNumericType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>n..5</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S011</SuperClassElementID>
+                                <SuperClassElementName>sequence</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>006</WCOAttributeID>
+                                <WCOAttributeName>Sequence number</WCOAttributeName>
+                                <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                                <CoreDataType>Numeric</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1050</TDEDUID>
+                                <TDEDName>Sequence. Position.Identifier</TDEDName>
+                                <DictionaryEntryName>Person On Board. Sequence. Numeric</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardSequenceNumericType</NamedComplexType>
+                                <XMLTag>SequenceNumeric</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5415</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="FamilyName" type="ds:PersonOnBoardFamilyNameTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..70</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S012</SuperClassElementID>
+                                <SuperClassElementName>familyName</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>421</WCOAttributeID>
+                                <WCOAttributeName>Family name</WCOAttributeName>
+                                <WCOAttributeDescription>The family name of a person as mentioned in an official document</WCOAttributeDescription>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3500</TDEDUID>
+                                <TDEDName>Person. Family Name.Text</TDEDName>
+                                <DictionaryEntryName>Person On Board. Family Name. Text</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardFamilyNameTextType</NamedComplexType>
+                                <XMLTag>FamilyName</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5416</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Last name</APIName>
+                                <APILength>an..35</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="GivenName" type="ds:PersonOnBoardGivenNameTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..70</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S013</SuperClassElementID>
+                                <SuperClassElementName>givenName</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>422</WCOAttributeID>
+                                <WCOAttributeName>Given name</WCOAttributeName>
+                                <WCOAttributeDescription>The given name of a person as mentioned in an official document</WCOAttributeDescription>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3460</TDEDUID>
+                                <TDEDName>Person. Given Name.Text</TDEDName>
+                                <DictionaryEntryName>Person On Board. Given Name. Text</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardGivenNameTextType</NamedComplexType>
+                                <XMLTag>GivenName</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5417</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>First given name (or initial)</APIName>
+                                <APILength>an..35</APILength>
+                                <APIName>Second given name (or initial)</APIName>
+                                <APILength>an..35</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Designation" type="ds:PersonOnBoardDesignationTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..70</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S014</SuperClassElementID>
+                                <SuperClassElementName>designation</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>423</WCOAttributeID>
+                                <WCOAttributeName>Job title</WCOAttributeName>
+                                <WCOAttributeDescription>The job title or the rank of a person</WCOAttributeDescription>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3480</TDEDUID>
+                                <TDEDName>Person. Job Title.Text</TDEDName>
+                                <DictionaryEntryName>Person On Board. Designation. Text</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardDesignationTextType</NamedComplexType>
+                                <XMLTag>Designation</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5419</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Occupation of a passenger or the rank of crew</APIName>
+                                <APICodes>
+‘CR1’ for cockpit crew or individuals inside cockpit 
+‘CR2’ for cabin crew
+‘CR3’ for airline operation management with cockpit access 
+‘CR4’ for cargo non cockpit crew and/or non-crew individuals. 
+‘CR5’ pilots on board but not on duty
+                                </APICodes>
+                                <APILength>an3</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="NationalityCode" type="ds:PersonOnBoardNationalityCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207)</WCOCodeRemarks>
+                                <WCOFormat>an..3</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S015</SuperClassElementID>
+                                <SuperClassElementName>nationality</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>424</WCOAttributeID>
+                                <WCOAttributeName>Nationality, code</WCOAttributeName>
+                                <WCOAttributeDescription>The nationality of a person</WCOAttributeDescription>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3485</TDEDUID>
+                                <TDEDName>Person. Nationality.Identifier</TDEDName>
+                                <DictionaryEntryName>Person On Board. Nationality. Code</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardNationalityCodeType</NamedComplexType>
+                                <XMLTag>NationalityCode</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5420</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Nationality of the passenger or crew member</APIName>
+                                <APILength>a3</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="BirthDateTime" type="ds:PersonOnBoardBirthDateTimeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S016</SuperClassElementID>
+                                <SuperClassElementName>birth</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>425</WCOAttributeID>
+                                <WCOAttributeName>Date of birth</WCOAttributeName>
+                                <WCOAttributeDescription>Date on which an individual is or was born</WCOAttributeDescription>
+                                <CoreDataType>Date Time</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>2491</TDEDUID>
+                                <TDEDName>Person. Birth.Date Time</TDEDName>
+                                <DictionaryEntryName>Person On Board. Birth. Date Time</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardBirthDateTimeType</NamedComplexType>
+                                <XMLTag>BirthDateTime</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5421</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Date of birth of a passenger or crew member</APIName>
+                                <APILength>n6</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="BirthPlace" type="ds:PersonOnBoardBirthPlaceTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S017</SuperClassElementID>
+                                <SuperClassElementName>birthPlace</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>426</WCOAttributeID>
+                                <WCOAttributeName>Place of birth</WCOAttributeName>
+                                <WCOAttributeDescription>Name of the place where a person is or was born</WCOAttributeDescription>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3486</TDEDUID>
+                                <TDEDName>Person. Birth Location.Text</TDEDName>
+                                <DictionaryEntryName>Person On Board. Birth Place. Text</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardBirthPlaceTextType</NamedComplexType>
+                                <XMLTag>BirthPlace</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5422</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <APIName>Place of birth</APIName>
+                                <APILength>an..35</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="GenderCode" type="ds:PersonOnBoardGenderCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3499)</WCOCodeRemarks>
+                                <WCOFormat>an..3</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S018</SuperClassElementID>
+                                <SuperClassElementName>gender</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>427</WCOAttributeID>
+                                <WCOAttributeName>Gender, code</WCOAttributeName>
+                                <WCOAttributeDescription>Code giving the gender of a person</WCOAttributeDescription>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3499</TDEDUID>
+                                <TDEDName>Gender. Code</TDEDName>
+                                <DictionaryEntryName>Person On Board. Gender. Code</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardGenderCodeType</NamedComplexType>
+                                <XMLTag>GenderCode</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5423</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Gender of the passenger or crew member</APIName>
+                                <APICodes>
+F Indicates a female passenger or crew member
+M Indicates a male passenger or crew member
+X  Official code according to document 9030
+U Indicates when a passenger or crew member does not wish to divulge gender and the Machine Readable Zone of a document has no value (i.e. &lt;)
+                                </APICodes>
+                                <APILength>a1</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ResidenceCountryCode" type="ds:PersonOnBoardResidenceCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOFormat>a2</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S019</SuperClassElementID>
+                                <SuperClassElementName>residenceCountry</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>428</WCOAttributeID>
+                                <WCOAttributeName>Residence country, code</WCOAttributeName>
+                                <WCOAttributeDescription>The country of residence of a person</WCOAttributeDescription>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                                <DictionaryEntryName>Person On Board. Residence Country. Code</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardResidenceCountryCodeType</NamedComplexType>
+                                <XMLTag>ResidenceCountryCode</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5424</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Country of residence of passengers or crew members</APIName>
+                                <APILength>a3</APILength>
+                                <APIRemark>a2 in WCO Data Model</APIRemark>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="StatusCode" type="ds:PersonOnBoardStatusCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3035)</WCOCodeRemarks>
+                                <WCOCodeRemarks>EDIFACT codes (7365)</WCOCodeRemarks>
+                                <WCOFormat>an..3</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S020</SuperClassElementID>
+                                <SuperClassElementName>status</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>429</WCOAttributeID>
+                                <WCOAttributeName>Traveller status, code</WCOAttributeName>
+                                <WCOAttributeDescription>The status of a person on board</WCOAttributeDescription>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>7365</TDEDUID>
+                                <TDEDName>Process. Indicator.Code</TDEDName>
+                                <DictionaryEntryName>Person On Board. Traveller Status. Code</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardTravellerStatusCodeType</NamedComplexType>
+                                <XMLTag>TravellerStatusCode</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5441</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>PARTY FUNCTION CODE QUALIFIER</APIName>
+                                <APICodes>DDT, DDU, FL, FM, ZZZ</APICodes>
+                                <APILength>a..3</APILength>
+                                <APIRemark>DMR needed for Person on board type, code with code list 3035</APIRemark>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="InformationVerifiedIndicator" type="ds:PersonOnBoardInformationVerifiedIndicatorType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>n1</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC6</SuperClassID>
+                                <SuperClassName>Person</SuperClassName>
+                                <SuperClassElementID>S021</SuperClassElementID>
+                                <SuperClassElementName>informationVerified</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>430</WCOAttributeID>
+                                <WCOAttributeName>Information verified indicator</WCOAttributeName>
+                                <WCOAttributeDescription>To indicate if the information is verified (boolean)</WCOAttributeDescription>
+                                <CoreDataType>Indicator</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>9606</TDEDUID>
+                                <TDEDName>Response. Yes Or No. Indicator</TDEDName>
+                                <DictionaryEntryName>Person On Board. Information Verified. Indicator</DictionaryEntryName>
+                                <NamedComplexType>PersonOnBoardInformationVerifiedIndicatorType</NamedComplexType>
+                                <XMLTag>InformationVerifiedIndicator</XMLTag>
+                                <SuperClassTypePerson>X</SuperClassTypePerson>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>67B</WCOClassID>
+                                <WCOClassName>PersonOnBoard</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>5442</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0122D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <APIName>To identify that information for this passenger has been validated</APIName>
+                                <APICodes>
+173 for information verified 
+174 for information not verified
+                                </APICodes>
+                                <APILength>an..3</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Address. Details</DictionaryEntryName>
+                                <UniqueDecClassID>0126D</UniqueDecClassID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>241</WCOAttributeID>
+                                      <WCOAttributeName>City name</WCOAttributeName>
+                                      <WCOAttributeDescription>Name of a city</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Text</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3164</TDEDUID>
+                                      <TDEDName>Address.City.Name</TDEDName>
+                                      <DictionaryEntryName>Address. City. Text</DictionaryEntryName>
+                                      <NamedComplexType>AddressCityTextType</NamedComplexType>
+                                      <XMLTag>City</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>04A</WCOClassID>
+                                      <WCOClassName>Address</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5445</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0126D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>CITY NAME</APIName>
+                                      <APILength>an..35</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                      <WCOAttributeID>242</WCOAttributeID>
+                                      <WCOAttributeName>Country, coded</WCOAttributeName>
+                                      <WCOAttributeDescription>Identification of the name of the country or other geographical entity as specified in ISO 3166 and UN/ECE Rec 3</WCOAttributeDescription>
+                                      <WCOFormat>a2</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3207</TDEDUID>
+                                      <TDEDName>Country.Identifier</TDEDName>
+                                      <DictionaryEntryName>Address. Country. Code</DictionaryEntryName>
+                                      <NamedComplexType>AddressCountryCodeType</NamedComplexType>
+                                      <XMLTag>CountryCode</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>04A</WCOClassID>
+                                      <WCOClassName>Address</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5446</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0126D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>COUNTRY NAME CODE</APIName>
+                                      <APICodes>ICAO codes in Doc 9303/ISO 3166</APICodes>
+                                      <APILength>a3</APILength>
+                                      <APIRemark>a2 in WCO Data Model</APIRemark>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (3229) = ISO 3166-2 2-alpha code or User codes</WCOCodeRemarks>
+                                      <WCOAttributeID>244</WCOAttributeID>
+                                      <WCOAttributeName>Country sub-entity identification</WCOAttributeName>
+                                      <WCOAttributeDescription>Code specifying the name of a country subdivision</WCOAttributeDescription>
+                                      <WCOFormat>an..9</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3229</TDEDUID>
+                                      <TDEDName>Country.Subdivision.Identifier</TDEDName>
+                                      <DictionaryEntryName>Address. Country Sub Division. Code</DictionaryEntryName>
+                                      <NamedComplexType>AddressCountrySubDivisionCodeType</NamedComplexType>
+                                      <XMLTag>CountrySubDivisionCode</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>04A</WCOClassID>
+                                      <WCOClassName>Address</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5448</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0126D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>State/Province/County</APIName>
+                                      <APILength>an..9</APILength>
+                                      <APIRemark>Either a code in data element 3229 or a name in data element 3228</APIRemark>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="CountrySubDivisionName" type="ds:AddressCountrySubDivisionNameTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>243</WCOAttributeID>
+                                      <WCOAttributeName>Country sub-entity name</WCOAttributeName>
+                                      <WCOAttributeDescription>Name of a country subdivision</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Text</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3228</TDEDUID>
+                                      <TDEDName>Country.Subdivision.Name</TDEDName>
+                                      <DictionaryEntryName>Address. Country Sub Division Name. Text</DictionaryEntryName>
+                                      <NamedComplexType>AddressCountrySubDivisionNameTextType</NamedComplexType>
+                                      <XMLTag>CountrySubDivisionName</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>04A</WCOClassID>
+                                      <WCOClassName>Address</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5449</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0126D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>State/Province/County</APIName>
+                                      <APILength>an..35</APILength>
+                                      <APIRemark>Either a code in data element 3229 or a name in data element 3228</APIRemark>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>239</WCOAttributeID>
+                                      <WCOAttributeName>Street and number/P.O. Box</WCOAttributeName>
+                                      <WCOAttributeDescription>Specification of the postal delivery point such as street and number or post office box</WCOAttributeDescription>
+                                      <WCOFormat>an..256</WCOFormat>
+                                      <CoreDataType>Text</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3042</TDEDUID>
+                                      <TDEDName>Postal.DeliveryPoint.Text</TDEDName>
+                                      <DictionaryEntryName>Address. Line. Text</DictionaryEntryName>
+                                      <NamedComplexType>AddressLineTextType</NamedComplexType>
+                                      <XMLTag>Line</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>04A</WCOClassID>
+                                      <WCOClassName>Address</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5450</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0126D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Street Address</APIName>
+                                      <APILength>an..35</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>245</WCOAttributeID>
+                                      <WCOAttributeName>Postcode identification</WCOAttributeName>
+                                      <WCOAttributeDescription>Code specifying a postal zone or address</WCOAttributeDescription>
+                                      <WCOFormat>an..17</WCOFormat>
+                                      <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3251</TDEDUID>
+                                      <TDEDName>Postal.Identifier</TDEDName>
+                                      <DictionaryEntryName>Address. Postcode. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>AddressPostcodeIDType</NamedComplexType>
+                                      <XMLTag>PostcodeID</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>04A</WCOClassID>
+                                      <WCOClassName>Address</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5451</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0126D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>POSTAL IDENTIFICATION CODE</APIName>
+                                      <APILength>an..17</APILength>
+                                      <APIRemark>Only an..9 available in WCO Data Model</APIRemark>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="AdditionalDocument" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <SuperClassID>SC1</SuperClassID>
+                                <SuperClassName>RootDocument</SuperClassName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>02A</WCOClassID>
+                                <WCOClassName>AdditionalDocument</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Document. Details</DictionaryEntryName>
+                                <UniqueDecClassID>0123D</UniqueDecClassID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <APIName>Official travel document and/or other document used for travel</APIName>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:AdditionalDocumentIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..70</WCOFormat>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>1004</TDEDUID>
+                                      <TDEDName>Document. Identifier</TDEDName>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S031</SuperClassElementID>
+                                      <SuperClassElementName>identification</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>D005</WCOAttributeID>
+                                      <WCOAttributeName>Additional document reference number</WCOAttributeName>
+                                      <WCOAttributeDescription>Identifier of a document providing additional information</WCOAttributeDescription>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Additional Document. Identification. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>AdditionalDocumentIdentificationIDType</NamedComplexType>
+                                      <XMLTag>ID</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>02A</WCOClassID>
+                                      <WCOClassName>AdditionalDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5452</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0123D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Document number</APIName>
+                                      <APILength>an..9</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="IssueDateTime" type="ds:AdditionalDocumentIssueDateTimeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..35</WCOFormat>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>2380</TDEDUID>
+                                      <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S032</SuperClassElementID>
+                                      <SuperClassElementName>issue</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>D002</WCOAttributeID>
+                                      <WCOAttributeName>Additional document issuing date</WCOAttributeName>
+                                      <WCOAttributeDescription>Date at which an additional document was issued and when appropriate, signed or otherwise authenticated</WCOAttributeDescription>
+                                      <CoreDataType>Date Time</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Additional Document. Issue. Date Time</DictionaryEntryName>
+                                      <NamedComplexType>AdditionalDocumentIssueDateTimeType</NamedComplexType>
+                                      <XMLTag>IssueDateTime</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>02A</WCOClassID>
+                                      <WCOClassName>AdditionalDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5454</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0123D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Issue date of the other document used to travel</APIName>
+                                      <APICodes>182</APICodes>
+                                      <APILength>n6</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="IssueLocationName" type="ds:AdditionalDocumentIssueLocationNameTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..256</WCOFormat>
+                                      <WCOAttributeID>D003</WCOAttributeID>
+                                      <WCOAttributeName>Additional document issue place</WCOAttributeName>
+                                      <WCOAttributeDescription>Name of a location where a document was issued</WCOAttributeDescription>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S034</SuperClassElementID>
+                                      <SuperClassElementName>issueLocationName</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <CoreDataType>Text</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3224</TDEDUID>
+                                      <TDEDName>Location.Name.Text</TDEDName>
+                                      <DictionaryEntryName>Additional Document. Issue Location. Text</DictionaryEntryName>
+                                      <NamedComplexType>AdditionalDocumentIssueLocationTextType</NamedComplexType>
+                                      <XMLTag>IssueLocation</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>02A</WCOClassID>
+                                      <WCOClassName>AdditionalDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5456</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0123D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Place of issue of the other document used for travel</APIName>
+                                      <APILength>an..35</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="TypeCode" type="ds:AdditionalDocumentTypeCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+                                      <WCOFormat>an..3</WCOFormat>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>1001</TDEDUID>
+                                      <TDEDName>Document. Type.Code</TDEDName>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S042</SuperClassElementID>
+                                      <SuperClassElementName>type</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>D006</WCOAttributeID>
+                                      <WCOAttributeName>Additional document type, coded</WCOAttributeName>
+                                      <WCOAttributeDescription>Code specifying the name of an additional document</WCOAttributeDescription>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Additional Document. Type. Code</DictionaryEntryName>
+                                      <NamedComplexType>AdditionalDocumentTypeCodeType</NamedComplexType>
+                                      <XMLTag>TypeCode</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>02A</WCOClassID>
+                                      <WCOClassName>AdditionalDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5453</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0123D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Document name code</APIName>
+                                      <APICodes>Document types as per ICAO 9303</APICodes>
+                                      <APILength>a..2</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="TravelDocument" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <SuperClassID>SC1</SuperClassID>
+                                <SuperClassName>RootDocument</SuperClassName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>34B</WCOClassID>
+                                <WCOClassName>TravelDocument</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Travel Document. Details</DictionaryEntryName>
+                                <UniqueDecClassID>0131D</UniqueDecClassID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <APIName>Official travel document and/or other document used for travel</APIName>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ExpirationDateTime" type="ds:TravelDocumentExpirationDateTimeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>
+                                      <TDEDUID>2380</TDEDUID>
+                                      <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S027</SuperClassElementID>
+                                      <SuperClassElementName>expiration</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>275</WCOAttributeID>
+                                      <WCOAttributeName>Document Expiration (Expiry) Date</WCOAttributeName>
+                                      <WCOAttributeDescription>The expiry date of the document (e.g. license, visa, permit, certificate)</WCOAttributeDescription>
+                                      <CoreDataType>Date Time</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Travel Document. Expiration. Date Time</DictionaryEntryName>
+                                      <NamedComplexType>TravelDocumentExpirationDateTimeType</NamedComplexType>
+                                      <XMLTag>ExpirationDateTime</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>34B</WCOClassID>
+                                      <WCOClassName>TravelDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5460</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0131D</UniqueDecClassID>
+                                      <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                      <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                      <APIName>Expiry date of the official travel document</APIName>
+                                      <APICodes>36</APICodes>
+                                      <APILength>n6</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="ID" type="ds:TravelDocumentIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..70</WCOFormat>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>1004</TDEDUID>
+                                      <TDEDName>Document. Identifier</TDEDName>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S031</SuperClassElementID>
+                                      <SuperClassElementName>identification</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>D035</WCOAttributeID>
+                                      <WCOAttributeName>Travel document reference number</WCOAttributeName>
+                                      <WCOAttributeDescription>The identification number of a travel document</WCOAttributeDescription>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Travel Document. Identification. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>TravelDocumentIdentificationIDType</NamedComplexType>
+                                      <XMLTag>ID</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>34B</WCOClassID>
+                                      <WCOClassName>TravelDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5457</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0131D</UniqueDecClassID>
+                                      <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                      <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                      <APIName>Document number</APIName>
+                                      <APILength>an..9</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="issueLocationID" type="ds:TravelDocumentIssueLocationIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..5</WCOFormat>
+                                      <WCOCodeRemarks>UN/LOCODE</WCOCodeRemarks>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S033</SuperClassElementID>
+                                      <SuperClassElementName>issueLocationIdentification</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>D044</WCOAttributeID>
+                                      <WCOAttributeName>Travel Document Issuing Country or Political Entity, coded</WCOAttributeName>
+                                      <WCOAttributeDescription>Identification of the country or political entity issuing the travel document</WCOAttributeDescription>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3411</TDEDUID>
+                                      <TDEDName>Document.IssueLocation.Identifier</TDEDName>
+                                      <DictionaryEntryName>Travel Document. Issue Location. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>TravelDocumentIssueLocationIDType</NamedComplexType>
+                                      <XMLTag>IssueLocationID</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>34B</WCOClassID>
+                                      <WCOClassName>TravelDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniquePositionID>10851</UniquePositionID>
+                                      <UniqueDecClassID>0131D</UniqueDecClassID>
+                                      <APIName>Country of issue of the official travel document</APIName>
+                                      <APICodes>ICAO 9303/ISO 3166 codes</APICodes>
+                                      <APILength>a3</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="TypeCode" type="ds:TravelDocumentTypeCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+                                      <WCOFormat>an..3</WCOFormat>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>1001</TDEDUID>
+                                      <TDEDName>Document. Type.Code</TDEDName>
+                                      <SuperClassID>SC1</SuperClassID>
+                                      <SuperClassName>RootDocument</SuperClassName>
+                                      <SuperClassElementID>S042</SuperClassElementID>
+                                      <SuperClassElementName>type</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>D037</WCOAttributeID>
+                                      <WCOAttributeName>Travel document type, coded</WCOAttributeName>
+                                      <WCOAttributeDescription>Code specifying the name of a travel document</WCOAttributeDescription>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Travel Document. Type. Code</DictionaryEntryName>
+                                      <NamedComplexType>TravelDocumentTypeCodeType</NamedComplexType>
+                                      <XMLTag>TypeCode</XMLTag>
+                                      <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>34B</WCOClassID>
+                                      <WCOClassName>TravelDocument</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5458</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0131D</UniqueDecClassID>
+                                      <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                      <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                      <APIName>Document name code</APIName>
+                                      <APICodes>Document types as per ICAO 9303</APICodes>
+                                      <APILength>a..2</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="DisembarkationPlace" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <SuperClassID>SC3</SuperClassID>
+                                <SuperClassName>Location</SuperClassName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>63B</WCOClassID>
+                                <WCOClassName>DisembarkationPlace</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Disembarkation Place. Details</DictionaryEntryName>
+                                <UniqueDecClassID>0127D</UniqueDecClassID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:DisembarkationPlaceIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..35</WCOFormat>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3225</TDEDUID>
+                                      <TDEDName>Location.Identifier</TDEDName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>UN/LOCODE (an..5) + user codes (an..30)</WCOCodeRemarks>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassID>SC3</SuperClassID>
+                                      <SuperClassName>Location</SuperClassName>
+                                      <SuperClassElementID>S003</SuperClassElementID>
+                                      <SuperClassElementName>identification</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>L091</WCOAttributeID>
+                                      <WCOAttributeName>Place of disembarkation, coded</WCOAttributeName>
+                                      <WCOAttributeDescription>Identification of a port or place of disembarkation</WCOAttributeDescription>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Disembarkation Place. Identification. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>DisembarkationPlaceIdentificationIDType</NamedComplexType>
+                                      <XMLTag>ID</XMLTag>
+                                      <SuperClassTypeLocation>X</SuperClassTypeLocation>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>63B</WCOClassID>
+                                      <WCOClassName>DisembarkationPlace</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5463</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0127D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Airports related to the journey</APIName>
+                                      <APILength>a3</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="EmbarkationPlace" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <SuperClassID>SC3</SuperClassID>
+                                <SuperClassName>Location</SuperClassName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>64B</WCOClassID>
+                                <WCOClassName>EmbarkationPlace</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Embarkation Place. Details</DictionaryEntryName>
+                                <UniqueDecClassID>0129D</UniqueDecClassID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:EmbarkationPlaceIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..35</WCOFormat>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>3225</TDEDUID>
+                                      <TDEDName>Location.Identifier</TDEDName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>UN/LOCODE (an..5) + user codes (an..30)</WCOCodeRemarks>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassID>SC3</SuperClassID>
+                                      <SuperClassName>Location</SuperClassName>
+                                      <SuperClassElementID>S003</SuperClassElementID>
+                                      <SuperClassElementName>identification</SuperClassElementName>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>L093</WCOAttributeID>
+                                      <WCOAttributeName>Place of embarkation, coded</WCOAttributeName>
+                                      <WCOAttributeDescription>Identification of a port or place of embarkation</WCOAttributeDescription>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <DictionaryEntryName>Embarkation Place. Identification. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>EmbarkationPlaceIdentificationIDType</NamedComplexType>
+                                      <XMLTag>ID</XMLTag>
+                                      <SuperClassTypeLocation>X</SuperClassTypeLocation>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>64B</WCOClassID>
+                                      <WCOClassName>EmbarkationPlace</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <UniquePositionID>5465</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0129D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Airports related to the journey</APIName>
+                                      <APILength>a3</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Reservation" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>66B</WCOClassID>
+                                <WCOClassName>Reservation</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Reservation. Details</DictionaryEntryName>
+                                <UniqueDecClassID>0130D</UniqueDecClassID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <APIRemark>
+Possible DMR for:
+Unique Passenger Reference
+Government agency reference number 
+Customer Reference Number
+                                </APIRemark>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PNRID" type="ds:ReservationPNRIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>432</WCOAttributeID>
+                                      <WCOAttributeName>PNR</WCOAttributeName>
+                                      <WCOAttributeDescription>Passenger Name Record Locator Number (or unique identifier)</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>1154</TDEDUID>
+                                      <TDEDName>Reference. Identifier</TDEDName>
+                                      <DictionaryEntryName>Reservation. PNR. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>ReservationPNRIDType</NamedComplexType>
+                                      <XMLTag>PNRID</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>66B</WCOClassID>
+                                      <WCOClassName>Reservation</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5466</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0130D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Passenger reservation reference number</APIName>
+                                      <APICodes>AVF, ABO, SEA , AEA,  CR</APICodes>
+                                      <APILength>an..35</APILength>
+                                      <APIRemark>To specify the passenger reservation number, unique passenger reference, and other reference information related to this traveler.  Up to 5 occurrences of this segment may be present</APIRemark>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="SeatID" type="ds:ReservationSeatIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>433</WCOAttributeID>
+                                      <WCOAttributeName>Seat or berth</WCOAttributeName>
+                                      <WCOAttributeDescription>Identification of an assigned seat or berth</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>1154</TDEDUID>
+                                      <TDEDName>Reference. Identifier</TDEDName>
+                                      <DictionaryEntryName>Reservation. Seat. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>ReservationSeatIDType</NamedComplexType>
+                                      <XMLTag>SeatID</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>66B</WCOClassID>
+                                      <WCOClassName>Reservation</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5467</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0130D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Passenger reservation reference number</APIName>
+                                      <APICodes>AVF, ABO, SEA , AEA,  CR</APICodes>
+                                      <APILength>an..35</APILength>
+                                      <APIRemark>To specify the passenger reservation number, unique passenger reference, and other reference information related to this traveler.  Up to 5 occurrences of this segment may be present</APIRemark>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Effects" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>65B</WCOClassID>
+                                <WCOClassName>Effects</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Effects. Details</DictionaryEntryName>
+                                <UniqueDecClassID>0128D</UniqueDecClassID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <APIRemark>DMR needed for weight of the baggage</APIRemark>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="SequenceNumeric" type="ds:EffectsSequenceNumericType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>006</WCOAttributeID>
+                                      <WCOAttributeName>Sequence number</WCOAttributeName>
+                                      <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                                      <WCOFormat>n..5</WCOFormat>
+                                      <CoreDataType>Numeric</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>1050</TDEDUID>
+                                      <TDEDName>Sequence. Position.Identifier</TDEDName>
+                                      <DictionaryEntryName>Effects. Sequence. Numeric</DictionaryEntryName>
+                                      <NamedComplexType>EffectsSequenceNumericType</NamedComplexType>
+                                      <XMLTag>SequenceNumeric</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>65B</WCOClassID>
+                                      <WCOClassName>Effects</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5468</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0128D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Description and bag tag numbers of the passenger or crew effects</APIName>
+                                      <APILength>n..3</APILength>
+                                      <APIRemark>Sequential reference</APIRemark>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="ID" type="ds:EffectsIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>418</WCOAttributeID>
+                                      <WCOAttributeName>Effects identification number</WCOAttributeName>
+                                      <WCOAttributeDescription>Identification of the personal effects</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7402</TDEDUID>
+                                      <TDEDName>Object. Identifier</TDEDName>
+                                      <DictionaryEntryName>Effects. Identification. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>EffectsIdentificationIDType</NamedComplexType>
+                                      <XMLTag>ID</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>65B</WCOClassID>
+                                      <WCOClassName>Effects</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5469</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0128D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Description and bag tag numbers of the passenger or crew effects</APIName>
+                                      <APILength>an.35</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="Description" type="ds:EffectsDescriptionTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>419</WCOAttributeID>
+                                      <WCOAttributeName>Effects description</WCOAttributeName>
+                                      <WCOAttributeDescription>Description of personal belongings in the possession of individual crew members or passengers which according to regulations in force at the place of arrival of a means of transport are dutiable or subject to prohibitions or restrictions</WCOAttributeDescription>
+                                      <WCOFormat>an..256</WCOFormat>
+                                      <CoreDataType>Text</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7410</TDEDUID>
+                                      <TDEDName>Crew. Personal Effects.Text</TDEDName>
+                                      <DictionaryEntryName>Effects. Description. Text</DictionaryEntryName>
+                                      <NamedComplexType>EffectsDescriptionTextType</NamedComplexType>
+                                      <XMLTag>Description</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>65B</WCOClassID>
+                                      <WCOClassName>Effects</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5470</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0128D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Description and bag tag numbers of the passenger or crew effects</APIName>
+                                      <APILength>an.35</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="QuantityQuantity" type="ds:EffectsQuantityQuantityType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>420</WCOAttributeID>
+                                      <WCOAttributeName>Effects quantity</WCOAttributeName>
+                                      <WCOAttributeDescription>Quantity of personal belongings in the possession of individual crew members or passengers which according to regulations in force at the place of arrival of a means of transport are dutiable or subject to prohibitions or restrictions</WCOAttributeDescription>
+                                      <WCOFormat>n..16,6</WCOFormat>
+                                      <CoreDataType>Quantity</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7410</TDEDUID>
+                                      <TDEDName>Crew. Personal Effects.Text</TDEDName>
+                                      <DictionaryEntryName>Effects. Quantity. Quantity</DictionaryEntryName>
+                                      <NamedComplexType>EffectsQuantityQuantityType</NamedComplexType>
+                                      <XMLTag>QuantityQuantity</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>65B</WCOClassID>
+                                      <WCOClassName>Effects</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5471</UniquePositionID>
+                                      <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                      <UniqueDecClassID>0128D</UniqueDecClassID>
+                                      <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                      <APIName>Number of Checked Bags</APIName>
+                                      <APILength>an..3</APILength>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="TotalPersons" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <WCOClassID>96B</WCOClassID>
+                          <WCOClassName>TotalPersons</WCOClassName>
+                          <DictionaryEntryName>Total Persons. Details</DictionaryEntryName>
+                          <UniqueDecClassID>0142D</UniqueDecClassID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TypeCode" type="ds:TotalPersonsTypeCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3035)</WCOCodeRemarks>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <WCOAttributeID>458</WCOAttributeID>
+                                <WCOAttributeName>Person type, coded</WCOAttributeName>
+                                <WCOAttributeDescription>The type of person (Crew, Passenger, Stowaway, etc.)</WCOAttributeDescription>
+                                <WCOFormat>an..3</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>6063</TDEDUID>
+                                <TDEDName>Quantity. Type.Code</TDEDName>
+                                <DictionaryEntryName>Total Persons. Type. Code</DictionaryEntryName>
+                                <NamedComplexType>TotalPersonsTypeCodeType</NamedComplexType>
+                                <XMLTag>TypeCode</XMLTag>
+                                <WCOClassID>96B</WCOClassID>
+                                <WCOClassName>TotalPersons</WCOClassName>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>5612</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0142D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <APIName>Message control total</APIName>
+                                <APICodes>41, 42</APICodes>
+                                <APILength>n2</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="QuantityQuantity" type="ds:TotalPersonsQuantityQuantityType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <WCOAttributeID>459</WCOAttributeID>
+                                <WCOAttributeName>Total number of persons</WCOAttributeName>
+                                <WCOAttributeDescription>Total number of persons (passengers and crew, including the captain/master) on board of a means of transport</WCOAttributeDescription>
+                                <WCOFormat>n..4</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <CoreDataType>Quantity</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>6104</TDEDUID>
+                                <TDEDName>Transport Means. Onboard Person.Quantity</TDEDName>
+                                <DictionaryEntryName>Total Persons. Quantity. Quantity</DictionaryEntryName>
+                                <NamedComplexType>TotalPersonsQuantityQuantityType</NamedComplexType>
+                                <XMLTag>QuantityQuantity</XMLTag>
+                                <WCOClassID>96B</WCOClassID>
+                                <WCOClassName>TotalPersons</WCOClassName>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>5613</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0142D</UniqueDecClassID>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <APIName>Message control total</APIName>
+                                <APILength>n..4</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Carrier" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>18A</WCOClassID>
+                    <WCOClassName>Carrier</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Carrier. Details</DictionaryEntryName>
+                    <UniqueDecClassID>0178D</UniqueDecClassID>
+                    <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:CarrierIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3039</TDEDUID>
+                          <TDEDName>Party. Identifier</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S009</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>R012</WCOAttributeID>
+                          <WCOAttributeName>Carrier identification</WCOAttributeName>
+                          <WCOAttributeDescription>To identify a party providing the transport of goods between named points</WCOAttributeDescription>
+                          <WCOCodeRemarks>International codes (e.g. DUNS, EAN) or user codes</WCOCodeRemarks>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Carrier. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>CarrierIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>18A</WCOClassID>
+                          <WCOClassName>Carrier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <UniquePositionID>99</UniquePositionID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                          <UniqueDecClassID>0178D</UniqueDecClassID>
+                          <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                          <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                          <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                          <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                          <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                          <APIName>Carrier identifier</APIName>
+                          <APILength>an..3</APILength>
+                          <APIRemark>
+AF Over-flight
+DL
+                          </APIRemark>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Declarant" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>57B</WCOClassID>
+                    <WCOClassName>Declarant</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Declarant. Details</DictionaryEntryName>
+                    <UniqueDecClassID>0845D</UniqueDecClassID>
+                    <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                    <APIName>Contact responsible for the message content</APIName>
+                    <APIRemark>This may either be an assigned profile or the name of the contact person</APIRemark>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:DeclarantNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..70</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3036</TDEDUID>
+                          <TDEDName>Party.Name.Text</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S008</SuperClassElementID>
+                          <SuperClassElementName>name</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>R124</WCOAttributeID>
+                          <WCOAttributeName>Declarant name</WCOAttributeName>
+                          <WCOAttributeDescription>Name of a party who makes a declaration to an official body or - where legally permitted - in whose name, or on whose behalf, a declaration to an official body is made</WCOAttributeDescription>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Declarant. Name. Text</DictionaryEntryName>
+                          <NamedComplexType>DeclarantNameTextType</NamedComplexType>
+                          <XMLTag>Name</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>57B</WCOClassID>
+                          <WCOClassName>Declarant</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <UniquePositionID>4665</UniquePositionID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                          <UniqueDecClassID>0845D</UniqueDecClassID>
+                          <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                          <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                          <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                          <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                          <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                          <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                          <APIName>Party Name</APIName>
+                          <APILength>an..35</APILength>
+                          <APIRemark>
+Used if profile has not been established
+Contact Surname
+                          </APIRemark>
+                          <APIName>Party Name</APIName>
+                          <APILength>an..35</APILength>
+                          <APIRemark>
+Used if profile has not been established
+Contact First Name
+                          </APIRemark>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ID" type="ds:DeclarantIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3039</TDEDUID>
+                          <TDEDName>Party. Identifier</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S009</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>R123</WCOAttributeID>
+                          <WCOAttributeName>Declarant, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Identification of a party who makes a declaration to an official body or - where legally permitted - in whose name, or on whose behalf, a declaration to an official body is made</WCOAttributeDescription>
+                          <WCOCodeRemarks>International codes (e.g. DUNS, EAN) or user codes</WCOCodeRemarks>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Declarant. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>DeclarantIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>57B</WCOClassID>
+                          <WCOClassName>Declarant</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <UniquePositionID>4666</UniquePositionID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                          <UniqueDecClassID>0845D</UniqueDecClassID>
+                          <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                          <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                          <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                          <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                          <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                          <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                          <APIName>Party identifier</APIName>
+                          <APILength>an..35</APILength>
+                          <APIRemark>Used if a Profile has been assigned</APIRemark>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>25A</WCOClassID>
+                          <WCOClassName>Communication</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Communication. Details</DictionaryEntryName>
+                          <UniqueDecClassID>0848D</UniqueDecClassID>
+                          <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                          <APIName>
+Communication number(s) of the person responsible for the message 
+content
+                          </APIName>
+                          <APIRemark>
+Up to 3 communication numbers can be provided.
+Data must be provided if no contact profile has been established.
+
+When reporting email addresses, special consideration should be give to any special characters appearing in the email address and potential impact to the syntax delimitation defined in the UNA segment
+                          </APIRemark>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>240</WCOAttributeID>
+                                <WCOAttributeName>Communication number</WCOAttributeName>
+                                <WCOAttributeDescription>To identify a communication address</WCOAttributeDescription>
+                                <WCOFormat>an..50</WCOFormat>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3148</TDEDUID>
+                                <TDEDName>Communication.Address.Identifier</TDEDName>
+                                <DictionaryEntryName>Communication. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>CommunicationIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>4677</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0848D</UniqueDecClassID>
+                                <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                                <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Communication address identifier</APIName>
+                                <APILength>an..35</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3155)</WCOCodeRemarks>
+                                <WCOAttributeID>253</WCOAttributeID>
+                                <WCOAttributeName>Communication number type</WCOAttributeName>
+                                <WCOAttributeDescription>To identify the type of communication address</WCOAttributeDescription>
+                                <WCOFormat>an..3</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3155</TDEDUID>
+                                <TDEDName>Communication.MeansType.Code</TDEDName>
+                                <DictionaryEntryName>Communication. Type. Code</DictionaryEntryName>
+                                <NamedComplexType>CommunicationTypeCodeType</NamedComplexType>
+                                <XMLTag>TypeCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>4678</UniquePositionID>
+                                <BIPUsageDeclaration>X</BIPUsageDeclaration>
+                                <UniqueDecClassID>0848D</UniqueDecClassID>
+                                <DeclarationProcedureIM>X</DeclarationProcedureIM>
+                                <DeclarationProcedureEX>X</DeclarationProcedureEX>
+                                <DeclarationProcedureCRI>X</DeclarationProcedureCRI>
+                                <DeclarationProcedureCRE>X</DeclarationProcedureCRE>
+                                <DeclarationProcedureCONV>X</DeclarationProcedureCONV>
+                                <DeclarationProcedureTRT>X</DeclarationProcedureTRT>
+                                <APIName>Communication address code qualifier</APIName>
+                                <APICodes>EM, FX, TE</APICodes>
+                                <APILength>a2</APILength>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

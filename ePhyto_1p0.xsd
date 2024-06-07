@@ -1,0 +1,2369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:LPCO:ePhyto:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:LPCO:ePhyto_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:LPCO:ePhyto:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:LPCO:ePhyto_DS:1" schemaLocation="ePhyto_1p0_urn_wco_datamodel_WCO_LPCO_ePhyto_DS_1.xsd"/>
+  <xs:element name="LPCO">
+    <xs:annotation>
+      <xs:documentation>
+        <SuperClassID>SC1</SuperClassID>
+        <SuperClassName>RootDocument</SuperClassName>
+        <WCOClassID>74B</WCOClassID>
+        <WCOClassName>LPCO</WCOClassName>
+        <DictionaryEntryName>Content Information Structure. Details</DictionaryEntryName>
+        <UniqueLPCOClassID>0001L</UniqueLPCOClassID>
+        <BIPUsageLPCO>X</BIPUsageLPCO>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ID" type="ds:LPCOIdentificationIDType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOFormat>an..70</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1004</TDEDUID>
+              <TDEDName>Document. Identifier</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S031</SuperClassElementID>
+              <SuperClassElementName>identification</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>D014</WCOAttributeID>
+              <WCOAttributeName>Document reference number</WCOAttributeName>
+              <WCOAttributeDescription>Reference number identifying a specific document</WCOAttributeDescription>
+              <CoreDataType>Identifier</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Identification. Identifier</DictionaryEntryName>
+              <NamedComplexType>DeclarationIdentificationIDType</NamedComplexType>
+              <XMLTag>ID</XMLTag>
+              <DictionaryEntryName>InterGov. Identification. Identifier</DictionaryEntryName>
+              <NamedComplexType>InterGovIdentificationIDType</NamedComplexType>
+              <XMLTag>ID</XMLTag>
+              <DictionaryEntryName>LPCO. Identification. Identifier</DictionaryEntryName>
+              <NamedComplexType>LPCOIdentificationIDType</NamedComplexType>
+              <XMLTag>ID</XMLTag>
+              <DictionaryEntryName>Response. Identification. Identifier</DictionaryEntryName>
+              <NamedComplexType>ResponseIdentificationIDType</NamedComplexType>
+              <XMLTag>ID</XMLTag>
+              <BIPUsageLPCO>X</BIPUsageLPCO>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>74B</WCOClassID>
+              <WCOClassName>LPCO</WCOClassName>
+              <UniquePositionID>336</UniquePositionID>
+              <UniqueLPCOClassID>0001L</UniqueLPCOClassID>
+              <e-Phyto_BoxName>No.</e-Phyto_BoxName>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="TypeCode" type="ds:LPCOTypeCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+              <WCOFormat>an..3</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1001</TDEDUID>
+              <TDEDName>Document. Type.Code</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S042</SuperClassElementID>
+              <SuperClassElementName>type</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>D013</WCOAttributeID>
+              <WCOAttributeName>Document name, coded</WCOAttributeName>
+              <WCOAttributeDescription>Code specifying the name of a document</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Type. Code</DictionaryEntryName>
+              <NamedComplexType>DeclarationTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <DictionaryEntryName>InterGov. Type. Code</DictionaryEntryName>
+              <NamedComplexType>InterGovTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <DictionaryEntryName>Response. Type. Code</DictionaryEntryName>
+              <NamedComplexType>ResponseTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <BIPUsageLPCO>X</BIPUsageLPCO>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>74B</WCOClassID>
+              <WCOClassName>LPCO</WCOClassName>
+              <UniquePositionID>337</UniquePositionID>
+              <UniqueLPCOClassID>0001L</UniqueLPCOClassID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Authentication" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>61B</WCOClassID>
+              <WCOClassName>Authentication</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Authentication. Details</DictionaryEntryName>
+              <BIPUsageLPCO>X</BIPUsageLPCO>
+              <UniqueLPCOClassID>0045L</UniqueLPCOClassID>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActualDateTime" type="ds:AuthenticationActualDateTimeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>451</WCOAttributeID>
+                    <WCOAttributeName>Actual Authentication Date</WCOAttributeName>
+                    <WCOAttributeDescription>Actual date and optional time when this authentication was signed or otherwise authenticated</WCOAttributeDescription>
+                    <WCOFormat>an..35</WCOFormat>
+                    <CoreDataType>Date Time</CoreDataType>
+                    <TDEDUID>2007</TDEDUID>
+                    <TDEDName>Document. Issue.Date Time</TDEDName>
+                    <DictionaryEntryName>Authentication. Actual. Date Time</DictionaryEntryName>
+                    <NamedComplexType>AuthenticationActualDateTimeType</NamedComplexType>
+                    <XMLTag>ActualDateTime</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>61B</WCOClassID>
+                    <WCOClassName>Authentication</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniquePositionID>6015</UniquePositionID>
+                    <UniqueLPCOClassID>0045L</UniqueLPCOClassID>
+                    <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Date)</e-Phyto_BoxName>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ActualLocationID" type="ds:AuthenticationActualLocationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>L098</WCOAttributeID>
+                    <WCOAttributeName>Actual Authentication Location, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Identifier of a location where a document was signed or otherwise authenticated</WCOAttributeDescription>
+                    <WCOFormat>an..17</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3225</TDEDUID>
+                    <TDEDName>Location. Identifier</TDEDName>
+                    <DictionaryEntryName>Authentication. Actual Location. Identifier</DictionaryEntryName>
+                    <NamedComplexType>AuthenticationActualLocationIDType</NamedComplexType>
+                    <XMLTag>ActualLocationID</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>61B</WCOClassID>
+                    <WCOClassName>Authentication</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniquePositionID>6014</UniquePositionID>
+                    <UniqueLPCOClassID>0045L</UniqueLPCOClassID>
+                    <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Place of issue)</e-Phyto_BoxName>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="LocationName" type="ds:AuthenticationLocationNameTextType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>D017</WCOAttributeID>
+                    <WCOAttributeName>Place of authentication of document</WCOAttributeName>
+                    <WCOAttributeDescription>Name of a location where a document was signed or otherwise authenticated</WCOAttributeDescription>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..256</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3410</TDEDUID>
+                    <TDEDName>Document. Issue Location.Text</TDEDName>
+                    <DictionaryEntryName>Authentication. Location Name. Text</DictionaryEntryName>
+                    <NamedComplexType>AuthenticationLocationNameTextType</NamedComplexType>
+                    <XMLTag>LocationName</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>61B</WCOClassID>
+                    <WCOClassName>Authentication</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniquePositionID>5431</UniquePositionID>
+                    <UniqueLPCOClassID>0045L</UniqueLPCOClassID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Authenticator" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>12A</WCOClassID>
+                    <WCOClassName>Authenticator</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Authenticator. Details</DictionaryEntryName>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0046L</UniqueLPCOClassID>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:AuthenticatorNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..70</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3036</TDEDUID>
+                          <TDEDName>Party.Name.Text</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S008</SuperClassElementID>
+                          <SuperClassElementName>name</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>R007</WCOAttributeID>
+                          <WCOAttributeName>Authenticator - name</WCOAttributeName>
+                          <WCOAttributeDescription>Name of the party which certifies that a document is authentic</WCOAttributeDescription>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Authenticator. Name. Text</DictionaryEntryName>
+                          <NamedComplexType>AuthenticatorNameTextType</NamedComplexType>
+                          <XMLTag>Name</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>12A</WCOClassID>
+                          <WCOClassName>Authenticator</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniquePositionID>28</UniquePositionID>
+                          <UniqueLPCOClassID>0046L</UniqueLPCOClassID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AuthorisedPerson" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>13A</WCOClassID>
+                    <WCOClassName>AuthorisedPerson</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Authorised Person. Details</DictionaryEntryName>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0052L</UniqueLPCOClassID>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:AuthorisedPersonNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..70</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3036</TDEDUID>
+                          <TDEDName>Party.Name.Text</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S008</SuperClassElementID>
+                          <SuperClassElementName>name</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>R067</WCOAttributeID>
+                          <WCOAttributeName>Authorised person</WCOAttributeName>
+                          <WCOAttributeDescription>The name of a person designated under relevant legislation for the purpose of issuing official assurances</WCOAttributeDescription>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Authorised Person. Name. Text</DictionaryEntryName>
+                          <NamedComplexType>AuthorisedPersonNameTextType</NamedComplexType>
+                          <XMLTag>Name</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>13A</WCOClassID>
+                          <WCOClassName>AuthorisedPerson</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniquePositionID>85</UniquePositionID>
+                          <UniqueLPCOClassID>0052L</UniqueLPCOClassID>
+                          <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Name of authorized officer)</e-Phyto_BoxName>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdditionalDocument" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>02A</WCOClassID>
+              <WCOClassName>AdditionalDocument</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Additional Document. Details</DictionaryEntryName>
+              <BIPUsageLPCO>X</BIPUsageLPCO>
+              <UniqueLPCOClassID>0002L</UniqueLPCOClassID>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                    <WCOFormat>an..3</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1003</TDEDUID>
+                    <TDEDName>Document. Type.Identifier</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S025</SuperClassElementID>
+                    <SuperClassElementName>category</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>D031</WCOAttributeID>
+                    <WCOAttributeName>Document category, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Code specifying the category of a document</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Additional Document. Category. Code</DictionaryEntryName>
+                    <NamedComplexType>AdditionalDocumentCategoryCodeType</NamedComplexType>
+                    <XMLTag>CategoryCode</XMLTag>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>02A</WCOClassID>
+                    <WCOClassName>AdditionalDocument</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>4472</UniquePositionID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0002L</UniqueLPCOClassID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="EffectiveDateTime" type="ds:AdditionalDocumentEffectiveDateTimeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <TDEDUID>2380</TDEDUID>
+                    <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                    <WCOFormat>an..35</WCOFormat>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S026</SuperClassElementID>
+                    <SuperClassElementName>effective</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>276</WCOAttributeID>
+                    <WCOAttributeName>Document Effective Date</WCOAttributeName>
+                    <WCOAttributeDescription>The effective date of the document (e.g. license, visa, permit, certificate)</WCOAttributeDescription>
+                    <CoreDataType>Date Time</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Additional Document. Effective. Date Time</DictionaryEntryName>
+                    <NamedComplexType>AdditionalDocumentEffectiveDateTimeType</NamedComplexType>
+                    <XMLTag>EffectiveDateTime</XMLTag>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>02A</WCOClassID>
+                    <WCOClassName>AdditionalDocument</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>4526</UniquePositionID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0002L</UniqueLPCOClassID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ID" type="ds:AdditionalDocumentIdentificationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..70</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1004</TDEDUID>
+                    <TDEDName>Document. Identifier</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S031</SuperClassElementID>
+                    <SuperClassElementName>identification</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>D005</WCOAttributeID>
+                    <WCOAttributeName>Additional document reference number</WCOAttributeName>
+                    <WCOAttributeDescription>Identifier of a document providing additional information</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Additional Document. Identification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>AdditionalDocumentIdentificationIDType</NamedComplexType>
+                    <XMLTag>ID</XMLTag>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>02A</WCOClassID>
+                    <WCOClassName>AdditionalDocument</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>356</UniquePositionID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0002L</UniqueLPCOClassID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="TypeCode" type="ds:AdditionalDocumentTypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+                    <WCOFormat>an..3</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1001</TDEDUID>
+                    <TDEDName>Document. Type.Code</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S042</SuperClassElementID>
+                    <SuperClassElementName>type</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>D006</WCOAttributeID>
+                    <WCOAttributeName>Additional document type, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Code specifying the name of an additional document</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Additional Document. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>AdditionalDocumentTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>02A</WCOClassID>
+                    <WCOClassName>AdditionalDocument</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>357</UniquePositionID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0002L</UniqueLPCOClassID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdditionalInformation" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>03A</WCOClassID>
+              <WCOClassName>AdditionalInformation</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Additional Information. Details</DictionaryEntryName>
+              <BIPUsageLPCO>X</BIPUsageLPCO>
+              <UniqueLPCOClassID>0030L</UniqueLPCOClassID>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StatementCode" type="ds:AdditionalInformationStatementCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                    <WCOAttributeID>226</WCOAttributeID>
+                    <WCOAttributeName>Additional statement code</WCOAttributeName>
+                    <WCOAttributeDescription>Coded form of an additional statement</WCOAttributeDescription>
+                    <WCOFormat>an..17</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>4441</TDEDUID>
+                    <TDEDName>FreeText.Code</TDEDName>
+                    <DictionaryEntryName>Additional Information. Statement. Code</DictionaryEntryName>
+                    <NamedComplexType>AdditionalInformationStatementCodeType</NamedComplexType>
+                    <XMLTag>StatementCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>03A</WCOClassID>
+                    <WCOClassName>AdditionalInformation</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>421</UniquePositionID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0030L</UniqueLPCOClassID>
+                    <e-Phyto_BoxName>II. Additional Declaration</e-Phyto_BoxName>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="StatementDescription" type="ds:AdditionalInformationStatementDescriptionTextType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>225</WCOAttributeID>
+                    <WCOAttributeName>Additional statement text</WCOAttributeName>
+                    <WCOAttributeDescription>Description of an additional statement</WCOAttributeDescription>
+                    <WCOFormat>an..512</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>4440</TDEDUID>
+                    <TDEDName>FreeText.Text</TDEDName>
+                    <DictionaryEntryName>Additional Information. Statement Description. Text</DictionaryEntryName>
+                    <NamedComplexType>AdditionalInformationStatementDescriptionTextType</NamedComplexType>
+                    <XMLTag>StatementDescription</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>03A</WCOClassID>
+                    <WCOClassName>AdditionalInformation</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>422</UniquePositionID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0030L</UniqueLPCOClassID>
+                    <e-Phyto_BoxName>This is to certify that the plants ......</e-Phyto_BoxName>
+                    <e-Phyto_BoxName>II. Additional Declaration</e-Phyto_BoxName>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (4451)</WCOCodeRemarks>
+                    <WCOClassID>03A</WCOClassID>
+                    <WCOClassName>AdditionalInformation</WCOClassName>
+                    <WCOAttributeID>369</WCOAttributeID>
+                    <WCOAttributeName>Additional statement type</WCOAttributeName>
+                    <WCOAttributeDescription>Code qualifying the subject of the additional statement</WCOAttributeDescription>
+                    <WCOFormat>an..3</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>4451</TDEDUID>
+                    <TDEDName>Free Text. Subject.Code</TDEDName>
+                    <DictionaryEntryName>Additional Information. Statement Type. Code</DictionaryEntryName>
+                    <NamedComplexType>AdditionalInformationStatementTypeCodeType</NamedComplexType>
+                    <XMLTag>StatementTypeCode</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>423</UniquePositionID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <UniqueLPCOClassID>0030L</UniqueLPCOClassID>
+                    <e-Phyto_BoxName>This is to certify that the plants ......</e-Phyto_BoxName>
+                    <e-Phyto_BoxName>II. Additional Declaration</e-Phyto_BoxName>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Consignment" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>28A</WCOClassID>
+              <WCOClassName>Consignment</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Consignment. Details</DictionaryEntryName>
+              <UniqueLPCOClassID>0203L</UniqueLPCOClassID>
+              <BIPUsageLPCO>X</BIPUsageLPCO>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BorderTransportMeans" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC5</SuperClassID>
+                    <SuperClassName>TransportMeans</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>15A</WCOClassID>
+                    <WCOClassName>BorderTransportMeans</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Border Transport Means. Details</DictionaryEntryName>
+                    <UniqueLPCOClassID>0250L</UniqueLPCOClassID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ModeCode" type="ds:BorderTransportMeansModeCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (8067) / UN/Recommendation 19</WCOCodeRemarks>
+                          <WCOFormat>n1</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>8067</TDEDUID>
+                          <TDEDName>Transport Movement. Mode.Code</TDEDName>
+                          <SuperClassID>SC5</SuperClassID>
+                          <SuperClassName>TransportMeans</SuperClassName>
+                          <SuperClassElementID>S055</SuperClassElementID>
+                          <SuperClassElementName>mode</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>T022</WCOAttributeID>
+                          <WCOAttributeName>Mode of transport crossing the border, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Mode of transport used for crossing the border, coded</WCOAttributeDescription>
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Border Transport Means. Mode. Code</DictionaryEntryName>
+                          <NamedComplexType>BorderTransportMeansModeCodeType</NamedComplexType>
+                          <XMLTag>ModeCode</XMLTag>
+                          <SuperClassTypeTransportMeans>X</SuperClassTypeTransportMeans>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>15A</WCOClassID>
+                          <WCOClassName>BorderTransportMeans</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <UniquePositionID>7298</UniquePositionID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniqueLPCOClassID>0250L</UniqueLPCOClassID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="JourneyID" type="ds:BorderTransportMeansJourneyIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>149</WCOAttributeID>
+                          <WCOAttributeName>Conveyance reference number</WCOAttributeName>
+                          <WCOAttributeDescription>To identify a journey of a means of transport, for example voyage number, flight number, trip number</WCOAttributeDescription>
+                          <WCOFormat>an..17</WCOFormat>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>8028</TDEDUID>
+                          <TDEDName>TransportMeans.Journey.Identifier</TDEDName>
+                          <DictionaryEntryName>Border Transport Means. Journey. Identifier</DictionaryEntryName>
+                          <NamedComplexType>BorderTransportMeansJourneyIDType</NamedComplexType>
+                          <XMLTag>JourneyID</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>15A</WCOClassID>
+                          <WCOClassName>BorderTransportMeans</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <UniquePositionID>900</UniquePositionID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniqueLPCOClassID>0250L</UniqueLPCOClassID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="ArrivalLocation" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <SuperClassID>SC3</SuperClassID>
+                          <SuperClassName>Location</SuperClassName>
+                          <WCOClassID>11C</WCOClassID>
+                          <WCOClassName>ArrivalLocation</WCOClassName>
+                          <DictionaryEntryName>Arrival Location. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>1969L</UniqueLPCOClassID>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:ArrivalLocationIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3225</TDEDUID>
+                                <TDEDName>Location.Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>UN/LOCODE (an..5) + user codes (an..30)</WCOCodeRemarks>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassID>SC3</SuperClassID>
+                                <SuperClassName>Location</SuperClassName>
+                                <SuperClassElementID>S003</SuperClassElementID>
+                                <SuperClassElementName>identification</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>L109</WCOAttributeID>
+                                <WCOAttributeName>Port of arrival, coded</WCOAttributeName>
+                                <WCOAttributeDescription>To identify the arrival location. This would be a port for sea, airport for air and border post for land crossing</WCOAttributeDescription>
+                                <WCOCodeRemarks>Or user codes</WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Arrival Location. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>ArrivalLocationIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                                <SuperClassTypeLocation>X</SuperClassTypeLocation>
+                                <WCOClassID>11C</WCOClassID>
+                                <WCOClassName>ArrivalLocation</WCOClassName>
+                                <UniquePositionID>6022</UniquePositionID>
+                                <UniqueLPCOClassID>1969L</UniqueLPCOClassID>
+                                <UniquePositionID>10839</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Consignee" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>27A</WCOClassID>
+                    <WCOClassName>Consignee</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Consignee. Details</DictionaryEntryName>
+                    <UniqueLPCOClassID>0269L</UniqueLPCOClassID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ConsigneeNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..70</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3036</TDEDUID>
+                          <TDEDName>Party.Name.Text</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S008</SuperClassElementID>
+                          <SuperClassElementName>name</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>R014</WCOAttributeID>
+                          <WCOAttributeName>Consignee name</WCOAttributeName>
+                          <WCOAttributeDescription>Name of party to which goods are consigned</WCOAttributeDescription>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Consignee. Name. Text</DictionaryEntryName>
+                          <NamedComplexType>ConsigneeNameTextType</NamedComplexType>
+                          <XMLTag>Name</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>27A</WCOClassID>
+                          <WCOClassName>Consignee</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <UniquePositionID>1065</UniquePositionID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniqueLPCOClassID>0269L</UniqueLPCOClassID>
+                          <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Address. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0271L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>241</WCOAttributeID>
+                                <WCOAttributeName>City name</WCOAttributeName>
+                                <WCOAttributeDescription>Name of a city</WCOAttributeDescription>
+                                <WCOFormat>an..35</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3164</TDEDUID>
+                                <TDEDName>Address.City.Name</TDEDName>
+                                <DictionaryEntryName>Address. City. Text</DictionaryEntryName>
+                                <NamedComplexType>AddressCityTextType</NamedComplexType>
+                                <XMLTag>City</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1067</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0271L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOAttributeID>242</WCOAttributeID>
+                                <WCOAttributeName>Country, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Identification of the name of the country or other geographical entity as specified in ISO 3166 and UN/ECE Rec 3</WCOAttributeDescription>
+                                <WCOFormat>a2</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                                <DictionaryEntryName>Address. Country. Code</DictionaryEntryName>
+                                <NamedComplexType>AddressCountryCodeType</NamedComplexType>
+                                <XMLTag>CountryCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1068</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0271L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3229) = ISO 3166-2 2-alpha code or User codes</WCOCodeRemarks>
+                                <WCOAttributeID>244</WCOAttributeID>
+                                <WCOAttributeName>Country sub-entity identification</WCOAttributeName>
+                                <WCOAttributeDescription>Code specifying the name of a country subdivision</WCOAttributeDescription>
+                                <WCOFormat>an..9</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3229</TDEDUID>
+                                <TDEDName>Country.Subdivision.Identifier</TDEDName>
+                                <DictionaryEntryName>Address. Country Sub Division. Code</DictionaryEntryName>
+                                <NamedComplexType>AddressCountrySubDivisionCodeType</NamedComplexType>
+                                <XMLTag>CountrySubDivisionCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1069</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0271L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>239</WCOAttributeID>
+                                <WCOAttributeName>Street and number/P.O. Box</WCOAttributeName>
+                                <WCOAttributeDescription>Specification of the postal delivery point such as street and number or post office box</WCOAttributeDescription>
+                                <WCOFormat>an..256</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3042</TDEDUID>
+                                <TDEDName>Postal.DeliveryPoint.Text</TDEDName>
+                                <DictionaryEntryName>Address. Line. Text</DictionaryEntryName>
+                                <NamedComplexType>AddressLineTextType</NamedComplexType>
+                                <XMLTag>Line</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1070</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0271L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>245</WCOAttributeID>
+                                <WCOAttributeName>Postcode identification</WCOAttributeName>
+                                <WCOAttributeDescription>Code specifying a postal zone or address</WCOAttributeDescription>
+                                <WCOFormat>an..17</WCOFormat>
+                                <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3251</TDEDUID>
+                                <TDEDName>Postal.Identifier</TDEDName>
+                                <DictionaryEntryName>Address. Postcode. Identifier</DictionaryEntryName>
+                                <NamedComplexType>AddressPostcodeIDType</NamedComplexType>
+                                <XMLTag>PostcodeID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1071</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0271L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ConsignmentItem" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>29A</WCOClassID>
+                    <WCOClassName>ConsignmentItem</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Consignment Item. Details</DictionaryEntryName>
+                    <UniqueLPCOClassID>0275L</UniqueLPCOClassID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AdditionalDocument" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <SuperClassID>SC1</SuperClassID>
+                          <SuperClassName>RootDocument</SuperClassName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>02A</WCOClassID>
+                          <WCOClassName>AdditionalDocument</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Document. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0276L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:AdditionalDocumentIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..70</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1004</TDEDUID>
+                                <TDEDName>Document. Identifier</TDEDName>
+                                <SuperClassID>SC1</SuperClassID>
+                                <SuperClassName>RootDocument</SuperClassName>
+                                <SuperClassElementID>S031</SuperClassElementID>
+                                <SuperClassElementName>identification</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>D005</WCOAttributeID>
+                                <WCOAttributeName>Additional document reference number</WCOAttributeName>
+                                <WCOAttributeDescription>Identifier of a document providing additional information</WCOAttributeDescription>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Document. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>AdditionalDocumentIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                                <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>02A</WCOClassID>
+                                <WCOClassName>AdditionalDocument</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>1083</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0276L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="TypeCode" type="ds:AdditionalDocumentTypeCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+                                <WCOFormat>an..3</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1001</TDEDUID>
+                                <TDEDName>Document. Type.Code</TDEDName>
+                                <SuperClassID>SC1</SuperClassID>
+                                <SuperClassName>RootDocument</SuperClassName>
+                                <SuperClassElementID>S042</SuperClassElementID>
+                                <SuperClassElementName>type</SuperClassElementName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>D006</WCOAttributeID>
+                                <WCOAttributeName>Additional document type, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Code specifying the name of an additional document</WCOAttributeDescription>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Document. Type. Code</DictionaryEntryName>
+                                <NamedComplexType>AdditionalDocumentTypeCodeType</NamedComplexType>
+                                <XMLTag>TypeCode</XMLTag>
+                                <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>02A</WCOClassID>
+                                <WCOClassName>AdditionalDocument</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <UniquePositionID>1084</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0276L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AdditionalInformation" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>03A</WCOClassID>
+                          <WCOClassName>AdditionalInformation</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Information. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0297L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Content" type="ds:AdditionalInformationContentTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>105</WCOAttributeID>
+                                <WCOAttributeName>Free text</WCOAttributeName>
+                                <WCOAttributeDescription>Free text field available to the message sender for information</WCOAttributeDescription>
+                                <WCOFormat>an..512</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>4440</TDEDUID>
+                                <TDEDName>FreeText.Text</TDEDName>
+                                <DictionaryEntryName>Additional Information. Content. Text</DictionaryEntryName>
+                                <NamedComplexType>AdditionalInformationContentTextType</NamedComplexType>
+                                <XMLTag>Content</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>03A</WCOClassID>
+                                <WCOClassName>AdditionalInformation</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1145</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0297L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="StatementCode" type="ds:AdditionalInformationStatementCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                                <WCOAttributeID>226</WCOAttributeID>
+                                <WCOAttributeName>Additional statement code</WCOAttributeName>
+                                <WCOAttributeDescription>Coded form of an additional statement</WCOAttributeDescription>
+                                <WCOFormat>an..17</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>4441</TDEDUID>
+                                <TDEDName>FreeText.Code</TDEDName>
+                                <DictionaryEntryName>Additional Information. Statement. Code</DictionaryEntryName>
+                                <NamedComplexType>AdditionalInformationStatementCodeType</NamedComplexType>
+                                <XMLTag>StatementCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>03A</WCOClassID>
+                                <WCOClassName>AdditionalInformation</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1149</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0297L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (4451)</WCOCodeRemarks>
+                                <WCOClassID>03A</WCOClassID>
+                                <WCOClassName>AdditionalInformation</WCOClassName>
+                                <WCOAttributeID>369</WCOAttributeID>
+                                <WCOAttributeName>Additional statement type</WCOAttributeName>
+                                <WCOAttributeDescription>Code qualifying the subject of the additional statement</WCOAttributeDescription>
+                                <WCOFormat>an..3</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>4451</TDEDUID>
+                                <TDEDName>Free Text. Subject.Code</TDEDName>
+                                <DictionaryEntryName>Additional Information. Statement Type. Code</DictionaryEntryName>
+                                <NamedComplexType>AdditionalInformationStatementTypeCodeType</NamedComplexType>
+                                <XMLTag>StatementTypeCode</XMLTag>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1153</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0297L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Commodity" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23A</WCOClassID>
+                          <WCOClassName>Commodity</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Commodity. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0307L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CargoDescription" type="ds:CommodityCargoDescriptionTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>138</WCOAttributeID>
+                                <WCOAttributeName>Brief cargo description</WCOAttributeName>
+                                <WCOAttributeDescription>Plain language description of the cargo of a means of transport, in general terms only</WCOAttributeDescription>
+                                <WCOFormat>an..256</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>7004</TDEDUID>
+                                <TDEDName>Consignment.SummaryDescription.Text</TDEDName>
+                                <DictionaryEntryName>Commodity. Cargo Description. Text</DictionaryEntryName>
+                                <NamedComplexType>CommodityCargoDescriptionTextType</NamedComplexType>
+                                <XMLTag>CargoDescription</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23A</WCOClassID>
+                                <WCOClassName>Commodity</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1171</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0307L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Description" type="ds:CommodityDescriptionTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>137</WCOAttributeID>
+                                <WCOAttributeName>Description of goods</WCOAttributeName>
+                                <WCOAttributeDescription>Plain language description of the nature of a goods item sufficient to identify it for cross-border regulatory purposes such as customs, phytosanitary, statistical or transport.</WCOAttributeDescription>
+                                <WCOFormat>an..512</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>7002</TDEDUID>
+                                <TDEDName>GoodsItem.Description.Text</TDEDName>
+                                <DictionaryEntryName>Commodity. Description. Text</DictionaryEntryName>
+                                <NamedComplexType>CommodityDescriptionTextType</NamedComplexType>
+                                <XMLTag>Description</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23A</WCOClassID>
+                                <WCOClassName>Commodity</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1172</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0307L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Name of produce and quantity declared</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="IntendedUse" type="ds:CommodityIntendedUseTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>327</WCOAttributeID>
+                                <WCOAttributeName>Intended Use, text</WCOAttributeName>
+                                <WCOAttributeDescription>Statement describing the intended use of the commodity</WCOAttributeDescription>
+                                <WCOFormat>an..256</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>7008</TDEDUID>
+                                <TDEDName>Line Item. Text</TDEDName>
+                                <DictionaryEntryName>Commodity. Intended Use. Text</DictionaryEntryName>
+                                <NamedComplexType>CommodityIntendedUseTextType</NamedComplexType>
+                                <XMLTag>IntendedUse</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23A</WCOClassID>
+                                <WCOClassName>Commodity</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>6461</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0307L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="IntendedUseCode" type="ds:CommodityIntendedUseCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>WCO codes + user codes</WCOCodeRemarks>
+                                <WCOAttributeID>330</WCOAttributeID>
+                                <WCOAttributeName>Intended use, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Coded representation of the description of the intended use of the commodity</WCOAttributeDescription>
+                                <WCOFormat>an..17</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>7009</TDEDUID>
+                                <TDEDName>Line Item. Code</TDEDName>
+                                <DictionaryEntryName>Commodity. Intended Use. Code</DictionaryEntryName>
+                                <NamedComplexType>CommodityIntendedUseCodeType</NamedComplexType>
+                                <XMLTag>IntendedUseCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23A</WCOClassID>
+                                <WCOClassName>Commodity</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>5405</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0307L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="AdditionalInformation" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>03A</WCOClassID>
+                                <WCOClassName>AdditionalInformation</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Information. Details</DictionaryEntryName>
+                                <UniqueLPCOClassID>0329L</UniqueLPCOClassID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="StatementCode" type="ds:AdditionalInformationStatementCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                                      <WCOAttributeID>226</WCOAttributeID>
+                                      <WCOAttributeName>Additional statement code</WCOAttributeName>
+                                      <WCOAttributeDescription>Coded form of an additional statement</WCOAttributeDescription>
+                                      <WCOFormat>an..17</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>4441</TDEDUID>
+                                      <TDEDName>FreeText.Code</TDEDName>
+                                      <DictionaryEntryName>Additional Information. Statement. Code</DictionaryEntryName>
+                                      <NamedComplexType>AdditionalInformationStatementCodeType</NamedComplexType>
+                                      <XMLTag>StatementCode</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>03A</WCOClassID>
+                                      <WCOClassName>AdditionalInformation</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniquePositionID>6038</UniquePositionID>
+                                      <UniqueLPCOClassID>0329L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Additional information)</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="StatementDescription" type="ds:AdditionalInformationStatementDescriptionTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>225</WCOAttributeID>
+                                      <WCOAttributeName>Additional statement text</WCOAttributeName>
+                                      <WCOAttributeDescription>Description of an additional statement</WCOAttributeDescription>
+                                      <WCOFormat>an..512</WCOFormat>
+                                      <CoreDataType>Text</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>4440</TDEDUID>
+                                      <TDEDName>FreeText.Text</TDEDName>
+                                      <DictionaryEntryName>Additional Information. Statement Description. Text</DictionaryEntryName>
+                                      <NamedComplexType>AdditionalInformationStatementDescriptionTextType</NamedComplexType>
+                                      <XMLTag>StatementDescription</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>03A</WCOClassID>
+                                      <WCOClassName>AdditionalInformation</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5342</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0329L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Additional information)</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (4451)</WCOCodeRemarks>
+                                      <WCOClassID>03A</WCOClassID>
+                                      <WCOClassName>AdditionalInformation</WCOClassName>
+                                      <WCOAttributeID>369</WCOAttributeID>
+                                      <WCOAttributeName>Additional statement type</WCOAttributeName>
+                                      <WCOAttributeDescription>Code qualifying the subject of the additional statement</WCOAttributeDescription>
+                                      <WCOFormat>an..3</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>4451</TDEDUID>
+                                      <TDEDName>Free Text. Subject.Code</TDEDName>
+                                      <DictionaryEntryName>Additional Information. Statement Type. Code</DictionaryEntryName>
+                                      <NamedComplexType>AdditionalInformationStatementTypeCodeType</NamedComplexType>
+                                      <XMLTag>StatementTypeCode</XMLTag>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5343</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0329L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Additional information)</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Classification" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>21A</WCOClassID>
+                                <WCOClassName>Classification</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Classification. Details</DictionaryEntryName>
+                                <UniqueLPCOClassID>0333L</UniqueLPCOClassID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:ClassificationIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>145</WCOAttributeID>
+                                      <WCOAttributeName>Commodity Classification</WCOAttributeName>
+                                      <WCOAttributeDescription>The non-commercial categorization of a commodity by a standard-setting organization</WCOAttributeDescription>
+                                      <WCOFormat>an..18</WCOFormat>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7357</TDEDUID>
+                                      <TDEDName>Goods Item. Type.Code</TDEDName>
+                                      <DictionaryEntryName>Classification. Identification. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>ClassificationIdentificationIDType</NamedComplexType>
+                                      <XMLTag>ID</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>21A</WCOClassID>
+                                      <WCOClassName>Classification</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>1297</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0333L</UniqueLPCOClassID>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="IdentificationTypeCode" type="ds:ClassificationIdentificationTypeCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (7143)</WCOCodeRemarks>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <WCOAttributeID>337</WCOAttributeID>
+                                      <WCOAttributeName>Commodity Classification Type</WCOAttributeName>
+                                      <WCOAttributeDescription>A qualifier to describe the commodity classification, e.g. Harmonized Tariff Schedule (HTS), Export Control Classification Code (ECCC), UNDG Code list, International Code of Zoological Nomenclature (ICZN)</WCOAttributeDescription>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOFormat>an..3</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7143</TDEDUID>
+                                      <TDEDName>Line Item. Identifier Type.Identifier</TDEDName>
+                                      <DictionaryEntryName>Classification. Identification Type. Code</DictionaryEntryName>
+                                      <NamedComplexType>ClassificationIdentificationTypeCodeType</NamedComplexType>
+                                      <XMLTag>IdentificationTypeCode</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>21A</WCOClassID>
+                                      <WCOClassName>Classification</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>1296</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0333L</UniqueLPCOClassID>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Process" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>60B</WCOClassID>
+                                <WCOClassName>Process</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Process. Details</DictionaryEntryName>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0354L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ActualTemperatureMeasure" type="ds:ProcessActualTemperatureMeasureType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>320</WCOAttributeID>
+                                      <WCOAttributeName>Actual Temperature</WCOAttributeName>
+                                      <WCOAttributeDescription>The recorded temperature</WCOAttributeDescription>
+                                      <WCOFormat>n..15</WCOFormat>
+                                      <CoreDataType>Measure</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>6246</TDEDUID>
+                                      <TDEDName>Temperature. Measure</TDEDName>
+                                      <DictionaryEntryName>Process. Actual Temperature. Measure</DictionaryEntryName>
+                                      <NamedComplexType>ProcessActualTemperatureMeasureType</NamedComplexType>
+                                      <XMLTag>ActualTemperatureMeasure</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>60B</WCOClassID>
+                                      <WCOClassName>Process</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniquePositionID>6047</UniquePositionID>
+                                      <UniqueLPCOClassID>0354L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Duration and temperature)</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="InspectionStartDateTime" type="ds:ProcessInspectionStartDateTimeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>355</WCOAttributeID>
+                                      <WCOAttributeName>Event start date and/or time</WCOAttributeName>
+                                      <WCOAttributeDescription>Date and or time at which a specified event becomes effective</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Date Time</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>2380</TDEDUID>
+                                      <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                                      <DictionaryEntryName>Process. Inspection Start. Date Time</DictionaryEntryName>
+                                      <NamedComplexType>ProcessInspectionStartDateTimeType</NamedComplexType>
+                                      <XMLTag>InspectionStartDateTime</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>60B</WCOClassID>
+                                      <WCOClassName>Process</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>5560</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0354L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Date)</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="TypeIdentificationCode" type="ds:ProcessTypeIdentificationCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (7187)</WCOCodeRemarks>
+                                      <WCOAttributeID>340</WCOAttributeID>
+                                      <WCOAttributeName>Commodity process type identification</WCOAttributeName>
+                                      <WCOAttributeDescription>A code of the process or production associated with the commodity (e.g. method of growing, pretreatment, etc)</WCOAttributeDescription>
+                                      <WCOFormat>an..17</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7187</TDEDUID>
+                                      <TDEDName>Process. Type.Code</TDEDName>
+                                      <DictionaryEntryName>Process. Type Identification. Code</DictionaryEntryName>
+                                      <NamedComplexType>ProcessTypeIdentificationCodeType</NamedComplexType>
+                                      <XMLTag>TypeIdentificationCode</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>60B</WCOClassID>
+                                      <WCOClassName>Process</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniquePositionID>6048</UniquePositionID>
+                                      <UniqueLPCOClassID>0354L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Treatment)</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="DurationDateTime" type="ds:ProcessDurationDateTimeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>269</WCOAttributeID>
+                                      <WCOAttributeName>Commodity Process Duration</WCOAttributeName>
+                                      <WCOAttributeDescription>The date on which the process associated with the commodity was performed</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Date Time</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>2380</TDEDUID>
+                                      <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                                      <DictionaryEntryName>Process. Duration. Date Time</DictionaryEntryName>
+                                      <NamedComplexType>ProcessDurationDateTimeType</NamedComplexType>
+                                      <XMLTag>DurationDateTime</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>60B</WCOClassID>
+                                      <WCOClassName>Process</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniquePositionID>6049</UniquePositionID>
+                                      <UniqueLPCOClassID>0354L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>III. Disinfestation and/or Disinfection Treatment (Duration and temperature)</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Product" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>46B</WCOClassID>
+                                <WCOClassName>Product</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Product. Details</DictionaryEntryName>
+                                <UniqueLPCOClassID>0357L</UniqueLPCOClassID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:ProductIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>147</WCOAttributeID>
+                                      <WCOAttributeName>Identity number</WCOAttributeName>
+                                      <WCOAttributeDescription>Numbers or characters used to identity an object, for example the unique number affixed by the manufacturer to a product for identification purposes</WCOAttributeDescription>
+                                      <WCOFormat>an..25</WCOFormat>
+                                      <CoreDataType>Identifier</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7402</TDEDUID>
+                                      <TDEDName>Object.Identifier</TDEDName>
+                                      <DictionaryEntryName>Product. Identification. Identifier</DictionaryEntryName>
+                                      <NamedComplexType>ProductIdentificationIDType</NamedComplexType>
+                                      <XMLTag>ID</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>46B</WCOClassID>
+                                      <WCOClassName>Product</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>4379</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0357L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>Botanical name of plants</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="IdentifierTypeCode" type="ds:ProductIdentifierTypeCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (7143)</WCOCodeRemarks>
+                                      <WCOAttributeID>338</WCOAttributeID>
+                                      <WCOAttributeName>Commodity Identifier Type</WCOAttributeName>
+                                      <WCOAttributeDescription>A code identifying the type of commodity identifier</WCOAttributeDescription>
+                                      <WCOFormat>an..3</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7143</TDEDUID>
+                                      <TDEDName>Line Item. Identifier Type.Identifier</TDEDName>
+                                      <DictionaryEntryName>Product. Identifier Type. Code</DictionaryEntryName>
+                                      <NamedComplexType>ProductIDTypeCodeType</NamedComplexType>
+                                      <XMLTag>IDTypeCode</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>46B</WCOClassID>
+                                      <WCOClassName>Product</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>4380</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0357L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>Botanical name of plants</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ProductName" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>47B</WCOClassID>
+                                <WCOClassName>ProductName</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Product Name. Details</DictionaryEntryName>
+                                <UniqueLPCOClassID>0359L</UniqueLPCOClassID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Description" type="ds:ProductNameDescriptionTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOAttributeID>258</WCOAttributeID>
+                                      <WCOAttributeName>Commodity name</WCOAttributeName>
+                                      <WCOAttributeDescription>A name or a term that identifies the goods assigned by a seller as distinct from those of other sellers also known in legal terms as trademark, that helps to identify one item, a family of items, or all items of that seller</WCOAttributeDescription>
+                                      <WCOFormat>an..35</WCOFormat>
+                                      <CoreDataType>Text</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7002</TDEDUID>
+                                      <TDEDName>Goods Item. Description.Text</TDEDName>
+                                      <DictionaryEntryName>Product Name. Description. Text</DictionaryEntryName>
+                                      <NamedComplexType>ProductNameDescriptionTextType</NamedComplexType>
+                                      <XMLTag>Description</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>47B</WCOClassID>
+                                      <WCOClassName>ProductName</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>4374</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0359L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>Name of produce and quantity declared</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="QualifierCode" type="ds:ProductNameQualifierCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOCodeRemarks>EDIFACT codes (7081)</WCOCodeRemarks>
+                                      <WCOAttributeID>335</WCOAttributeID>
+                                      <WCOAttributeName>Commodity Name Qualifier</WCOAttributeName>
+                                      <WCOAttributeDescription>A qualifier to describe the commodity name, e.g. common name, registered name, brand name</WCOAttributeDescription>
+                                      <WCOFormat>an..3</WCOFormat>
+                                      <CoreDataType>Code</CoreDataType>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <TDEDUID>7081</TDEDUID>
+                                      <TDEDName>Line Item. Characteristic.Code</TDEDName>
+                                      <DictionaryEntryName>Product Name. Qualifier. Code</DictionaryEntryName>
+                                      <NamedComplexType>ProductNameQualifierCodeType</NamedComplexType>
+                                      <XMLTag>QualifierCode</XMLTag>
+                                    </xs:documentation>
+                                    <xs:documentation xml:lang="EN">
+                                      <WCOClassID>47B</WCOClassID>
+                                      <WCOClassName>ProductName</WCOClassName>
+                                    </xs:documentation>
+                                    <xs:documentation>
+                                      <SuperClassTypeNone>X</SuperClassTypeNone>
+                                      <UniquePositionID>4375</UniquePositionID>
+                                      <BIPUsageLPCO>X</BIPUsageLPCO>
+                                      <UniqueLPCOClassID>0359L</UniqueLPCOClassID>
+                                      <e-Phyto_BoxName>Name of produce and quantity declared</e-Phyto_BoxName>
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GoodsMeasure" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>65A</WCOClassID>
+                          <WCOClassName>GoodsMeasure</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Goods Measure. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0395L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="GrossMassMeasure" type="ds:GoodsMeasureGrossMassMeasureType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>126</WCOAttributeID>
+                                <WCOAttributeName>Gross weight item level</WCOAttributeName>
+                                <WCOAttributeDescription>Weight of line item including packaging but excluding the transport equipment</WCOAttributeDescription>
+                                <WCOFormat>n..16,6</WCOFormat>
+                                <CoreDataType>Measure</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>6018</TDEDUID>
+                                <TDEDName>LineItem.GrossWeight.Measure</TDEDName>
+                                <DictionaryEntryName>Goods Measure. Gross Mass. Measure</DictionaryEntryName>
+                                <NamedComplexType>GoodsMeasureGrossMassMeasureType</NamedComplexType>
+                                <XMLTag>GrossMassMeasure</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>65A</WCOClassID>
+                                <WCOClassName>GoodsMeasure</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1636</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0395L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="NetNetWeightMeasure" type="ds:GoodsMeasureNetNetWeightMeasureType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>128</WCOAttributeID>
+                                <WCOAttributeName>Net net weight</WCOAttributeName>
+                                <WCOAttributeDescription>Weight (mass) of the goods themselves without any packing</WCOAttributeDescription>
+                                <WCOFormat>n..16,6</WCOFormat>
+                                <CoreDataType>Measure</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>6048</TDEDUID>
+                                <TDEDName>NetNetWeight.Measure</TDEDName>
+                                <DictionaryEntryName>Goods Measure. Net Net Weight. Measure</DictionaryEntryName>
+                                <NamedComplexType>GoodsMeasureNetNetWeightMeasureType</NamedComplexType>
+                                <XMLTag>NetNetWeightMeasure</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>65A</WCOClassID>
+                                <WCOClassName>GoodsMeasure</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1637</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0395L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="NetVolumeMeasure" type="ds:GoodsMeasureNetVolumeMeasureType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>474</WCOAttributeID>
+                                <WCOAttributeName>Net volume</WCOAttributeName>
+                                <WCOAttributeDescription>The measure of the gross volume of the item, excluding unoccupied volume of the packaging</WCOAttributeDescription>
+                                <WCOFormat>n..16,6</WCOFormat>
+                                <CoreDataType>Measure</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>6314</TDEDUID>
+                                <TDEDName>Measurement. Value.Measure</TDEDName>
+                                <DictionaryEntryName>Goods Measure. Net Volume. Measure</DictionaryEntryName>
+                                <NamedComplexType>GoodsMeasureNetVolumeMeasureType</NamedComplexType>
+                                <XMLTag>NetVolumeMeasure</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>65A</WCOClassID>
+                                <WCOClassName>GoodsMeasure</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>6865</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0395L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Origin" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>92A</WCOClassID>
+                          <WCOClassName>Origin</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Origin. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0405L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CountryCode" type="ds:OriginCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOAttributeID>063</WCOAttributeID>
+                                <WCOAttributeName>Country of origin, coded</WCOAttributeName>
+                                <WCOAttributeDescription>To identify the country in which the goods have been produced or manufactured, according to criteria laid down for the application of the Customs tariff or quantitative restrictions, or any measure related to trade</WCOAttributeDescription>
+                                <WCOFormat>a2</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                                <DictionaryEntryName>Origin. Country. Code</DictionaryEntryName>
+                                <NamedComplexType>OriginCountryCodeType</NamedComplexType>
+                                <XMLTag>CountryCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>92A</WCOClassID>
+                                <WCOClassName>Origin</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1952</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0405L</UniqueLPCOClassID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="RegionID" type="ds:OriginRegionIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>066</WCOAttributeID>
+                                <WCOAttributeName>Region of origin, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Region in which the goods have been produced or manufactured, according to criteria laid down for the purposes of application of the Customs tariff, or quantitative restrictions, or of any other measure related to trade</WCOAttributeDescription>
+                                <WCOFormat>an..9</WCOFormat>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3229</TDEDUID>
+                                <TDEDName>Country.Subdivision.Identifier</TDEDName>
+                                <DictionaryEntryName>Origin. Region. Identifier</DictionaryEntryName>
+                                <NamedComplexType>OriginRegionIDType</NamedComplexType>
+                                <XMLTag>RegionID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>92A</WCOClassID>
+                                <WCOClassName>Origin</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0405L</UniqueLPCOClassID>
+                                <UniquePositionID>6072</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Packaging" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>93A</WCOClassID>
+                          <WCOClassName>Packaging</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Packaging. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0406L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="MarksNumbersID" type="ds:PackagingMarksNumbersIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>142</WCOAttributeID>
+                                <WCOAttributeName>Shipping marks</WCOAttributeName>
+                                <WCOAttributeDescription>Free form description of the marks and numbers on a transport unit or package</WCOAttributeDescription>
+                                <WCOFormat>an..512</WCOFormat>
+                                <WCOCodeRemarks>UN/ECE Recommendation 15</WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>7102</TDEDUID>
+                                <TDEDName>GoodsItem.ShippingMarks.Text</TDEDName>
+                                <DictionaryEntryName>Packaging. Marks Numbers. Identifier</DictionaryEntryName>
+                                <NamedComplexType>PackagingMarksNumbersIDType</NamedComplexType>
+                                <XMLTag>MarksNumbersID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>93A</WCOClassID>
+                                <WCOClassName>Packaging</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1644</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0406L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Distinguishing marks</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="QuantityQuantity" type="ds:PackagingQuantityQuantityType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>144</WCOAttributeID>
+                                <WCOAttributeName>Number of packages</WCOAttributeName>
+                                <WCOAttributeDescription>Number of individual items packaged in such a way that they cannot be divided without first undoing the packing</WCOAttributeDescription>
+                                <WCOFormat>n..8</WCOFormat>
+                                <CoreDataType>Quantity</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>6061</TDEDUID>
+                                <TDEDName>Quantity.Quantity</TDEDName>
+                                <DictionaryEntryName>Packaging. Quantity. Quantity</DictionaryEntryName>
+                                <NamedComplexType>PackagingQuantityQuantityType</NamedComplexType>
+                                <XMLTag>QuantityQuantity</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>93A</WCOClassID>
+                                <WCOClassName>Packaging</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1645</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0406L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Number and description of packages</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Consignor" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>30A</WCOClassID>
+                    <WCOClassName>Consignor</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Consignor. Details</DictionaryEntryName>
+                    <UniqueLPCOClassID>0474L</UniqueLPCOClassID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                    <e-Phyto_BoxName>Name and address of exporter</e-Phyto_BoxName>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Name" type="ds:ConsignorNameTextType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..70</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3036</TDEDUID>
+                          <TDEDName>Party.Name.Text</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S008</SuperClassElementID>
+                          <SuperClassElementName>name</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>R020</WCOAttributeID>
+                          <WCOAttributeName>Consignor - name</WCOAttributeName>
+                          <WCOAttributeDescription>Name of the party consigning goods as stipulated in the transport contract by the party ordering transport</WCOAttributeDescription>
+                          <CoreDataType>Text</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Consignor. Name. Text</DictionaryEntryName>
+                          <NamedComplexType>ConsignorNameTextType</NamedComplexType>
+                          <XMLTag>Name</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>30A</WCOClassID>
+                          <WCOClassName>Consignor</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <UniquePositionID>1796</UniquePositionID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniqueLPCOClassID>0474L</UniqueLPCOClassID>
+                          <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Address" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>04A</WCOClassID>
+                          <WCOClassName>Address</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Address. Details</DictionaryEntryName>
+                          <UniqueLPCOClassID>0476L</UniqueLPCOClassID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CityName" type="ds:AddressCityNameTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>241</WCOAttributeID>
+                                <WCOAttributeName>City name</WCOAttributeName>
+                                <WCOAttributeDescription>Name of a city</WCOAttributeDescription>
+                                <WCOFormat>an..35</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3164</TDEDUID>
+                                <TDEDName>Address.City.Name</TDEDName>
+                                <DictionaryEntryName>Address. City. Text</DictionaryEntryName>
+                                <NamedComplexType>AddressCityTextType</NamedComplexType>
+                                <XMLTag>City</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1798</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0476L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="CountryCode" type="ds:AddressCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOAttributeID>242</WCOAttributeID>
+                                <WCOAttributeName>Country, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Identification of the name of the country or other geographical entity as specified in ISO 3166 and UN/ECE Rec 3</WCOAttributeDescription>
+                                <WCOFormat>a2</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                                <DictionaryEntryName>Address. Country. Code</DictionaryEntryName>
+                                <NamedComplexType>AddressCountryCodeType</NamedComplexType>
+                                <XMLTag>CountryCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1799</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0476L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="CountrySubDivisionCode" type="ds:AddressCountrySubDivisionCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3229) = ISO 3166-2 2-alpha code or User codes</WCOCodeRemarks>
+                                <WCOAttributeID>244</WCOAttributeID>
+                                <WCOAttributeName>Country sub-entity identification</WCOAttributeName>
+                                <WCOAttributeDescription>Code specifying the name of a country subdivision</WCOAttributeDescription>
+                                <WCOFormat>an..9</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3229</TDEDUID>
+                                <TDEDName>Country.Subdivision.Identifier</TDEDName>
+                                <DictionaryEntryName>Address. Country Sub Division. Code</DictionaryEntryName>
+                                <NamedComplexType>AddressCountrySubDivisionCodeType</NamedComplexType>
+                                <XMLTag>CountrySubDivisionCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1800</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0476L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Line" type="ds:AddressLineTextType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>239</WCOAttributeID>
+                                <WCOAttributeName>Street and number/P.O. Box</WCOAttributeName>
+                                <WCOAttributeDescription>Specification of the postal delivery point such as street and number or post office box</WCOAttributeDescription>
+                                <WCOFormat>an..256</WCOFormat>
+                                <CoreDataType>Text</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3042</TDEDUID>
+                                <TDEDName>Postal.DeliveryPoint.Text</TDEDName>
+                                <DictionaryEntryName>Address. Line. Text</DictionaryEntryName>
+                                <NamedComplexType>AddressLineTextType</NamedComplexType>
+                                <XMLTag>Line</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1802</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0476L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="PostcodeID" type="ds:AddressPostcodeIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>245</WCOAttributeID>
+                                <WCOAttributeName>Postcode identification</WCOAttributeName>
+                                <WCOAttributeDescription>Code specifying a postal zone or address</WCOAttributeDescription>
+                                <WCOFormat>an..17</WCOFormat>
+                                <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3251</TDEDUID>
+                                <TDEDName>Postal.Identifier</TDEDName>
+                                <DictionaryEntryName>Address. Postcode. Identifier</DictionaryEntryName>
+                                <NamedComplexType>AddressPostcodeIDType</NamedComplexType>
+                                <XMLTag>PostcodeID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>04A</WCOClassID>
+                                <WCOClassName>Address</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>1803</UniquePositionID>
+                                <BIPUsageLPCO>X</BIPUsageLPCO>
+                                <UniqueLPCOClassID>0476L</UniqueLPCOClassID>
+                                <e-Phyto_BoxName>Declared name and address of consignee</e-Phyto_BoxName>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Control" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>38A</WCOClassID>
+                    <WCOClassName>Control</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Control. Details</DictionaryEntryName>
+                    <UniqueLPCOClassID>0480L</UniqueLPCOClassID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InspectionEndDateTime" type="ds:ControlInspectionEndDateTimeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>356</WCOAttributeID>
+                          <WCOAttributeName>Event end date and/or time</WCOAttributeName>
+                          <WCOAttributeDescription>Date and or time at which a specified event is completed</WCOAttributeDescription>
+                          <WCOFormat>an..35</WCOFormat>
+                          <CoreDataType>Date Time</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>2380</TDEDUID>
+                          <TDEDName>Date Or Time Or Period. Text</TDEDName>
+                          <DictionaryEntryName>Control. Inspection End. Date Time</DictionaryEntryName>
+                          <NamedComplexType>ControlInspectionEndDateTimeType</NamedComplexType>
+                          <XMLTag>InspectionEndDateTime</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>38A</WCOClassID>
+                          <WCOClassName>Control</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <UniquePositionID>1811</UniquePositionID>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniqueLPCOClassID>0480L</UniqueLPCOClassID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GoodsConsignedPlace" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC3</SuperClassID>
+                    <SuperClassName>Location</SuperClassName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>63A</WCOClassID>
+                    <WCOClassName>GoodsConsignedPlace</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Goods Consigned Place. Details</DictionaryEntryName>
+                    <UniqueLPCOClassID>0506L</UniqueLPCOClassID>
+                    <BIPUsageLPCO>X</BIPUsageLPCO>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:GoodsConsignedPlaceIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3225</TDEDUID>
+                          <TDEDName>Location.Identifier</TDEDName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>UN/LOCODE (an..5) + user codes (an..30)</WCOCodeRemarks>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassID>SC3</SuperClassID>
+                          <SuperClassName>Location</SuperClassName>
+                          <SuperClassElementID>S003</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>L024</WCOAttributeID>
+                          <WCOAttributeName>Place or country whence consigned, coded</WCOAttributeName>
+                          <WCOAttributeDescription>Identification of the place in country or country from which the goods were initially despatched to the importing country</WCOAttributeDescription>
+                          <WCOCodeRemarks>Or ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Goods Consigned Place. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>GoodsConsignedPlaceIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeLocation>X</SuperClassTypeLocation>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>63A</WCOClassID>
+                          <WCOClassName>GoodsConsignedPlace</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <BIPUsageLPCO>X</BIPUsageLPCO>
+                          <UniquePositionID>1865</UniquePositionID>
+                          <UniqueLPCOClassID>0506L</UniqueLPCOClassID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

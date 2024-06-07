@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:MSW2B_Overall:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:MSW2B_Overall_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:MSW2B_Overall:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:MSW2B_Overall_DS:1" schemaLocation="MSW2B_Overall_1p0_urn_wco_datamodel_WCO_MSW2B_Overall_DS_1.xsd"/>
+  <xs:element name="Response">
+    <xs:annotation>
+      <xs:documentation>
+        <SuperClassID>SC1</SuperClassID>
+        <SuperClassName>RootDocument</SuperClassName>
+        <WCOClassID>07B</WCOClassID>
+        <WCOClassName>Response</WCOClassName>
+        <DictionaryEntryName>Content Information Structure. Details</DictionaryEntryName>
+        <UniqueResClassID>0001R</UniqueResClassID>
+        <BIPUsageResponse>X</BIPUsageResponse>
+        <MswStatusRES>X</MswStatusRES>
+        <MswStatusDEC>X</MswStatusDEC>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Function" type="ds:ResponseFunctionCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (1225)</WCOCodeRemarks>
+              <WCOFormat>n..2</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1225</TDEDUID>
+              <TDEDName>Document.Function.Code</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S028</SuperClassElementID>
+              <SuperClassElementName>function</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>017</WCOAttributeID>
+              <WCOAttributeName>Message function, coded</WCOAttributeName>
+              <WCOAttributeDescription>Code indicating the function of a document</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Function. Code</DictionaryEntryName>
+              <NamedComplexType>DeclarationFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <DictionaryEntryName>InterGov. Function. Code</DictionaryEntryName>
+              <NamedComplexType>InterGovFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <DictionaryEntryName>Response. Function. Code</DictionaryEntryName>
+              <NamedComplexType>ResponseFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <DictionaryEntryName>LPCO. Function. Code</DictionaryEntryName>
+              <NamedComplexType>LPCOFunctionCodeType</NamedComplexType>
+              <XMLTag>FunctionCode</XMLTag>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>07B</WCOClassID>
+              <WCOClassName>Response</WCOClassName>
+              <UniquePositionID>341</UniquePositionID>
+              <UniqueResClassID>0001R</UniqueResClassID>
+              <MswStatusDEC>X</MswStatusDEC>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="FunctionalReferenceID" type="ds:ResponseFunctionalReferenceIDType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOFormat>an..70</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1154</TDEDUID>
+              <TDEDName>Reference. Identifier</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S030</SuperClassElementID>
+              <SuperClassElementName>functionalReference</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>D026</WCOAttributeID>
+              <WCOAttributeName>Functional reference number</WCOAttributeName>
+              <WCOAttributeDescription>Reference number identifying a specific information exchange</WCOAttributeDescription>
+              <CoreDataType>Identifier</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Functional Reference. Identifier</DictionaryEntryName>
+              <NamedComplexType>DeclarationFunctionalReferenceIDType</NamedComplexType>
+              <XMLTag>FunctionalReferenceID</XMLTag>
+              <DictionaryEntryName>InterGov. Functional Reference. Identifier</DictionaryEntryName>
+              <NamedComplexType>InterGovFunctionalReferenceIDType</NamedComplexType>
+              <XMLTag>FunctionalReferenceID</XMLTag>
+              <DictionaryEntryName>Response. Functional Reference. Identifier</DictionaryEntryName>
+              <NamedComplexType>ResponseFunctionalReferenceIDType</NamedComplexType>
+              <XMLTag>FunctionalReferenceID</XMLTag>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>07B</WCOClassID>
+              <WCOClassName>Response</WCOClassName>
+              <UniquePositionID>338</UniquePositionID>
+              <UniqueResClassID>0001R</UniqueResClassID>
+              <MswStatusRES>X</MswStatusRES>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="IssueDateTime" type="ds:ResponseIssueDateTimeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOFormat>an..35</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>2380</TDEDUID>
+              <TDEDName>Date Or Time Or Period. Text</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S032</SuperClassElementID>
+              <SuperClassElementName>issue</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>D011</WCOAttributeID>
+              <WCOAttributeName>Document issuing date</WCOAttributeName>
+              <WCOAttributeDescription>Date at which a document was issued and when appropriate, signed or otherwise authenticated</WCOAttributeDescription>
+              <WCOAttributeID>D029</WCOAttributeID>
+              <WCOAttributeName>Response issuing date</WCOAttributeName>
+              <WCOAttributeDescription>Date at which a response was issued and when appropriate, signed or otherwise authenticated</WCOAttributeDescription>
+              <CoreDataType>Date Time</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Issue. Date Time</DictionaryEntryName>
+              <NamedComplexType>DeclarationIssueDateTimeType</NamedComplexType>
+              <XMLTag>IssueDateTime</XMLTag>
+              <DictionaryEntryName>LPCO. Issue. Date Time</DictionaryEntryName>
+              <NamedComplexType>LPCOIssueDateTimeType</NamedComplexType>
+              <XMLTag>IssueDateTime</XMLTag>
+              <DictionaryEntryName>Response. Issue. Date Time</DictionaryEntryName>
+              <NamedComplexType>ResponseIssueDateTimeType</NamedComplexType>
+              <XMLTag>IssueDateTime</XMLTag>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>07B</WCOClassID>
+              <WCOClassName>Response</WCOClassName>
+              <UniquePositionID>335</UniquePositionID>
+              <UniqueResClassID>0001R</UniqueResClassID>
+              <MswStatusRES>X</MswStatusRES>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="TypeCode" type="ds:ResponseTypeCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (1001) or User codes</WCOCodeRemarks>
+              <WCOFormat>an..3</WCOFormat>
+            </xs:documentation>
+            <xs:documentation>
+              <TDEDUID>1001</TDEDUID>
+              <TDEDName>Document. Type.Code</TDEDName>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+              <SuperClassElementID>S042</SuperClassElementID>
+              <SuperClassElementName>type</SuperClassElementName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOAttributeID>D013</WCOAttributeID>
+              <WCOAttributeName>Document name, coded</WCOAttributeName>
+              <WCOAttributeDescription>Code specifying the name of a document</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Declaration. Type. Code</DictionaryEntryName>
+              <NamedComplexType>DeclarationTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <DictionaryEntryName>InterGov. Type. Code</DictionaryEntryName>
+              <NamedComplexType>InterGovTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <DictionaryEntryName>Response. Type. Code</DictionaryEntryName>
+              <NamedComplexType>ResponseTypeCodeType</NamedComplexType>
+              <XMLTag>TypeCode</XMLTag>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <SuperClassTypeDocument>X</SuperClassTypeDocument>
+              <WCOClassID>07B</WCOClassID>
+              <WCOClassName>Response</WCOClassName>
+              <UniquePositionID>337</UniquePositionID>
+              <UniqueResClassID>0001R</UniqueResClassID>
+              <MswStatusRES>X</MswStatusRES>
+              <MswStatusDEC>X</MswStatusDEC>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="Submitter" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation>
+              <SuperClassID>SC4</SuperClassID>
+              <SuperClassName>Party</SuperClassName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>17B</WCOClassID>
+              <WCOClassName>Submitter</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Submitter. Details</DictionaryEntryName>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <UniqueResClassID>1846R</UniqueResClassID>
+              <MswStatusDEC>X</MswStatusDEC>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="ds:SubmitterIdentificationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..35</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>3039</TDEDUID>
+                    <TDEDName>Party. Identifier</TDEDName>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <SuperClassElementID>S009</SuperClassElementID>
+                    <SuperClassElementName>identification</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>R059</WCOAttributeID>
+                    <WCOAttributeName>Submitter, coded</WCOAttributeName>
+                    <WCOAttributeDescription>The identifier of the party who presents a document or data for the approval, consideration, or decision of another</WCOAttributeDescription>
+                    <WCOCodeRemarks>International codes (e.g. DUNS, EAN) or user codes</WCOCodeRemarks>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Submitter. Identification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>SubmitterIdentificationIDType</NamedComplexType>
+                    <XMLTag>ID</XMLTag>
+                    <SuperClassTypeParty>X</SuperClassTypeParty>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>17B</WCOClassID>
+                    <WCOClassName>Submitter</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <BIPUsageResponse>X</BIPUsageResponse>
+                    <UniquePositionID>55</UniquePositionID>
+                    <UniqueResClassID>1846R</UniqueResClassID>
+                    <MswStatusDEC>X</MswStatusDEC>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdditionalInformation" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>03A</WCOClassID>
+              <WCOClassName>AdditionalInformation</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Additional Information. Details</DictionaryEntryName>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <UniqueResClassID>0030R</UniqueResClassID>
+              <MswStatusDEC>X</MswStatusDEC>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StatementDescription" type="ds:AdditionalInformationStatementDescriptionTextType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>225</WCOAttributeID>
+                    <WCOAttributeName>Additional statement text</WCOAttributeName>
+                    <WCOAttributeDescription>Description of an additional statement</WCOAttributeDescription>
+                    <WCOFormat>an..512</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>4440</TDEDUID>
+                    <TDEDName>FreeText.Text</TDEDName>
+                    <DictionaryEntryName>Additional Information. Statement Description. Text</DictionaryEntryName>
+                    <NamedComplexType>AdditionalInformationStatementDescriptionTextType</NamedComplexType>
+                    <XMLTag>StatementDescription</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>03A</WCOClassID>
+                    <WCOClassName>AdditionalInformation</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>422</UniquePositionID>
+                    <BIPUsageResponse>X</BIPUsageResponse>
+                    <UniqueResClassID>0030R</UniqueResClassID>
+                    <MswStatusDEC>X</MswStatusDEC>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (4451)</WCOCodeRemarks>
+                    <WCOClassID>03A</WCOClassID>
+                    <WCOClassName>AdditionalInformation</WCOClassName>
+                    <WCOAttributeID>369</WCOAttributeID>
+                    <WCOAttributeName>Additional statement type</WCOAttributeName>
+                    <WCOAttributeDescription>Code qualifying the subject of the additional statement</WCOAttributeDescription>
+                    <WCOFormat>an..3</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>4451</TDEDUID>
+                    <TDEDName>Free Text. Subject.Code</TDEDName>
+                    <DictionaryEntryName>Additional Information. Statement Type. Code</DictionaryEntryName>
+                    <NamedComplexType>AdditionalInformationStatementTypeCodeType</NamedComplexType>
+                    <XMLTag>StatementTypeCode</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>423</UniquePositionID>
+                    <BIPUsageResponse>X</BIPUsageResponse>
+                    <UniqueResClassID>0030R</UniqueResClassID>
+                    <MswStatusDEC>X</MswStatusDEC>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Declaration" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <SuperClassID>SC1</SuperClassID>
+              <SuperClassName>RootDocument</SuperClassName>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>RelatedDeclaration</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Related Declaration. Details</DictionaryEntryName>
+              <UniqueResClassID>0851R</UniqueResClassID>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <MswStatusRES>X</MswStatusRES>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FunctionalReferenceID" type="ds:DeclarationFunctionalReferenceIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOFormat>an..70</WCOFormat>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>1154</TDEDUID>
+                    <TDEDName>Reference. Identifier</TDEDName>
+                    <SuperClassID>SC1</SuperClassID>
+                    <SuperClassName>RootDocument</SuperClassName>
+                    <SuperClassElementID>S030</SuperClassElementID>
+                    <SuperClassElementName>functionalReference</SuperClassElementName>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>D026</WCOAttributeID>
+                    <WCOAttributeName>Functional reference number</WCOAttributeName>
+                    <WCOAttributeDescription>Reference number identifying a specific information exchange</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Declaration. Functional Reference. Identifier</DictionaryEntryName>
+                    <NamedComplexType>DeclarationFunctionalReferenceIDType</NamedComplexType>
+                    <XMLTag>FunctionalReferenceID</XMLTag>
+                    <SuperClassTypeDocument>X</SuperClassTypeDocument>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>RelatedDeclaration</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>4352</UniquePositionID>
+                    <UniqueResClassID>0851R</UniqueResClassID>
+                    <BIPUsageResponse>X</BIPUsageResponse>
+                    <MswStatusRES>X</MswStatusRES>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Error" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>53A</WCOClassID>
+              <WCOClassName>Error</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Error. Details</DictionaryEntryName>
+              <BIPUsageResponse>X</BIPUsageResponse>
+              <UniqueResClassID>0956R</UniqueResClassID>
+              <MswStatusDEC>X</MswStatusDEC>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Description" type="ds:ErrorDescriptionTextType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>488</WCOAttributeID>
+                    <WCOAttributeName>Error description</WCOAttributeName>
+                    <WCOAttributeDescription>Description of a data validation error</WCOAttributeDescription>
+                    <WCOFormat>an..512</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>4440</TDEDUID>
+                    <TDEDName>FreeText.Text</TDEDName>
+                    <DictionaryEntryName>Error. Description. Text</DictionaryEntryName>
+                    <NamedComplexType>ErrorDescriptionTextType</NamedComplexType>
+                    <XMLTag>Description</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>53A</WCOClassID>
+                    <WCOClassName>Error</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <BIPUsageResponse>X</BIPUsageResponse>
+                    <UniqueResClassID>0956R</UniqueResClassID>
+                    <UniquePositionID>7218</UniquePositionID>
+                    <MswStatusDEC>X</MswStatusDEC>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ValidationCode" type="ds:ErrorValidationCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>User codes</WCOCodeRemarks>
+                    <WCOAttributeID>377</WCOAttributeID>
+                    <WCOAttributeName>Error, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Code specifying a data validation error</WCOAttributeDescription>
+                    <WCOFormat>an..8</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>9321</TDEDUID>
+                    <TDEDName>Application. Error.Code</TDEDName>
+                    <DictionaryEntryName>Error. Validation. Code</DictionaryEntryName>
+                    <NamedComplexType>ErrorValidationCodeType</NamedComplexType>
+                    <XMLTag>ValidationCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>53A</WCOClassID>
+                    <WCOClassName>Error</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <BIPUsageResponse>X</BIPUsageResponse>
+                    <UniqueResClassID>0956R</UniqueResClassID>
+                    <UniquePositionID>4329</UniquePositionID>
+                    <MswStatusDEC>X</MswStatusDEC>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Pointer" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>97A</WCOClassID>
+                    <WCOClassName>Pointer</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Pointer. Details</DictionaryEntryName>
+                    <BIPUsageResponse>X</BIPUsageResponse>
+                    <UniqueResClassID>0957R</UniqueResClassID>
+                    <MswStatusDEC>X</MswStatusDEC>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SequenceNumeric" type="ds:PointerSequenceNumericType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>006</WCOAttributeID>
+                          <WCOAttributeName>Sequence number</WCOAttributeName>
+                          <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                          <WCOFormat>n..5</WCOFormat>
+                          <CoreDataType>Numeric</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>1050</TDEDUID>
+                          <TDEDName>Sequence. Position.Identifier</TDEDName>
+                          <DictionaryEntryName>Pointer. Sequence. Numeric</DictionaryEntryName>
+                          <NamedComplexType>PointerSequenceNumericType</NamedComplexType>
+                          <XMLTag>SequenceNumeric</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>97A</WCOClassID>
+                          <WCOClassName>Pointer</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageResponse>X</BIPUsageResponse>
+                          <UniqueResClassID>0957R</UniqueResClassID>
+                          <UniquePositionID>4332</UniquePositionID>
+                          <MswStatusDEC>X</MswStatusDEC>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="TagID" type="ds:PointerTagIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOAttributeID>381</WCOAttributeID>
+                          <WCOAttributeName>Tag identifier</WCOAttributeName>
+                          <WCOAttributeDescription>Data element tag identifier</WCOAttributeDescription>
+                          <WCOFormat>an..4</WCOFormat>
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>9162</TDEDUID>
+                          <TDEDName>Data Element. Tag.Identifier</TDEDName>
+                          <DictionaryEntryName>Pointer. Tag. Identifier</DictionaryEntryName>
+                          <NamedComplexType>PointerTagIDType</NamedComplexType>
+                          <XMLTag>TagID</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>97A</WCOClassID>
+                          <WCOClassName>Pointer</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassTypeNone>X</SuperClassTypeNone>
+                          <BIPUsageResponse>X</BIPUsageResponse>
+                          <UniqueResClassID>0957R</UniqueResClassID>
+                          <UniquePositionID>4330</UniquePositionID>
+                          <MswStatusDEC>X</MswStatusDEC>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

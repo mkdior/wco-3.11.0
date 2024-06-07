@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:clm63055="urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="urn:un:unece:uncefact:codelist:standard:UNECE:AgencyIdentificationCode:D12B"
+    elementFormDefault="qualified"
+    version="3.2">
+  <xs:simpleType name="AgencyIdentificationCodeContentType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+</xs:schema>

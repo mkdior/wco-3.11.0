@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:DocumentMetaData:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:MetaData_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:DocumentMetaData:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:MetaData_DS:1" schemaLocation="DocumentMetaData_1p0_urn_wco_datamodel_WCO_MetaData_DS_1.xsd"/>
+  <xs:element name="MetaData">
+    <xs:annotation>
+      <xs:documentation xml:lang="EN">
+        <WCOClassID>N/A</WCOClassID>
+        <WCOClassName>DocumentMetaData</WCOClassName>
+      </xs:documentation>
+      <xs:documentation>
+        <DictionaryEntryName>Document Meta Data. Details</DictionaryEntryName>
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="WCODataModelVersionCode" type="ds:MetaDataWCODataModelVersionCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>WCO Data Model Version</WCOAttributeName>
+              <WCOAttributeDescription>The version of the WCO Data Model, e.g. 3.40</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOFormat>an..6</WCOFormat>
+              <WCOCodeRemarks>WCO code list</WCOCodeRemarks>
+              <DictionaryEntryName>Document Meta Data. WCO Data Model Version. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataWCODataModelVersionCodeType</NamedComplexType>
+              <XMLTag>WCODataModelVersionCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9010</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="WCOCategoryCode" type="ds:MetaDataWCOCategoryCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>WCO Category</WCOAttributeName>
+              <WCOAttributeDescription>The category within the WCO Data Model</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOCodeRemarks>WCO code list</WCOCodeRemarks>
+              <DictionaryEntryName>Document Meta Data. WCO Category. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataWCOCategoryCodeType</NamedComplexType>
+              <XMLTag>WCOCategoryCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9011</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="WCOTypeCode" type="ds:MetaDataWCOTypeCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>WCO Type</WCOAttributeName>
+              <CoreDataType>Code</CoreDataType>
+              <WCOCodeRemarks>WCO code list</WCOCodeRemarks>
+              <WCOFormat>an..6</WCOFormat>
+              <DictionaryEntryName>Document Meta Data. WCO Type. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataWCOTypeCodeType</NamedComplexType>
+              <XMLTag>WCOTypeCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9012</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="WCOTypeName" type="ds:MetaDataWCOTypeNameTextType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>WCO Type Name</WCOAttributeName>
+              <CoreDataType>Text</CoreDataType>
+              <DictionaryEntryName>Document Meta Data. WCO Type Name. Text</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataWCOTypeNameTextType</NamedComplexType>
+              <XMLTag>WCOTypeName</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9013</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ResponsibleCountryCode" type="ds:MetaDataResponsibleCountryCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+            </xs:documentation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Responsible Country</WCOAttributeName>
+              <WCOAttributeDescription>Code to identify the country controlling the specification, maintenance and publication of the message type</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOFormat>a2</WCOFormat>
+              <DictionaryEntryName>Document Meta Data. Responsible Country. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataResponsibleCountryCodeType</NamedComplexType>
+              <XMLTag>ResponsibleCountryCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9014</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ResponsibleAgencyCode" type="ds:MetaDataResponsibleAgencyCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOCodeRemarks>EDIFACT codes (0051)</WCOCodeRemarks>
+            </xs:documentation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Responsible Agency</WCOAttributeName>
+              <WCOAttributeDescription>Code to identify the agency controlling the specification, maintenance and publication of the message type</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOFormat>an..2</WCOFormat>
+              <DictionaryEntryName>Document Meta Data. Responsible Agency. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataResponsibleAgencyCodeType</NamedComplexType>
+              <XMLTag>ResponsibleAgencyCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9015</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="ResponsibleAgencyName" type="ds:MetaDataResponsibleAgencyNameTextType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Responsible Agency Name</WCOAttributeName>
+              <WCOAttributeDescription>Name to identify the agency controlling the specification, maintenance and publication of the message type</WCOAttributeDescription>
+              <CoreDataType>Text</CoreDataType>
+              <WCOFormat>an..70</WCOFormat>
+              <DictionaryEntryName>Document Meta Data. ResponsibleAgencyName. Text</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataResponsibleAgencyNameTextType</NamedComplexType>
+              <XMLTag>ResponsibleAgencyName</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9016</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="AgencyAssignedCustomizationCode" type="ds:MetaDataAgencyAssignedCustomizationCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Agency Assigned Customization</WCOAttributeName>
+              <WCOAttributeDescription>A code assigned by the association responsible for the design and maintenance of the message type concerned, which further identifies the message</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOFormat>an..6</WCOFormat>
+              <WCOCodeRemarks>User codes</WCOCodeRemarks>
+              <DictionaryEntryName>Document Meta Data. Agency Assigned Customization. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataAgencyAssignedCustomizationCodeType</NamedComplexType>
+              <XMLTag>AgencyAssignedCustomizationCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9000</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="AgencyAssignedCustomizationVersionCode" type="ds:MetaDataAgencyAssignedCustomizationVersionCodeType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Agency Assigned Customization Version</WCOAttributeName>
+              <WCOAttributeDescription>Identification of the version of the agency assigned customization, coded</WCOAttributeDescription>
+              <CoreDataType>Code</CoreDataType>
+              <WCOFormat>an..3</WCOFormat>
+              <WCOCodeRemarks>User codes</WCOCodeRemarks>
+              <DictionaryEntryName>Document Meta Data. Agency Assigned Customization Version. Code</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataAgencyAssignedCustomizationVersionCodeType</NamedComplexType>
+              <XMLTag>AgencyAssignedCustomizationVersionCode</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9017</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="FunctionalDefinition" type="ds:MetaDataFunctionalDefinitionTextType" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>
+              <WCOAttributeID>N/A</WCOAttributeID>
+              <WCOAttributeName>Functional definition</WCOAttributeName>
+              <WCOAttributeDescription>Textual description of the functional definition of the message</WCOAttributeDescription>
+              <CoreDataType>Text</CoreDataType>
+              <DictionaryEntryName>Document Meta Data. Functional Definition. Text</DictionaryEntryName>
+              <NamedComplexType>DocumentMetaDataFunctionalDefinitionTextType</NamedComplexType>
+              <XMLTag>FunctionalDefinition</XMLTag>
+              <SuperClassTypeNone>X</SuperClassTypeNone>
+              <TDEDUID>N/A</TDEDUID>
+            </xs:documentation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>DocumentMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <UniquePositionID>9018</UniquePositionID>
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="BinaryFile" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>72B</WCOClassID>
+              <WCOClassName>BinaryFile</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Binary File. Details</DictionaryEntryName>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="ds:BinaryFileIdentificationIDType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M001</WCOAttributeID>
+                    <WCOAttributeName>Binary File Identifier</WCOAttributeName>
+                    <WCOAttributeDescription>A unique identifier for this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..256</WCOFormat>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Identification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileIdentificationIDType</NamedComplexType>
+                    <XMLTag>ID</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9019</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Title" type="ds:BinaryFileTitleTextType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M002</WCOAttributeID>
+                    <WCOAttributeName>Binary File Title</WCOAttributeName>
+                    <WCOAttributeDescription>A title, expressed as text, for this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..256</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Title. Text</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileTitleTextType</NamedComplexType>
+                    <XMLTag>Title</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9020</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="AuthorName" type="ds:BinaryFileAuthorNameTextType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M003</WCOAttributeID>
+                    <WCOAttributeName>Binary File Author Name</WCOAttributeName>
+                    <WCOAttributeDescription>An author name, expressed as text, of this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..70</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Author Name. Text</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileAuthorNameTextType</NamedComplexType>
+                    <XMLTag>AuthorName</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9021</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="VersionID" type="ds:BinaryFileVersionIDType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M004</WCOAttributeID>
+                    <WCOAttributeName>Binary File Version</WCOAttributeName>
+                    <WCOAttributeDescription>A unique version identifier for this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..17</WCOFormat>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Version. Identifier</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileVersionIDType</NamedComplexType>
+                    <XMLTag>VersionID</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9022</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="FileNametext" type="ds:BinaryFileFileNameTextType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M005</WCOAttributeID>
+                    <WCOAttributeName>Binary File Name</WCOAttributeName>
+                    <WCOAttributeDescription>A file name, expressed as text, of this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..256</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. File Name. Text</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileFileNameTextType</NamedComplexType>
+                    <XMLTag>FileNameText</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9023</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="URIID" type="ds:BinaryFileURIIDType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M006</WCOAttributeID>
+                    <WCOAttributeName>Binary File URI</WCOAttributeName>
+                    <WCOAttributeDescription>A unique Uniform Resource Identifier (URI) for this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..2048</WCOFormat>
+                    <CoreDataType>Identifier</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. URI. Identifier</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileURIIDType</NamedComplexType>
+                    <XMLTag>URIID</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9024</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="MIMECode" type="ds:BinaryFileMIMECodeType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M007</WCOAttributeID>
+                    <WCOAttributeName>Binary File MIME, coded</WCOAttributeName>
+                    <WCOAttributeDescription>A code specifying the Multipurpose Internet Mail Extensions (MIME) type for this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..70</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. MIME. Code</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileMIMECodeType</NamedComplexType>
+                    <XMLTag>MIMECode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9025</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="EncodingCode" type="ds:BinaryFileEncodingCodeType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M008</WCOAttributeID>
+                    <WCOAttributeName>Binary File Encoding, coded</WCOAttributeName>
+                    <WCOAttributeDescription>A code specifying the encoding of this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..17</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Encoding. Code</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileEncodingCodeType</NamedComplexType>
+                    <XMLTag>EncodingCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9026</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="CharacterSetCode" type="ds:BinaryFileCharacterSetCodeType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M009</WCOAttributeID>
+                    <WCOAttributeName>Binary File Character Set, coded</WCOAttributeName>
+                    <WCOAttributeDescription>A code specifying the character set for this binary file</WCOAttributeDescription>
+                    <WCOFormat>n..17</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Character Set. Code</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileCharacterSetCodeType</NamedComplexType>
+                    <XMLTag>CharacterSetCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9027</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="IncludedBinaryObjectBinaryObject" type="ds:BinaryFileIncludedBinaryObjectBinaryObjectType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M010</WCOAttributeID>
+                    <WCOAttributeName>Binary File Included Binary Object</WCOAttributeName>
+                    <WCOAttributeDescription>An included binary object for this binary file</WCOAttributeDescription>
+                    <WCOFormat>N/A</WCOFormat>
+                    <CoreDataType>Binary Object</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Included. Binary Object</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileIncludedBinaryObjectType</NamedComplexType>
+                    <XMLTag>IncludedBinaryObject</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9028</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Access" type="ds:BinaryFileAccessTextType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M011</WCOAttributeID>
+                    <WCOAttributeName>Binary File Access Information</WCOAttributeName>
+                    <WCOAttributeDescription>Access information, expressed as text, for this binary file such as security and download parameters</WCOAttributeDescription>
+                    <WCOFormat>an..256</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Access. Text</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileAccessTextType</NamedComplexType>
+                    <XMLTag>Access</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9029</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Description" type="ds:BinaryFileDescriptionTextType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M012</WCOAttributeID>
+                    <WCOAttributeName>Binary File Description</WCOAttributeName>
+                    <WCOAttributeDescription>A textual description of this binary file</WCOAttributeDescription>
+                    <WCOFormat>an..256</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Description. Text</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileDescriptionTextType</NamedComplexType>
+                    <XMLTag>Description</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9030</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SizeMeasure" type="ds:BinaryFileSizeMeasureType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M013</WCOAttributeID>
+                    <WCOAttributeName>Binary File Size</WCOAttributeName>
+                    <WCOAttributeDescription>A measure of the size of this binary file</WCOAttributeDescription>
+                    <WCOFormat>n..16,6</WCOFormat>
+                    <CoreDataType>Measure</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Size. Measure</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileSizeMeasureType</NamedComplexType>
+                    <XMLTag>SizeMeasure</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9031</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="TypeCode" type="ds:BinaryFileTypeCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M014</WCOAttributeID>
+                    <WCOAttributeName>Binary File Type, coded</WCOAttributeName>
+                    <WCOAttributeDescription>The code specifying the type of binary file, such as photo, spreadsheet</WCOAttributeDescription>
+                    <WCOFormat>an..6</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Type. Code</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileTypeCodeType</NamedComplexType>
+                    <XMLTag>TypeCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9032</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="HashCode" type="ds:BinaryFileHashCodeTextType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M015</WCOAttributeID>
+                    <WCOAttributeName>Hash Code</WCOAttributeName>
+                    <WCOAttributeDescription>Hash code of the linked document</WCOAttributeDescription>
+                    <WCOFormat>an..256</WCOFormat>
+                    <CoreDataType>Text</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Hash Code. Text</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileHashCodeTextType</NamedComplexType>
+                    <XMLTag>HashCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9033</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="HashCodeAlgorithmIDCode" type="ds:BinaryFileHashCodeAlgorithmIDCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>M016</WCOAttributeID>
+                    <WCOAttributeName>Hash Code Algorithm ID, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Code indicating the algorithm used to calculate the hash code (e.g. MD5, ..)</WCOAttributeDescription>
+                    <WCOFormat>an..6</WCOFormat>
+                    <CoreDataType>Code</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <TDEDUID>N/A</TDEDUID>
+                    <DictionaryEntryName>Binary File. Hash Code Algorithm. Code</DictionaryEntryName>
+                    <NamedComplexType>BinaryFileHashCodeAlgorithmCodeType</NamedComplexType>
+                    <XMLTag>HashCodeAlgorithmCode</XMLTag>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>72B</WCOClassID>
+                    <WCOClassName>BinaryFile</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <UniquePositionID>9034</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CommunicationMetaData" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>CommunicationMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Communication Meta Data. Details</DictionaryEntryName>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AcknowledgementRequestIndicator" type="ds:CommunicationMetaDataAcknowledgementRequestIndicatorType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Acknowledgement Request</WCOAttributeName>
+                    <WCOAttributeDescription>Code determined by the sender for acknowledgement of the interchange</WCOAttributeDescription>
+                    <CoreDataType>Indicator</CoreDataType>
+                    <WCOFormat>n1</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Acknowledgement Request. Indicator</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataAcknowledgementRequestIndicatorType</NamedComplexType>
+                    <XMLTag>AcknowledgementRequestIndicator</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9001</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ApplicationReferenceID" type="ds:CommunicationMetaDataApplicationReferenceIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Application Reference</WCOAttributeName>
+                    <WCOAttributeDescription>Identification of the application area assigned by the sender, to which the messages in the interchange relate e.g. the message identifier if all the messages in the interchange are of the same type</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOFormat>an..70</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Application Reference. Identifier</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataApplicationReferenceIDType</NamedComplexType>
+                    <XMLTag>ApplicationReferenceID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                    <UniquePositionID>9002</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="CommunicationsAgreementID" type="ds:CommunicationMetaDataCommunicationsAgreementIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Communications Agreement</WCOAttributeName>
+                    <WCOAttributeDescription>Identification by name or code of the type of agreement under which the interchange takes place</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOFormat>an..35</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Communications Agreement. Identifier</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataCommunicationsAgreementIDType</NamedComplexType>
+                    <XMLTag>CommunicationsAgreementID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9003</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="PreparationDateTime" type="ds:CommunicationMetaDataPreparationDateTimeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Preparation date and time</WCOAttributeName>
+                    <WCOAttributeDescription>Local date and time when an interchange or a functional group was prepared</WCOAttributeDescription>
+                    <CoreDataType>Date Time</CoreDataType>
+                    <WCOFormat>an..35</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Preparation. Date Time</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataPreparationDateTimeType</NamedComplexType>
+                    <XMLTag>PreparationDateTime</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9004</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SyntaxIdentificationCode" type="ds:CommunicationMetaDataSyntaxIdentificationCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (0001)</WCOCodeRemarks>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Syntax identification, coded</WCOAttributeName>
+                    <WCOAttributeDescription>Coded identification of the agency controlling a syntax and syntax level used in an interchange</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                    <WCOFormat>a4</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Syntax Identification. Code</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataSyntaxIdentificationCodeType</NamedComplexType>
+                    <XMLTag>SyntaxIdentificationCode</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9005</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SyntaxVersionCode" type="ds:CommunicationMetaDataSyntaxVersionCodeType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOCodeRemarks>EDIFACT codes (0002)</WCOCodeRemarks>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Syntax Version</WCOAttributeName>
+                    <WCOAttributeDescription>Version number of the syntax identified in the syntax identifier (0001)</WCOAttributeDescription>
+                    <CoreDataType>Code</CoreDataType>
+                    <WCOFormat>n1</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Syntax Version. Code</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataSyntaxVersionCodeType</NamedComplexType>
+                    <XMLTag>SyntaxVersionCode</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9006</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="TestIndicator" type="ds:CommunicationMetaDataTestIndicatorType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Test indicator</WCOAttributeName>
+                    <WCOAttributeDescription>Indication that the interchange is a test</WCOAttributeDescription>
+                    <CoreDataType>Indicator</CoreDataType>
+                    <WCOFormat>n1</WCOFormat>
+                    <DictionaryEntryName>Communication Meta Data. Test. Indicator</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataTestIndicatorType</NamedComplexType>
+                    <XMLTag>TestIndicator</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9007</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SequenceNumeric" type="ds:CommunicationMetaDataSequenceNumericType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Sequence number</WCOAttributeName>
+                    <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                    <WCOFormat>n..5</WCOFormat>
+                    <CoreDataType>Numeric</CoreDataType>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <DictionaryEntryName>Communication Meta Data. Sequence. Numeric</DictionaryEntryName>
+                    <NamedComplexType>CommunicationMetaDataSequenceNumericType</NamedComplexType>
+                    <XMLTag>SequenceNumeric</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>CommunicationMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9049</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Recipient" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>Recipient</WCOClassName>
+                    <DictionaryEntryName>Recipient. Details</DictionaryEntryName>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:RecipientIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3039</TDEDUID>
+                          <TDEDName>Party. Identifier</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S009</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                          <WCOAttributeID>N/A</WCOAttributeID>
+                          <WCOAttributeName>Recipient identification</WCOAttributeName>
+                          <WCOAttributeDescription>Identifier of the (message) recipient</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Recipient. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>RecipientIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Recipient</WCOClassName>
+                          <UniquePositionID>9008</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="RoleCode" type="ds:RecipientRoleCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3035)</WCOCodeRemarks>
+                          <WCOFormat>an..3</WCOFormat>
+                          <WCOAttributeID>R005</WCOAttributeID>
+                          <WCOAttributeName>Role code</WCOAttributeName>
+                          <WCOAttributeDescription>Code giving specific meaning to a party</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3035</TDEDUID>
+                          <TDEDName>Party. Function.Code</TDEDName>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S010</SuperClassElementID>
+                          <SuperClassElementName>role</SuperClassElementName>
+                          <DictionaryEntryName>Recipient. Role. Code</DictionaryEntryName>
+                          <NamedComplexType>RecipientRoleCodeType</NamedComplexType>
+                          <XMLTag>RoleCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Recipient</WCOClassName>
+                          <UniquePositionID>9035</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:RecipientIdentificationIssuingCountryCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                          <WCOAttributeID>R147</WCOAttributeID>
+                          <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                          <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S057</SuperClassElementID>
+                          <SuperClassElementName>identificationIssuingCountry</SuperClassElementName>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <TDEDUID>3207</TDEDUID>
+                          <TDEDName>Country.Identifier</TDEDName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>a2</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Recipient. Identification Issuing Country. Code</DictionaryEntryName>
+                          <NamedComplexType>RecipientIdentificationIssuingCountryCodeType</NamedComplexType>
+                          <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Recipient</WCOClassName>
+                          <UniquePositionID>11396</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>25A</WCOClassID>
+                          <WCOClassName>Communication</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Communication. Details</DictionaryEntryName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>240</WCOAttributeID>
+                                <WCOAttributeName>Communication number</WCOAttributeName>
+                                <WCOAttributeDescription>To identify a communication address</WCOAttributeDescription>
+                                <WCOFormat>an..50</WCOFormat>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3148</TDEDUID>
+                                <TDEDName>Communication.Address.Identifier</TDEDName>
+                                <DictionaryEntryName>Communication. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>CommunicationIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>9036</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3155)</WCOCodeRemarks>
+                                <WCOAttributeID>253</WCOAttributeID>
+                                <WCOAttributeName>Communication number type</WCOAttributeName>
+                                <WCOAttributeDescription>To identify the type of communication address</WCOAttributeDescription>
+                                <WCOFormat>an..3</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3155</TDEDUID>
+                                <TDEDName>Communication.MeansType.Code</TDEDName>
+                                <DictionaryEntryName>Communication. Type. Code</DictionaryEntryName>
+                                <NamedComplexType>CommunicationTypeCodeType</NamedComplexType>
+                                <XMLTag>TypeCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>9037</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23C</WCOClassID>
+                          <WCOClassName>AdditionalIdentifier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Identifier. Details</DictionaryEntryName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>006</WCOAttributeID>
+                                <WCOAttributeName>Sequence number</WCOAttributeName>
+                                <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                                <WCOFormat>n..5</WCOFormat>
+                                <CoreDataType>Numeric</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1050</TDEDUID>
+                                <TDEDName>Sequence. Position.Identifier</TDEDName>
+                                <DictionaryEntryName>Additional Identifier. Sequence. Numeric</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierSequenceNumericType</NamedComplexType>
+                                <XMLTag>SequenceNumeric</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10843</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3039</TDEDUID>
+                                <TDEDName>Party. Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>511</WCOAttributeID>
+                                <WCOAttributeName>Additional identification, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Additional identification of a party, e.g. VAT number</WCOAttributeDescription>
+                                <WCOCodeRemarks>
+International codes (e.g. DUNS, EAN) or user codes.
+To be used with CDT attributes "Identification Scheme. Identifier" and
+"Identification Scheme Agency. Identifier" to make the information unique
+                                </WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10844</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOAttributeID>R147</WCOAttributeID>
+                                <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                                <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>a2</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification Issuing Country. Code</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIssuingCountryCodeType</NamedComplexType>
+                                <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>11397</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Sender" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <SuperClassID>SC4</SuperClassID>
+                    <SuperClassName>Party</SuperClassName>
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>Sender</WCOClassName>
+                    <DictionaryEntryName>Sender. Details</DictionaryEntryName>
+                  </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ID" type="ds:SenderIdentificationIDType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>an..35</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3039</TDEDUID>
+                          <TDEDName>Party. Identifier</TDEDName>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S009</SuperClassElementID>
+                          <SuperClassElementName>identification</SuperClassElementName>
+                          <WCOAttributeID>N/A</WCOAttributeID>
+                          <WCOAttributeName>Sender identification</WCOAttributeName>
+                          <WCOAttributeDescription>Identifier of the (message) sender</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Identifier</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Sender. Identification. Identifier</DictionaryEntryName>
+                          <NamedComplexType>SenderIdentificationIDType</NamedComplexType>
+                          <XMLTag>ID</XMLTag>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Sender</WCOClassName>
+                          <UniquePositionID>9009</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="RoleCode" type="ds:SenderRoleCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3035)</WCOCodeRemarks>
+                          <WCOFormat>an..3</WCOFormat>
+                          <WCOAttributeID>R005</WCOAttributeID>
+                          <WCOAttributeName>Role code</WCOAttributeName>
+                          <WCOAttributeDescription>Code giving specific meaning to a party</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <TDEDUID>3035</TDEDUID>
+                          <TDEDName>Party. Function.Code</TDEDName>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S010</SuperClassElementID>
+                          <SuperClassElementName>role</SuperClassElementName>
+                          <DictionaryEntryName>Sender. Role. Code</DictionaryEntryName>
+                          <NamedComplexType>SenderRoleCodeType</NamedComplexType>
+                          <XMLTag>RoleCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Sender</WCOClassName>
+                          <UniquePositionID>9038</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="IdentificationIssuingCountryCode" type="ds:SenderIdentificationIssuingCountryCodeType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                          <WCOAttributeID>R147</WCOAttributeID>
+                          <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                          <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <SuperClassID>SC4</SuperClassID>
+                          <SuperClassName>Party</SuperClassName>
+                          <SuperClassElementID>S057</SuperClassElementID>
+                          <SuperClassElementName>identificationIssuingCountry</SuperClassElementName>
+                          <SuperClassTypeParty>X</SuperClassTypeParty>
+                          <TDEDUID>3207</TDEDUID>
+                          <TDEDName>Country.Identifier</TDEDName>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOFormat>a2</WCOFormat>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Sender. Identification Issuing Country. Code</DictionaryEntryName>
+                          <NamedComplexType>SenderIdentificationIssuingCountryCodeType</NamedComplexType>
+                          <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                        </xs:documentation>
+                        <xs:documentation xml:lang="EN">
+                          <CoreDataType>Code</CoreDataType>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <WCOClassID>N/A</WCOClassID>
+                          <WCOClassName>Sender</WCOClassName>
+                          <UniquePositionID>11398</UniquePositionID>
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="Communication" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>25A</WCOClassID>
+                          <WCOClassName>Communication</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Communication. Details</DictionaryEntryName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ID" type="ds:CommunicationIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>240</WCOAttributeID>
+                                <WCOAttributeName>Communication number</WCOAttributeName>
+                                <WCOAttributeDescription>To identify a communication address</WCOAttributeDescription>
+                                <WCOFormat>an..50</WCOFormat>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3148</TDEDUID>
+                                <TDEDName>Communication.Address.Identifier</TDEDName>
+                                <DictionaryEntryName>Communication. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>CommunicationIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>9039</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="TypeCode" type="ds:CommunicationTypeCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3155)</WCOCodeRemarks>
+                                <WCOAttributeID>253</WCOAttributeID>
+                                <WCOAttributeName>Communication number type</WCOAttributeName>
+                                <WCOAttributeDescription>To identify the type of communication address</WCOAttributeDescription>
+                                <WCOFormat>an..3</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3155</TDEDUID>
+                                <TDEDName>Communication.MeansType.Code</TDEDName>
+                                <DictionaryEntryName>Communication. Type. Code</DictionaryEntryName>
+                                <NamedComplexType>CommunicationTypeCodeType</NamedComplexType>
+                                <XMLTag>TypeCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>25A</WCOClassID>
+                                <WCOClassName>Communication</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>9040</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AdditionalIdentifier" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation xml:lang="EN">
+                          <WCOClassID>23C</WCOClassID>
+                          <WCOClassName>AdditionalIdentifier</WCOClassName>
+                        </xs:documentation>
+                        <xs:documentation>
+                          <DictionaryEntryName>Additional Identifier. Details</DictionaryEntryName>
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SequenceNumeric" type="ds:AdditionalIdentifierSequenceNumericType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>006</WCOAttributeID>
+                                <WCOAttributeName>Sequence number</WCOAttributeName>
+                                <WCOAttributeDescription>Number indicating the position in a sequence</WCOAttributeDescription>
+                                <WCOFormat>n..5</WCOFormat>
+                                <CoreDataType>Numeric</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>1050</TDEDUID>
+                                <TDEDName>Sequence. Position.Identifier</TDEDName>
+                                <DictionaryEntryName>Additional Identifier. Sequence. Numeric</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierSequenceNumericType</NamedComplexType>
+                                <XMLTag>SequenceNumeric</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10845</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ID" type="ds:AdditionalIdentifierIdentificationIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>an..35</WCOFormat>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3039</TDEDUID>
+                                <TDEDName>Party. Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOAttributeID>511</WCOAttributeID>
+                                <WCOAttributeName>Additional identification, coded</WCOAttributeName>
+                                <WCOAttributeDescription>Additional identification of a party, e.g. VAT number</WCOAttributeDescription>
+                                <WCOCodeRemarks>
+International codes (e.g. DUNS, EAN) or user codes.
+To be used with CDT attributes "Identification Scheme. Identifier" and
+"Identification Scheme Agency. Identifier" to make the information unique
+                                </WCOCodeRemarks>
+                                <CoreDataType>Identifier</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification. Identifier</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIDType</NamedComplexType>
+                                <XMLTag>ID</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>10846</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="IdentificationIssuingCountryCode" type="ds:AdditionalIdentifierIdentificationIssuingCountryCodeType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOCodeRemarks>EDIFACT codes (3207) = ISO 3166-1 2-alpha code</WCOCodeRemarks>
+                                <WCOAttributeID>R147</WCOAttributeID>
+                                <WCOAttributeName>Identification issuing country, code</WCOAttributeName>
+                                <WCOAttributeDescription>To achieve a globally unique standardised TIN format for cross-border exchanges, add this separate 2-digit alpha numeric ISO Country Code attribute as a qualifier to the existing national identifier.</WCOAttributeDescription>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <TDEDUID>3207</TDEDUID>
+                                <TDEDName>Country.Identifier</TDEDName>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOFormat>a2</WCOFormat>
+                                <CoreDataType>Code</CoreDataType>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <DictionaryEntryName>Additional Identifier. Identification Issuing Country. Code</DictionaryEntryName>
+                                <NamedComplexType>AdditionalIdentifierIdentificationIssuingCountryCodeType</NamedComplexType>
+                                <XMLTag>IdentificationIssuingCountryCode</XMLTag>
+                              </xs:documentation>
+                              <xs:documentation xml:lang="EN">
+                                <WCOClassID>23C</WCOClassID>
+                                <WCOClassName>AdditionalIdentifier</WCOClassName>
+                              </xs:documentation>
+                              <xs:documentation>
+                                <SuperClassTypeNone>X</SuperClassTypeNone>
+                                <UniquePositionID>11399</UniquePositionID>
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContextMetaData" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation xml:lang="EN">
+              <WCOClassID>N/A</WCOClassID>
+              <WCOClassName>ContextMetaData</WCOClassName>
+            </xs:documentation>
+            <xs:documentation>
+              <DictionaryEntryName>Context Meta Data. Details</DictionaryEntryName>
+            </xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BusinessProcessID" type="ds:ContextMetaDataBusinessProcessIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Business Process Context</WCOAttributeName>
+                    <WCOAttributeDescription>Identify the interaction between Trading partners to achieve a given business objective</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+These values will be summarized and will be hierarchical where applicable. 
+This list can be extended.
+Default value “ALL” if no restrictions apply.
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. Business Process. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataBusinessProcessIDType</NamedComplexType>
+                    <XMLTag>BusinessProcessID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9041</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="ProductClassificationID" type="ds:ContextMetaDataProductClassificationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Product Classification Context</WCOAttributeName>
+                    <WCOAttributeDescription>Determine the goods or services concerned in the collaboration</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+Use relevant HS codes; or text; 
+Default value “ALL” if no restrictions apply.
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. Product Classification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataProductClassificationIDType</NamedComplexType>
+                    <XMLTag>ProductClassificationID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9042</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="IndustryClassificationID" type="ds:ContextMetaDataIndustryClassificationIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Industry Classification Context</WCOAttributeName>
+                    <WCOAttributeDescription>Determine the relevant trading partner industries</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+UN International Standard Industrial Classification (ISIC).
+Default value “ALL” if no restrictions apply
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. Industry Classification. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataIndustryClassificationIDType</NamedComplexType>
+                    <XMLTag>IndustryClassificationID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9043</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="GeopoliticalID" type="ds:ContextMetaDataGeopoliticalIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Geopolitical Context</WCOAttributeName>
+                    <WCOAttributeDescription>Determine where the Business Process is to be conducted</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+ISO 3166  including ISO 3166_1 and ISO 3166_2.
+Default value “ALL” if no restrictions apply.
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. Geopolitical. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataGeopoliticalIDType</NamedComplexType>
+                    <XMLTag>GeopoliticalID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9044</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="OfficialConstraintsID" type="ds:ContextMetaDataOfficialConstraintsIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Official Constraints Context</WCOAttributeName>
+                    <WCOAttributeDescription>Determine any legal restrictions or requirements on this Business Process</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+Proposed guideline: Use relevant laws, treaties or regulations : User codes and abbreviations are allowed. 
+Default  value “NONE” if no restrictions apply.
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. Official Constraints. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataOfficialConstraintsIDType</NamedComplexType>
+                    <XMLTag>OfficialConstraintslID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9045</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="BusinessProcessRoleID" type="ds:ContextMetaDataBusinessProcessRoleIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Business Process Role Context</WCOAttributeName>
+                    <WCOAttributeDescription>
+Identify the roles played by the trading partners. 
+These can be derived from the Business Process
+                    </WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+To be supplied by the producer of My IP.
+Default value “ALL” if no restrictions apply.      
+&lt;Examples: Broker, Importer, Forwarder etc.
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. Business Process Role. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataBusinessProcessRoleIDType</NamedComplexType>
+                    <XMLTag>BusinessProcessRoleID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9046</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SupportingRoleID" type="ds:ContextMetaDataSupportingRoleIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>Supporting Role Context</WCOAttributeName>
+                    <WCOAttributeDescription>Determine what other significant parties will be using the data in the messages. Determine their role in the overall process</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+To be supplied by the producer of My IP.
+Default value “ALL” if no restrictions apply.
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. Supporting Role. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataSupportingRoleIDType</NamedComplexType>
+                    <XMLTag>SupportingRoleID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9047</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="SystemCapabilitiesID" type="ds:ContextMetaDataSystemCapabilitiesIDType" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>
+                    <WCOAttributeID>N/A</WCOAttributeID>
+                    <WCOAttributeName>System Capabilities Context</WCOAttributeName>
+                    <WCOAttributeDescription>Determine any major restrictions derived from system, a class of systems or standard in the business situation. Identify the type of system</WCOAttributeDescription>
+                    <CoreDataType>Identifier</CoreDataType>
+                    <WCOCodeRemarks>
+To be supplied by the producer of My IP.
+Default value “ALL” if no restrictions apply.
+                    </WCOCodeRemarks>
+                    <DictionaryEntryName>Context Meta Data. System Capabilities. Identifier</DictionaryEntryName>
+                    <NamedComplexType>ContextMetaDataSystemCapabilitiesIDType</NamedComplexType>
+                    <XMLTag>SystemCapabilitiesID</XMLTag>
+                    <SuperClassTypeNone>X</SuperClassTypeNone>
+                    <TDEDUID>N/A</TDEDUID>
+                  </xs:documentation>
+                  <xs:documentation xml:lang="EN">
+                    <WCOClassID>N/A</WCOClassID>
+                    <WCOClassName>ContextMetaData</WCOClassName>
+                  </xs:documentation>
+                  <xs:documentation>
+                    <UniquePositionID>9048</UniquePositionID>
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

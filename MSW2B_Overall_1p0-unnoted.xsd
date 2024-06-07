@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:wco:datamodel:WCO:MSW2B_Overall:1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ds="urn:wco:datamodel:WCO:MSW2B_Overall_DS:1"
+    targetNamespace="urn:wco:datamodel:WCO:MSW2B_Overall:1"
+    elementFormDefault="qualified">
+  <xs:import namespace="urn:wco:datamodel:WCO:MSW2B_Overall_DS:1" schemaLocation="MSW2B_Overall_1p0_urn_wco_datamodel_WCO_MSW2B_Overall_DS_1.xsd"/>
+  <xs:element name="Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Function" type="ds:ResponseFunctionCodeType" minOccurs="0"/>
+        <xs:element name="FunctionalReferenceID" type="ds:ResponseFunctionalReferenceIDType" minOccurs="0"/>
+        <xs:element name="IssueDateTime" type="ds:ResponseIssueDateTimeType" minOccurs="0"/>
+        <xs:element name="TypeCode" type="ds:ResponseTypeCodeType" minOccurs="0"/>
+        <xs:element name="Submitter" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="ds:SubmitterIdentificationIDType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AdditionalInformation" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StatementDescription" type="ds:AdditionalInformationStatementDescriptionTextType" minOccurs="0"/>
+              <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Declaration" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FunctionalReferenceID" type="ds:DeclarationFunctionalReferenceIDType" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Error" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Description" type="ds:ErrorDescriptionTextType" minOccurs="0"/>
+              <xs:element name="ValidationCode" type="ds:ErrorValidationCodeType" minOccurs="0"/>
+              <xs:element name="Pointer" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SequenceNumeric" type="ds:PointerSequenceNumericType" minOccurs="0"/>
+                    <xs:element name="TagID" type="ds:PointerTagIDType" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
